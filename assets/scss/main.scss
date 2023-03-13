@@ -1,0 +1,146 @@
+$main-color: #7531ab;
+$assistance-color: #d48f3f;
+$bg-color: #f3f1fd;
+$bg-color-secondary: #d3f4ea;
+$text-color2: #444444;
+$body-bg-color: #fbfbfe;
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+// Then import Bootstrap
+@import "./bootstrap/bootstrap";
+
+.btn_brand {
+  background-color: $assistance-color;
+  color: #fff;
+  border: none;
+  border-radius: 32px 0px 32px 0px;
+  font-size: 18px;
+  padding: 18.5px 36px;
+  &:hover {
+    background-color: $main-color;
+  }
+}
+.btn_transparent {
+  background-color: transparent;
+  color: $main-color;
+  border: none;
+  border-radius: 32px 0px 32px 0px;
+  font-size: 18px;
+  padding: 18.5px 36px;
+  &:hover {
+    background-color: $assistance-color;
+    color: #fff;
+    path {
+      fill: #fff;
+    }
+  }
+}
+.btn_asist {
+  background-color: $assistance-color;
+  color: #fff;
+  border: none;
+  border-radius: 32px 0px 32px 0px;
+  font-size: 18px;
+  padding: 18.5px 36px;
+  &:hover {
+    background-color: $main-color;
+  }
+}
+.bg_brand {
+  background-color: $assistance-color;
+}
+nav {
+  padding: 20px 0px;
+}
+
+.hero {
+  background-color: $bg-color;
+  padding-top: 80px;
+  padding-bottom: 96px;
+  .hero_top_text {
+    .bg_brand {
+      color: #fff;
+      font-size: 24px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin-right: 10px;
+    }
+    p {
+      font-size: 18px;
+      color: $text-color2;
+    }
+  }
+  .hero_big_text {
+    h1 {
+      color: $main-color;
+      font-size: 64px;
+      font-weight: 800;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  &_big_text_sheap {
+    border-image: url(../images/shape.png);
+  }
+  .hero_bottom_text p {
+    color: $text-color2;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    font-size: 20px;
+    max-width: 512px;
+  }
+}
+.our_services {
+  background: $body-bg-color;
+  padding: 120px 0px;
+  h2 {
+    font-size: 48px;
+    color: $assistance-color;
+    font-weight: 600;
+    padding-bottom: 40px;
+  }
+  .service_card {
+    background-color: #fff;
+
+    .content {
+      padding: 20px 0px;
+      h3 {
+        font-size: 24px;
+        color: black;
+        font-weight: 600;
+        padding-bottom: 20px;
+      }
+      p {
+        color: $text-color2;
+        font-size: 16px;
+      }
+      a {
+        color: $assistance-color;
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.let_get_started {
+  background-image: url(../images/let-start-bg.png);
+  padding-bottom: 120px;
+  .content {
+    max-width: 652px;
+    p {
+      color: $text-color2;
+      padding-bottom: 30px;
+    }
+  }
+}
