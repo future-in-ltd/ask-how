@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
 }
 
 img {
@@ -11899,6 +11898,71 @@ footer p {
   font-size: 18px;
   font-weight: 600;
   text-decoration: none;
+}
+
+.req-demo {
+  padding: 120px 0px;
+}
+.req-demo h1, .req-demo .h1 {
+  font-size: 48;
+  color: black;
+  font-weight: 600;
+  text-align: center;
+}
+.req-demo .sub-text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #444444;
+}
+.req-demo .request_demo {
+  display: flex;
+  gap: 60px;
+  margin-top: 60px;
+}
+.req-demo .request_demo .demon_content {
+  max-width: 460px;
+  padding: 40px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+  height: fit-content;
+  border-radius: 16px;
+}
+.req-demo .request_demo .demo_form {
+  max-width: 800px;
+  padding: 40px 80px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+}
+.req-demo .request_demo .demo_form input,
+.req-demo .request_demo .demo_form select,
+.req-demo .request_demo .demo_form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #999999;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #999999;
+}
+.req-demo .request_demo .demo_form h3, .req-demo .request_demo .demo_form .h3 {
+  font-size: 18px;
+  color: black;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.req-demo .request_demo .demo_form .btn_submit {
+  background-color: #7531ab;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.req-demo .request_demo .demo_form .btn_submit:hover {
+  background-color: #d48f3f;
 }
 
 /*# sourceMappingURL=style.css.map */
