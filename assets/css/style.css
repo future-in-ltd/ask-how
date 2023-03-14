@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -11664,6 +11668,20 @@ textarea.form-control-lg {
   background-color: #7531ab;
 }
 
+.btn_submit {
+  background-color: #7531ab;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn_submit:hover {
+  background-color: #d48f3f;
+}
+
 .bg_brand {
   background-color: #d48f3f;
 }
@@ -11900,6 +11918,130 @@ footer p {
   text-decoration: none;
 }
 
+.blog_single_page_heading {
+  background-image: url(../images/blog/single-blog-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f3f1fd;
+  padding: 120px 0px;
+}
+.blog_single_page_heading h1, .blog_single_page_heading .h1 {
+  font-size: 64px;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.article-blog {
+  padding: 120px 0px;
+}
+.article-blog article h3, .article-blog article .h3 {
+  font-size: 36px;
+  color: black;
+  font-weight: 600;
+  max-width: 900px;
+}
+.article-blog article p {
+  font-size: 18px;
+  color: black;
+  padding: 20px 15px;
+}
+
+.commnet-wraper {
+  max-width: 920px;
+  margin: 0 auto;
+}
+.commnet-wraper .artical-info {
+  padding: 10px 20px;
+  gap: 10px;
+  width: 920px;
+  height: 64px;
+  border: 1px solid #d48f3f;
+  border-radius: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.commnet-wraper .artical-info .date-and-name {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.commnet-wraper .artical-info .date-and-name p {
+  margin: 0;
+  padding: 0;
+}
+.commnet-wraper .comment-form {
+  padding: 60px;
+  padding-bottom: 120px;
+}
+.commnet-wraper .comment-form h2, .commnet-wraper .comment-form .h2 {
+  font-size: 48px;
+  line-height: 150%;
+  color: #d48f3f;
+}
+.commnet-wraper .comment-form .author-info {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 34px;
+}
+.commnet-wraper .comment-form .author-info .author-img {
+  width: 100px;
+  height: 100px;
+}
+.commnet-wraper .comment-form .author-info .author-img img {
+  width: 100px;
+  height: 100px;
+}
+.commnet-wraper .comment-form .author-info .author-details .name {
+  font-size: 18px;
+  line-height: 150%;
+  color: #d48f3f;
+  margin-bottom: 0;
+}
+.commnet-wraper .comment-form .author-info .author-details .date {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #444444;
+  margin-bottom: 0;
+}
+.commnet-wraper .comment-form .author-info .author-details .bio {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 26px;
+  margin-bottom: 0;
+  color: #999999;
+}
+.commnet-wraper .comment-form .com-form h3, .commnet-wraper .comment-form .com-form .h3 {
+  font-size: 36px;
+  line-height: 150%;
+  color: black;
+  margin-bottom: 30px;
+}
+.commnet-wraper .comment-form .com-form p {
+  font-size: 18px;
+  line-height: 150%;
+  color: black;
+}
+.commnet-wraper .comment-form .com-form .inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.commnet-wraper .comment-form .com-form input,
+.commnet-wraper .comment-form .com-form textarea {
+  width: 100%;
+  border: 1px solid #999999;
+  border-radius: 8px;
+  padding: 10px;
+}
+.commnet-wraper .comment-form .com-form button {
+  margin-top: 10px;
+}
+
 .req-demo {
   padding: 120px 0px;
 }
@@ -11950,19 +12092,6 @@ footer p {
   color: black;
   font-weight: 600;
   padding-bottom: 20px;
-}
-.req-demo .request_demo .demo_form .btn_submit {
-  background-color: #7531ab;
-  color: #fff;
-  border: none;
-  padding: 15px 30px;
-  border-radius: 30px;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
-}
-.req-demo .request_demo .demo_form .btn_submit:hover {
-  background-color: #d48f3f;
 }
 
 /*# sourceMappingURL=style.css.map */
