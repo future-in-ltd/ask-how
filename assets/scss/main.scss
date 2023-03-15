@@ -11,7 +11,7 @@ $body-bg-color: #fbfbfe;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
+  // outline: 1px solid red;
 }
 a {
   text-decoration: none !important;
@@ -74,6 +74,9 @@ body {
   &:hover {
     background-color: $main-color;
   }
+}
+.text_main {
+  color: $main-color;
 }
 .btn_border {
   background-color: transparent;
@@ -148,6 +151,10 @@ header {
   background-color: $bg-color;
   padding-top: 80px;
   padding-bottom: 96px;
+  background-image: url(../images/hero-model.png);
+  background-repeat: no-repeat;
+  background-position: bottom -50px right 100px;
+  background-size: contain;
   .hero_top_text {
     .bg_brand {
       color: #fff;
@@ -171,7 +178,13 @@ header {
     }
   }
   &_big_text_sheap {
-    border-image: url(../images/shape.png);
+    background-image: url(../images/hero-text-shape.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: $assistance-color;
+    padding: 5px 15px;
+    margin: 5px;
   }
   .hero_bottom_text p {
     color: $text-color2;
@@ -194,16 +207,19 @@ header {
     background-color: #fff;
     height: 100%;
     .content {
-      padding: 20px 0px;
+      padding: 20px 37px;
       h3 {
         font-size: 24px;
         color: black;
         font-weight: 600;
         padding-bottom: 20px;
+        margin: 0;
       }
       p {
         color: $text-color2;
         font-size: 16px;
+        margin: 0;
+        padding-bottom: 20px;
       }
       a {
         color: $assistance-color;
@@ -244,6 +260,7 @@ header {
       border-radius: 50%;
       background: transparent;
       transition: all 0.3s ease-in-out;
+      background: #fff;
       &:hover {
         background: $bg-color;
         cursor: pointer;
@@ -340,7 +357,7 @@ header {
 .our-tutor {
   padding: 120px 0px;
   background-image: url(../images/our-tut-bg.png);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-color: $bg-color;
@@ -670,6 +687,62 @@ footer {
         font-weight: 600;
         padding-bottom: 20px;
       }
+    }
+  }
+}
+
+// school page
+.let_join {
+  padding-top: 60px;
+  h2 {
+    font-size: 36px;
+    line-height: 150%;
+    color: #222222;
+    margin-bottom: 30px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #444444;
+    margin-bottom: 60px;
+  }
+  img {
+    max-width: 620px;
+  }
+}
+
+.benefits {
+  h2 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 150%;
+    color: #000000;
+    margin-bottom: 120px;
+    text-align: center;
+  }
+  .mt-60 {
+    margin-top: 60px;
+  }
+  img {
+    max-width: 648px;
+  }
+  .content {
+    max-width: 612px;
+    h3 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 44px;
+      margin-bottom: 60px;
+      color: #000000;
+    }
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 150%;
+
+      color: #444444;
     }
   }
 }
