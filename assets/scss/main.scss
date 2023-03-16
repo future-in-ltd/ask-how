@@ -27,6 +27,9 @@ body {
 //  import Bootstrap
 @import "./bootstrap/bootstrap";
 
+.text_brand {
+  color: $assistance-color !important;
+}
 .btn_brand {
   background-color: $assistance-color;
   color: #fff;
@@ -38,6 +41,7 @@ body {
     background-color: $main-color;
   }
 }
+
 .btn_transparent {
   background-color: transparent;
   color: $main-color;
@@ -751,6 +755,7 @@ footer {
   background-color: #fbfbfe;
 
   .top_part {
+    text-align: center;
     h2 {
       font-size: 48px;
       line-height: 59px;
@@ -829,6 +834,214 @@ footer {
             color: $main-color;
           }
         }
+      }
+    }
+  }
+}
+// sign in page
+.sign-up-page {
+  position: relative;
+  h2 {
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 60px;
+  }
+  .left_side_area {
+    background: $main-color;
+    color: #fff;
+    padding: 100px 75px;
+    h2 {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 150%;
+      text-align: center;
+      color: #ffffff;
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+    p {
+      font-size: 24px;
+      line-height: 150%;
+      color: #ffffff;
+    }
+  }
+  .right_side_from {
+    padding: 100px 138px;
+    input,
+    select {
+      width: 780px;
+      margin-bottom: 30px;
+      padding: 10px;
+      width: 780px;
+      height: 47px;
+      border: 1px solid #999999;
+      border-radius: 8px;
+    }
+
+    .submit_area {
+      width: 780px;
+      display: flex;
+    }
+    a {
+      color: $main-color;
+    }
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 150%;
+      color: #999999;
+    }
+  }
+
+  select#countryCode {
+    background-repeat: no-repeat;
+    background-position: calc(100% - 8px) center;
+    background-size: 16px;
+    padding-right: 28px;
+  }
+
+  option[data-icon] {
+    padding-left: 24px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    line-height: 1.6;
+  }
+}
+
+.close_btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.btn_close {
+  background-color: $main-color;
+  color: #fff;
+  box-shadow: 10px 10px 30px rgba(152, 151, 151, 0.09);
+  border-radius: 50%;
+  width: 59.09px;
+  height: 59.09px;
+  font-size: 18px;
+  padding: 20px;
+  cursor: pointer;
+  &:hover {
+    background-color: $assistance-color;
+  }
+}
+
+.sign_up-page-2 {
+  position: relative;
+  h2 {
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 60px;
+  }
+  .left_side_area {
+    background: $main-color;
+    color: #fff;
+    padding: 100px 75px;
+    h2 {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 150%;
+      text-align: center;
+      color: #ffffff;
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+    p {
+      font-size: 24px;
+      line-height: 150%;
+      color: #ffffff;
+    }
+  }
+  input,
+  select {
+    width: 100%;
+  }
+  .right_side_from {
+    padding: 100px 138px;
+    h2 {
+      font-size: 36px;
+      line-height: 44px;
+      text-align: center;
+      color: #000000;
+    }
+    .w_full {
+      input,
+      select {
+        width: 780px;
+        margin-bottom: 30px;
+        padding: 10px;
+        width: 780px;
+        height: 47px;
+        border: 1px solid #999999;
+        border-radius: 8px;
+      }
+    }
+    .w_half {
+      input,
+      select {
+        margin-bottom: 30px;
+        padding: 10px;
+        width: 370px;
+        height: 47px;
+        border: 1px solid #999999;
+        border-radius: 8px;
+      }
+    }
+    .submit_area {
+      width: 780px;
+      display: flex;
+    }
+    a {
+      color: $main-color;
+      font-weight: 600;
+    }
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 150%;
+      color: #999999;
+    }
+    .inputss {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    .btn_resend {
+      background: $assistance-color;
+      border-radius: 8px;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 150%;
+      text-align: center;
+      margin-bottom: 40px;
+      cursor: pointer;
+      &:hover {
+        background: #5a1f7a;
+      }
+    }
+    .radios {
+      display: flex;
+      align-items: center;
+      div {
+        display: flex;
+        width: 260px;
+        justify-content: start;
+      }
+      margin-bottom: 40px;
+    }
+    .submit_area {
+      margin-bottom: 40px;
+      .btn_submit {
+        width: 275px;
       }
     }
   }
