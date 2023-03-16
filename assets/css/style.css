@@ -12324,4 +12324,87 @@ footer .copyright_text p {
   color: #444444;
 }
 
+.how-its-works {
+  padding: 120px 0px;
+  background-color: #fbfbfe;
+}
+.how-its-works .top_part h2, .how-its-works .top_part .h2 {
+  font-size: 48px;
+  line-height: 59px;
+  color: #d48f3f;
+}
+.how-its-works .top_part p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #444444;
+}
+.how-its-works .content .stepstoggle {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 60px;
+}
+.how-its-works .content .stepstoggle .nav-link {
+  width: 260px;
+  height: 100px;
+  background: #7531ab;
+  border: 4px solid #d48f3f;
+  border-radius: 16px;
+  color: #fff;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+}
+.how-its-works .content .steps {
+  display: grid;
+  grid-template-columns: repeat(4, 285px);
+  gap: 60px;
+  background: #fff;
+  margin-top: 90px;
+}
+.how-its-works .content .steps .step {
+  position: relative;
+  border-radius: 0px 0px 30px 30px;
+}
+.how-its-works .content .steps .step_details {
+  background: #7531ab;
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+  border-radius: 0px 0px 30px 30px;
+}
+.how-its-works .content .steps .step_details h3, .how-its-works .content .steps .step_details .h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+}
+.how-its-works .content .steps .step_details p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+.how-its-works .content .steps .step_number {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: 112.5px;
+  margin-top: -30px;
+  border-radius: 35px;
+  background: #ffffff;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+  display: grid;
+  place-items: center;
+}
+.how-its-works .content .steps .step_number .inner {
+  border: 2px solid #7531ab;
+  width: 40px;
+  height: 40px;
+  border-radius: 35px;
+  display: grid;
+  place-items: center;
+  color: #7531ab;
+}
+
 /*# sourceMappingURL=style.css.map */
