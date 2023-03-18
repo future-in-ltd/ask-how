@@ -86,3 +86,95 @@
         color: #fff;
     }
 }
+
+@media (max-width: 991px) {
+    .blog_page_heading {
+        background-image: url(../images/blog/blog-bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: $bg-color;
+        padding: 20px 0px;
+
+        h1 {
+            font-size: 32px;
+            color: #fff;
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+
+    .blogs {
+        padding: 20px 0px;
+
+        .single_blog_card {
+            box-shadow: 0px 30px 10px 0px rgba(152, 152, 152, 0.06);
+            border-radius: 30px;
+            overflow: hidden;
+            margin-top: 30px;
+
+            img {
+                max-height: 200px;
+            }
+
+            .content {
+                padding: 10px;
+
+                .info {
+                    color: $text-color3;
+
+                    p {
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+
+                h3 {
+                    font-size: 16px;
+                    color: black;
+                    font-weight: 600;
+                    padding: 10px 0px;
+                    margin: 0;
+                }
+
+                p {
+                    color: $text-color2;
+                    font-size: 14px;
+                }
+
+                a {
+                    color: $assistance-color;
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .pagination {
+        display: flex;
+        gap: 10px;
+        padding-top: 10px;
+        border-top: 0.5px solid #999999;
+        margin-top: 20px;
+
+        a {
+            background: #dbdbdb;
+            border-radius: 12px;
+            font-weight: 400;
+            font-size: 18px;
+            padding: 0px 8px;
+            text-decoration: none;
+            color: #444444;
+            display: grid;
+            place-items: center;
+        }
+
+        a.current-page,
+        a:hover {
+            background: $assistance-color;
+            color: #fff;
+        }
+    }
+}
