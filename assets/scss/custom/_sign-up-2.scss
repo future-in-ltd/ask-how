@@ -1,0 +1,143 @@
+.sign_up-page-2 {
+    position: relative;
+
+    h2 {
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 60px;
+    }
+
+    .logo img {
+        width: 195px;
+        height: 51px;
+    }
+
+    .left_side_area {
+        background: $main-color;
+        color: #fff;
+        padding: 100px 75px;
+
+        h2 {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 150%;
+            text-align: center;
+            color: #ffffff;
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+
+        p {
+            font-size: 24px;
+            line-height: 150%;
+            color: #ffffff;
+        }
+    }
+
+    input,
+    select {
+        width: 100%;
+    }
+
+    .right_side_from {
+        padding: 100px 138px;
+
+        h2 {
+            font-size: 36px;
+            line-height: 44px;
+            text-align: center;
+            color: #000000;
+        }
+
+        .w_full {
+
+            input,
+            select {
+                width: 780px;
+                margin-bottom: 30px;
+                padding: 10px;
+                width: 780px;
+                height: 47px;
+                border: 1px solid #999999;
+                border-radius: 8px;
+            }
+        }
+
+        .w_half {
+
+            input,
+            select {
+                margin-bottom: 30px;
+                padding: 10px;
+                width: 370px;
+                height: 47px;
+                border: 1px solid #999999;
+                border-radius: 8px;
+            }
+        }
+
+        .submit_area {
+            width: 780px;
+            display: flex;
+        }
+
+        a {
+            color: $main-color;
+            font-weight: 600;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: #999999;
+        }
+
+        .inputss {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .btn_resend {
+            background: $assistance-color;
+            border-radius: 8px;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 150%;
+            text-align: center;
+            margin-bottom: 40px;
+            cursor: pointer;
+
+            &:hover {
+                background: #5a1f7a;
+            }
+        }
+
+        .radios {
+            display: flex;
+            align-items: center;
+
+            div {
+                display: flex;
+                width: 260px;
+                justify-content: start;
+            }
+
+            margin-bottom: 40px;
+        }
+
+        .submit_area {
+            margin-bottom: 40px;
+
+            .btn_submit {
+                width: 275px;
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+// sign in page
+.sign-up-page {
+    position: relative;
+
+    h2 {
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 60px;
+    }
+
+    .logo img {
+        width: 195px;
+        height: 51px;
+    }
+
+    .left_side_area {
+        background: $main-color;
+        color: #fff;
+        padding: 100px 75px;
+
+        h2 {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 150%;
+            text-align: center;
+            color: #ffffff;
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+
+        p {
+            font-size: 24px;
+            line-height: 150%;
+            color: #ffffff;
+        }
+    }
+
+    .right_side_from {
+        padding: 100px 138px;
+
+        input,
+        select {
+            width: 780px;
+            margin-bottom: 30px;
+            padding: 10px;
+            width: 780px;
+            height: 47px;
+            border: 1px solid #999999;
+            border-radius: 8px;
+        }
+
+        .submit_area {
+            width: 780px;
+            display: flex;
+        }
+
+        a {
+            color: $main-color;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: #999999;
+        }
+    }
+
+    select#countryCode {
+        background-repeat: no-repeat;
+        background-position: calc(100% - 8px) center;
+        background-size: 16px;
+        padding-right: 28px;
+    }
+
+    option[data-icon] {
+        padding-left: 24px;
+        background-repeat: no-repeat;
+        background-position: left center;
+        line-height: 1.6;
+    }
+}

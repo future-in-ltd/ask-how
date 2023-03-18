@@ -1,0 +1,123 @@
+.text_brand {
+    color: $assistance-color !important;
+}
+
+.btn_brand {
+    background-color: $assistance-color;
+    color: #fff;
+    border: none;
+    border-radius: 32px 0px 32px 0px;
+    font-size: 18px;
+    padding: 18.5px 36px;
+
+    &:hover {
+        background-color: $main-color;
+    }
+}
+
+.btn_transparent {
+    background-color: transparent;
+    color: $main-color;
+    border: none;
+    border-radius: 32px 0px 32px 0px;
+    font-size: 18px;
+    padding: 18.5px 36px;
+
+    &:hover {
+        background-color: $assistance-color;
+        color: #fff;
+
+        path {
+            fill: #fff;
+        }
+    }
+}
+
+.btn_main {
+    background-color: $main-color;
+    color: #fff;
+    border: none;
+    border-radius: 32px 0px 32px 0px;
+    font-size: 18px;
+    padding: 18.5px 36px;
+
+    &:hover {
+        background-color: $assistance-color;
+    }
+}
+
+.btn_asist {
+    background-color: $assistance-color;
+    color: #fff;
+    border: none;
+    border-radius: 32px 0px 32px 0px;
+    font-size: 18px;
+    padding: 18.5px 36px;
+
+    &:hover {
+        background-color: $main-color;
+    }
+}
+
+.text_main {
+    color: $main-color;
+}
+
+.btn_border {
+    background-color: transparent;
+    color: $assistance-color;
+    border: 2px solid $assistance-color;
+    border-radius: 32px 0px 32px 0px;
+    font-size: 18px;
+    padding: 18.5px 36px;
+
+    &:hover {
+        background-color: $assistance-color;
+        color: #fff;
+    }
+}
+
+.btn_submit {
+    background-color: $main-color;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $assistance-color;
+    }
+}
+
+.bg_brand {
+    background-color: $assistance-color;
+}
+
+.close_btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.btn_close {
+
+    background-color: #7531ab;
+    color: #fff;
+    box-shadow: 10px 10px 30px rgba(152, 151, 151, 0.09);
+    border-radius: 50%;
+    width: 59.09px;
+    height: 59.09px;
+    font-size: 18px;
+    /* padding: 20px; */
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+
+
+    &:hover {
+        background-color: $assistance-color;
+    }
+}

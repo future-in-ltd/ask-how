@@ -1,0 +1,63 @@
+// school page
+.let_join {
+    padding-top: 60px;
+
+    h2 {
+        font-size: 36px;
+        line-height: 150%;
+        color: #222222;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #444444;
+        margin-bottom: 60px;
+    }
+
+    img {
+        max-width: 620px;
+    }
+}
+
+.benefits {
+    h2 {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 150%;
+        color: #000000;
+        margin-bottom: 120px;
+        text-align: center;
+    }
+
+    .mt-60 {
+        margin-top: 60px;
+    }
+
+    img {
+        max-width: 648px;
+    }
+
+    .content {
+        max-width: 612px;
+
+        h3 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 44px;
+            margin-bottom: 60px;
+            color: #000000;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+
+            color: #444444;
+        }
+    }
+}
