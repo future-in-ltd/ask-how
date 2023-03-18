@@ -12955,6 +12955,61 @@ footer .copyright_text p {
   color: #444444;
 }
 
+@media screen and (max-width: 767px) {
+  .let_join {
+    padding-top: 30px;
+  }
+  .let_join h2, .let_join .h2 {
+    font-size: 25px;
+    line-height: 150%;
+    color: #222222;
+    margin-bottom: 10px;
+  }
+  .let_join p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #444444;
+    margin-bottom: 20px;
+  }
+  .let_join img {
+    max-width: 320px;
+    margin-top: 30px;
+  }
+  .benefits h2, .benefits .h2 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 150%;
+    color: #000000;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .benefits .mt-60 {
+    margin-top: 20px;
+  }
+  .benefits img {
+    max-width: 320px;
+  }
+  .benefits .content {
+    max-width: 320px;
+  }
+  .benefits .content h3, .benefits .content .h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 44px;
+    margin-bottom: 60px;
+    color: #000000;
+    text-align: center;
+  }
+  .benefits .content p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #444444;
+  }
+}
 .how-its-works {
   padding: 120px 0px;
   background-color: #fbfbfe;
