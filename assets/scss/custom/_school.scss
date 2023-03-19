@@ -1,129 +1,131 @@
- .let_join {
-     padding-top: 60px;
+.let_join {
+  padding-top: 60px;
 
-     h2 {
-         font-size: 36px;
-         line-height: 150%;
-         color: #222222;
-         margin-bottom: 30px;
-     }
+  h2 {
+    font-size: 36px;
+    line-height: 150%;
+    color: #222222;
+    margin-bottom: 30px;
+  }
 
-     p {
-         font-weight: 400;
-         font-size: 18px;
-         line-height: 150%;
-         color: #444444;
-         margin-bottom: 60px;
-     }
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #444444;
+    margin-bottom: 60px;
+  }
 
-     img {
-         max-width: 620px;
-     }
- }
+  img {
+    max-width: 620px;
+  }
+}
 
- .benefits {
-     h2 {
-         font-weight: 600;
-         font-size: 36px;
-         line-height: 150%;
-         color: #000000;
-         margin-bottom: 120px;
-         text-align: center;
-     }
+.benefits {
+  h2 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 150%;
+    color: #000000;
+    margin-bottom: 120px;
+    text-align: center;
+  }
 
-     .mt-60 {
-         margin-top: 60px;
-     }
+  .mt-60 {
+    margin-top: 60px;
+  }
 
-     img {
-         max-width: 648px;
-     }
+  img {
+    max-width: 648px;
+  }
 
-     .content {
-         max-width: 612px;
+  .content {
+    max-width: 612px;
 
-         h3 {
-             font-style: normal;
-             font-weight: 500;
-             font-size: 36px;
-             line-height: 44px;
-             margin-bottom: 60px;
-             color: #000000;
-         }
+    h3 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 44px;
+      margin-bottom: 60px;
+      color: #000000;
+    }
 
-         p {
-             font-weight: 400;
-             font-size: 18px;
-             line-height: 150%;
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 150%;
 
-             color: #444444;
-         }
-     }
- }
+      color: #444444;
+    }
+  }
+}
 
- @media screen and (max-width: 767px) {
-     .let_join {
-         padding-top: 30px;
+@media screen and (max-width: 767px) {
+  .let_join {
+    padding-top: 30px;
 
-         h2 {
-             font-size: 25px;
-             line-height: 150%;
-             color: #222222;
-             margin-bottom: 10px;
-         }
+    h2 {
+      font-size: 25px;
+      line-height: 150%;
+      color: #222222;
+      margin-bottom: 10px;
+    }
 
-         p {
-             font-weight: 400;
-             font-size: 14px;
-             line-height: 150%;
-             color: #444444;
-             margin-bottom: 20px;
-         }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      color: #444444;
+      margin-bottom: 20px;
+    }
 
-         img {
-             max-width: 320px;
-             margin-top: 30px;
-         }
-     }
+    img {
+      max-width: 320px;
+      margin-top: 30px;
+    }
+  }
 
-     .benefits {
-         h2 {
-             font-weight: 600;
-             font-size: 30px;
-             line-height: 150%;
-             color: #000000;
-             margin-bottom: 25px;
-             text-align: center;
-         }
+  .benefits {
+    h2 {
+      font-weight: 600;
+      font-size: 30px;
 
-         .mt-60 {
-             margin-top: 20px;
-         }
+      color: #000000;
+      margin-bottom: 10px;
+      text-align: center;
+    }
 
-         img {
-             max-width: 320px;
-         }
+    .mt-60 {
+      margin-top: 5px;
+    }
 
-         .content {
-             max-width: 320px;
+    img {
+      max-width: 320px;
+      margin: 0 auto;
+    }
 
-             h3 {
-                 font-style: normal;
-                 font-weight: 500;
-                 font-size: 20px;
-                 line-height: 44px;
-                 margin-bottom: 60px;
-                 color: #000000;
-                 text-align: center;
-             }
+    .content {
+      max-width: 320px;
+      margin: 0 auto;
 
-             p {
-                 font-weight: 400;
-                 font-size: 14px;
-                 line-height: 150%;
-                 text-align: center;
-                 color: #444444;
-             }
-         }
-     }
- }
+      h3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 44px;
+        margin-bottom: 10px;
+        color: #000000;
+        text-align: center;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        text-align: center;
+        color: #444444;
+      }
+    }
+  }
+}
