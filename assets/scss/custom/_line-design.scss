@@ -1,0 +1,31 @@
+@media only screen and (max-width: 992px) {
+	.line-middle-column {
+		display: none !important;
+	}
+	.line-design-wrap {
+		flex-direction: column;
+	}
+	.line-design-content {
+		flex-direction: column;
+	}
+	.number-count-box {
+		max-width: 140px;
+		margin: 0 auto;
+	}
+	.last-items {
+		display: none !important;
+	}
+	.first {
+		flex-direction: column-reverse;
+		margin-top: 16%;
+		.number-count-box {
+			margin-bottom: 10px;
+		}
+	}
+}
+@media only screen and (max-width: 450px) {
+	.number-count-box {
+		max-width: 70px;
+		margin: 0 auto;
+	}
+}
