@@ -40,20 +40,24 @@ header {
     }
   }
 }
-@media (max-width: 767px) {
+
+@media (max-width: 990px) {
   header {
     nav {
       padding: 20px 0px;
+
       .header_buttons {
         display: flex;
         justify-content: center;
         margin: 20px auto;
+
         .btn_main,
         .btn_border {
           padding: 8px 15px !important;
           font-size: 14px;
         }
       }
+
       .navbar-nav {
         margin-left: 0px;
 
@@ -87,6 +91,58 @@ header {
     }
   }
 }
+
+@media (max-width: 990px) {
+  header {
+    nav {
+      padding: 20px 0px;
+
+      .header_buttons {
+        display: flex;
+        justify-content: center;
+        margin: 20px auto;
+
+        .btn_main,
+        .btn_border {
+          padding: 8px 15px !important;
+          font-size: 14px;
+        }
+      }
+
+      .navbar-nav {
+        margin-left: 0px;
+
+        .nav-link {
+          font-style: normal !important;
+          font-weight: 400 !important;
+          color: #000 !important;
+          border-bottom: 1px solid $assistance-color;
+        }
+
+        .nav-item {
+          margin-right: 40px;
+        }
+
+        .nav-link:after {
+          display: none;
+        }
+
+        .active.nav-link:after,
+        .nav-link:hover:after {
+          width: 29px;
+          margin: 0 auto;
+        }
+
+        .active.nav-link,
+        .nav-link:hover {
+          font-weight: 600 !important;
+          color: $assistance-color !important;
+        }
+      }
+    }
+  }
+}
+
 
 .hero {
   background-color: $bg-color;
@@ -221,6 +277,7 @@ header {
   .service_card {
     background-color: #fff;
     height: 100%;
+    border-radius: 0px 0px 30px 30px;
 
     .content {
       padding: 20px 37px;
@@ -266,9 +323,11 @@ header {
     .service_card {
       background-color: #fff;
       height: 100%;
+
       img {
         width: 75%;
       }
+
       .content {
         padding: 20px 37px;
 
@@ -389,7 +448,7 @@ header {
 
   .details_subject {
     h3 {
-      font-weight: 500;
+      font-weight: 700;
       font-size: 36px;
       line-height: 44px;
       color: #000000;
@@ -523,7 +582,8 @@ header {
   .features_card {
     background: #fff;
     height: 100%;
-    box-shadow: 0px 30px 10px 0px rgba(152, 152, 152, 0.06);
+    box-shadow: 10px 10px 30px rgba(152, 151, 151, 0.09);
+    border-radius: 0px 0px 30px 30px;
 
     &_content {
       padding: 10px;
@@ -573,9 +633,11 @@ header {
       background: #fff;
       height: 100%;
       box-shadow: 0px 30px 10px 0px rgba(152, 152, 152, 0.06);
+
       img {
         max-width: 75%;
       }
+
       &_content {
         padding: 10px;
 
@@ -1057,6 +1119,7 @@ footer {
       svg {
         margin-right: 10px;
       }
+
       a {
         font-size: 14px !important;
       }
@@ -1065,6 +1128,7 @@ footer {
     .copyright_text {
       padding: 10px 0px;
       text-align: center;
+
       p {
         color: #999999;
         font-size: 16px;
