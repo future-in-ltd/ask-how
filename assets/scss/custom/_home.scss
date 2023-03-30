@@ -147,6 +147,10 @@ header {
 .hero {
   background-color: $bg-color;
 
+  .font-48 {
+    font-size: 48px;
+  }
+
   .hero_left {
     padding-top: 80px;
     padding-bottom: 96px;
@@ -170,7 +174,8 @@ header {
   .hero_big_text {
     h1 {
       color: $main-color;
-      font-size: 64px;
+      // font-size: 64px;
+      font-size: 59px;
       font-weight: 800;
       padding: 0;
       margin: 0;
@@ -206,6 +211,10 @@ header {
 @media (max-width: 767px) {
   .hero {
     background-color: $bg-color;
+
+    .font-48 {
+      font-size: 20px;
+    }
 
     .hero_left {
       padding-top: 40px;

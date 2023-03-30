@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
 }
 
 a {
@@ -20,8 +19,8 @@ body {
   background-color: #f5f5f5;
 }
 
-.font-48 {
-  font-size: 48px;
+.modal-xl {
+  max-width: 1591px !important;
 }
 
 /*!
@@ -11893,6 +11892,9 @@ header nav .navbar-nav .nav-link:hover {
 .hero {
   background-color: #f3f1fd;
 }
+.hero .font-48 {
+  font-size: 48px;
+}
 .hero .hero_left {
   padding-top: 80px;
   padding-bottom: 96px;
@@ -11910,7 +11912,7 @@ header nav .navbar-nav .nav-link:hover {
 }
 .hero .hero_big_text h1, .hero .hero_big_text .h1 {
   color: #7531ab;
-  font-size: 64px;
+  font-size: 59px;
   font-weight: 800;
   padding: 0;
   margin: 0;
@@ -11940,6 +11942,9 @@ header nav .navbar-nav .nav-link:hover {
 @media (max-width: 767px) {
   .hero {
     background-color: #f3f1fd;
+  }
+  .hero .font-48 {
+    font-size: 20px;
   }
   .hero .hero_left {
     padding-top: 40px;
@@ -13370,7 +13375,18 @@ footer .copyright_text p {
 .how-its-works .content .stepstoggle .nav-link {
   width: 260px;
   height: 100px;
-  background: #7531ab;
+  background: #d48f3f;
+  border: 4px solid #d48f3f;
+  border-radius: 16px;
+  color: #fff;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+}
+.how-its-works .content .stepstoggle .nav-link.active {
+  width: 260px;
+  height: 100px;
+  background: #7531ab !important;
   border: 4px solid #d48f3f;
   border-radius: 16px;
   color: #fff;
@@ -13438,6 +13454,106 @@ footer .copyright_text p {
   background-color: #fbfbfe;
 }
 
+@media (max-width: 767px) {
+  .content .stepstoggle {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    gap: 10px !important;
+    margin-top: 60px;
+  }
+  .content .stepstoggle .nav-link {
+    width: 200px !important;
+    height: 50px !important;
+    background: #d48f3f;
+    border: 4px solid #d48f3f;
+    border-radius: 16px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+  }
+  .content .stepstoggle .nav-link.active {
+    width: 260px;
+    height: 100px;
+    background: #7531ab !important;
+    border: 4px solid #d48f3f;
+    border-radius: 16px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+  }
+  .content .steps {
+    display: grid;
+    grid-template-columns: repeat(4, 285px);
+    gap: 60px;
+    background: #fff;
+    margin-top: 90px;
+  }
+  .content .steps .step {
+    position: relative;
+    border-radius: 0px 0px 30px 30px;
+  }
+  .content .steps .step_details {
+    background: #7531ab;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    border-radius: 0px 0px 30px 30px;
+  }
+  .content .steps .step_details h3, .content .steps .step_details .h3 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+  }
+  .content .steps .step_details p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+  }
+  .content .steps .step_number {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 112.5px;
+    margin-top: -30px;
+    border-radius: 35px;
+    background: #ffffff;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+    display: grid;
+    place-items: center;
+  }
+  .content .steps .step_number .inner {
+    border: 2px solid #7531ab;
+    width: 40px;
+    height: 40px;
+    border-radius: 35px;
+    display: grid;
+    place-items: center;
+    color: #7531ab;
+  }
+}
+.bg-arts .row {
+  align-items: center;
+}
+.bg-arts .content h2, .bg-arts .content .h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  color: #D48F3F;
+}
+.bg-arts .content p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #444444;
+}
+
 .sign-up-page {
   position: relative;
 }
@@ -13456,7 +13572,6 @@ footer .copyright_text p {
   background: #7531ab;
   color: #fff;
   padding: 100px 75px;
-  height: 100vh;
   display: grid;
   place-items: center;
 }
@@ -13475,7 +13590,6 @@ footer .copyright_text p {
   color: #ffffff;
 }
 .sign-up-page .right_side_from {
-  padding: 100px 138px;
   display: grid;
   place-items: center;
   height: 100%;
@@ -13607,7 +13721,7 @@ footer .copyright_text p {
   background: #7531ab;
   color: #fff;
   padding: 100px 75px;
-  height: 100vh;
+  height: 100%;
   display: grid;
   place-items: center;
 }
@@ -13630,7 +13744,7 @@ footer .copyright_text p {
   width: 100%;
 }
 .sign_up-page-2 .right_side_from {
-  padding: 100px 138px;
+  padding: 100px 10px;
   display: grid;
   place-items: center;
   height: 100%;
