@@ -54,7 +54,7 @@
                                 Sign in
                             </button>
 
-                            <a data-bs-toggle="modal" data-bs-target="#regModal" href="./request-demo.html">
+                            <a href="./request-demo.html">
                                 <button class="btn_main">
                                     Request Demo
                                 </button>
@@ -683,7 +683,7 @@
                 </div>
 
             </div>
-            <div class="navigation-area-of-slide row">
+            <div class="navigation-area-of-slide row align-items-center">
                 <div class="col-md-6">
                     <div class="bar">
 
@@ -745,7 +745,6 @@
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <div class="youtube_video_area">
-                        <!-- <img src="./assets/images/youtube video placement.png" alt=""> -->
                         <iframe width="100%" height="415" src="https://www.youtube.com/embed/tgbNymZ7vqY">
                         </iframe>
                     </div>
@@ -804,25 +803,28 @@
                 <div class="col-md-2 contact-info">
                     <h2>Contact Info</h2>
                     <div>
-                        <a href="tel:+910000000000"> <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                        <a class="flex" href="tel:+910000000000"> <svg width="24" height="25" viewBox="0 0 24 25"
+                                fill="none" class="me-2" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M15.8944 22.9416C12.8764 22.9416 9.32545 21.3396 6.34345 18.3596C1.58545 13.6006 0.343446 7.38864 3.51545 4.21664C4.45245 3.28064 5.59245 2.71064 6.90745 2.52064L7.66745 2.41064L10.4644 8.93264L7.66745 10.3306C8.31545 11.5586 9.29745 12.8276 10.5864 14.1166C11.8154 15.3456 13.0834 16.3206 14.3564 17.0126L15.6704 14.4396L22.1534 15.3656L22.1914 16.1926C22.2864 18.2516 21.6964 19.9786 20.4854 21.1886C19.3014 22.3726 17.6924 22.9416 15.8944 22.9416ZM6.46145 4.67464C5.88645 4.86764 5.37245 5.18864 4.92945 5.63264C2.62945 7.93164 3.92545 13.1126 7.75745 16.9456C11.5914 20.7786 16.7714 22.0716 19.0714 19.7736C19.8374 19.0076 20.1134 17.9976 20.1814 17.1036L16.8144 16.6226L16.1684 17.9166C15.9244 18.4046 15.5034 18.7636 14.9824 18.9266C14.4614 19.0916 13.8834 19.0326 13.3994 18.7696C11.9594 17.9866 10.5364 16.8966 9.17145 15.5316C7.74145 14.1016 6.64245 12.6726 5.90345 11.2836C5.64645 10.7986 5.59745 10.2446 5.76345 9.72264C5.92945 9.20364 6.28845 8.78464 6.77545 8.54064L7.88145 7.98764L6.46145 4.67464Z"
                                     fill="white" />
                             </svg>
-                            +91 0000000000</a>
+                            <span>
+                                +91 0000000000
+                            </span></a>
                     </div>
                     <div>
-                        <a href="mailto:support@askhow.com">
-                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                        <a class="flex" href="mailto:support@askhow.com">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" class="me-2"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M2 4.70264V20.7026H22V4.70264H2ZM20 6.70264V7.16764L12 12.5006L4 7.16764V6.70264H20ZM4 18.7026V9.57164L12 14.9056L20 9.57164V18.7026H4Z"
                                     fill="white" />
-                            </svg>support@askhow.com</a>
+                            </svg>
+                            <span>support@askhow.com</span></a>
                     </div>
                 </div>
-                <div class="col-md-2 text-end">
+                <div class="col-md-2 text-center text-md-end">
                     <h2>Social Media</h2>
                     <div class="social_icons">
                         <a href="" target="_blank" rel="noopener noreferrer"><svg width="32" height="33"
@@ -879,7 +881,7 @@
             </div>
         </div>
     </footer>
-
+    <!-- modal  -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
@@ -933,8 +935,8 @@
 
                                     <input type="text" placeholder="Username/Email">
                                     <input type="Password" placeholder="Password">
-                                    <div class="submit_area  ">
-                                        <div class="col-md-7">
+                                    <div class="submit_area  row">
+                                        <div class="col-md-7  order-2 order-md-1">
                                             <p class="text_brand">
                                                 <a href="#" class="text_brand">Forgot Password?</a>
                                             </p>
@@ -943,7 +945,7 @@
                                                     data-bs-target="#regModal">Register Now</a>
                                             </p>
                                         </div>
-                                        <div class="col-md-5 text-end">
+                                        <div class="col-md-5 text-center order-1 order-md-2 text-md-end mb-3">
                                             <button class="btn_submit">continue</button>
                                         </div>
                                     </div>
@@ -1017,14 +1019,14 @@
                                     <div class="flag-icon" id="selectedFlag"></div>
                                     <input type="email" placeholder="Email">
                                     <input type="text" placeholder="Mobile No">
-                                    <div class="submit_area">
-                                        <div class="col-md-7">
+                                    <div class="submit_area row">
+                                        <div class="col-md-7 order-2 order-md-1">
                                             <p>
                                                 Already have an Account ? <a data-bs-toggle="modal"
                                                     data-bs-target="#loginModal">Login Now</a>
                                             </p>
                                         </div>
-                                        <div class="col-md-5 text-end">
+                                        <div class="col-md-5 order-1 order-md-2 text-center text-md-end mb-3">
                                             <button data-bs-toggle="modal" data-bs-target="#regModal2"
                                                 class="btn_submit">continue</button>
                                         </div>
@@ -1163,6 +1165,8 @@
             </div>
         </div>
     </div>
+    <!-- modal  -->
+
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
