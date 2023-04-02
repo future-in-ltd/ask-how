@@ -11652,6 +11652,7 @@ textarea.form-control-lg {
   border-radius: 32px 0px 32px 0px;
   font-size: 18px;
   padding: 18.5px 36px;
+  transition: all 0.3s ease-in-out;
 }
 .btn_brand:hover {
   background-color: #7531ab;
@@ -11692,13 +11693,13 @@ textarea.form-control-lg {
   border-radius: 32px 0px 32px 0px;
   font-size: 18px;
   padding: 18.5px 36px;
+  transition: all 0.3s ease-in-out;
 }
 .btn_transparent:hover {
-  background-color: #d48f3f;
-  color: #fff;
+  color: #d48f3f;
 }
 .btn_transparent:hover path {
-  fill: #fff;
+  fill: #d48f3f;
 }
 
 .btn_main {
@@ -11708,6 +11709,7 @@ textarea.form-control-lg {
   border-radius: 32px 0px 32px 0px;
   font-size: 18px;
   padding: 18.5px 36px;
+  transition: all 0.3s ease-in-out;
 }
 .btn_main:hover {
   background-color: #d48f3f;
@@ -11720,6 +11722,7 @@ textarea.form-control-lg {
   border-radius: 32px 0px 32px 0px;
   font-size: 18px;
   padding: 18.5px 36px;
+  transition: all 0.3s ease-in-out;
 }
 .btn_asist:hover {
   background-color: #7531ab;
@@ -11736,6 +11739,7 @@ textarea.form-control-lg {
   border-radius: 32px 0px 32px 0px;
   font-size: 18px;
   padding: 18.5px 36px;
+  transition: all 0.3s ease-in-out;
 }
 .btn_border:hover {
   background-color: #d48f3f;
@@ -12024,6 +12028,10 @@ header nav .navbar-nav .nav-link:hover {
   background-color: #fff;
   height: 100%;
   border-radius: 0px 0px 30px 30px;
+  transition: all 0.3s ease-in-out;
+}
+.our_services .service_card:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 .our_services .service_card .content {
   padding: 20px 37px;
@@ -12273,6 +12281,10 @@ header nav .navbar-nav .nav-link:hover {
   height: 100%;
   box-shadow: 10px 10px 30px rgba(152, 151, 151, 0.09);
   border-radius: 0px 0px 30px 30px;
+  transition: all 0.3s ease-in-out;
+}
+.our-features .features_card:hover {
+  box-shadow: 10px 10px 30px rgba(152, 151, 151, 0.2);
 }
 .our-features .features_card_content {
   padding: 10px;
@@ -12671,6 +12683,10 @@ footer p {
 }
 footer a {
   margin-bottom: 13px;
+  transition: all 0.3s ease-in-out;
+}
+footer a:hover {
+  color: #d48f3f;
 }
 footer .social_icons {
   display: flex;
@@ -12723,6 +12739,12 @@ footer .copyright_text p {
     display: flex;
     justify-content: center;
     gap: 10px;
+  }
+  footer .social_icons a:hover svg circle {
+    fill: #fff !important;
+  }
+  footer .social_icons a:hover svg path {
+    fill: #d48f3f !important;
   }
   footer .contact-info svg {
     margin-right: 10px;
