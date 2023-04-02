@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: $bg-color;
-  padding: 120px 0px;
+  padding: 283px 0px;
 
   h1 {
     font-size: 64px;
@@ -152,6 +152,7 @@
 }
 
 @media screen and (max-width: 768px) {
+
   //single blog page
   .blog_single_page_heading {
     background-image: url(../images/blog/single-blog-bg.png);
@@ -203,6 +204,7 @@
       justify-content: space-between;
       align-items: center;
       flex-direction: column;
+
       .date-and-name {
         display: flex;
         align-items: center;

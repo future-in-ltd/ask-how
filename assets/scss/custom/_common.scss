@@ -17,6 +17,7 @@
 }
 
 @media screen and (max-width: 767px) {
+
   // btn btn_brand on mobile
   .btn_brand {
     background-color: $assistance-color;
@@ -59,6 +60,7 @@
   font-size: 18px;
   padding: 18.5px 36px;
   transition: all 0.3s ease-in-out;
+
   &:hover {
     color: $assistance-color;
 
@@ -76,6 +78,7 @@
   font-size: 18px;
   padding: 18.5px 36px;
   transition: all 0.3s ease-in-out;
+
   &:hover {
     background-color: $assistance-color;
   }
@@ -89,6 +92,7 @@
   font-size: 18px;
   padding: 18.5px 36px;
   transition: all 0.3s ease-in-out;
+
   &:hover {
     background-color: $main-color;
   }
@@ -106,6 +110,7 @@
   font-size: 18px;
   padding: 18.5px 36px;
   transition: all 0.3s ease-in-out;
+
   &:hover {
     background-color: $assistance-color;
     color: #fff;
@@ -121,6 +126,7 @@
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
     background-color: $assistance-color;
