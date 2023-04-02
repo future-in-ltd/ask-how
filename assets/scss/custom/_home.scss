@@ -42,12 +42,9 @@ header {
 
       .active.nav-link,
       .nav-link:hover {
-
-        text-shadow: .25px 0px .1px,
-          -.25px 0px .1px;
+        text-shadow: 0.25px 0px 0.1px, -0.25px 0px 0.1px;
 
         color: #000 !important;
-
       }
     }
   }
@@ -454,7 +451,7 @@ header {
     button {
       background: transparent;
       border: none;
-      outline: none !important;
+      outline: transparent !important;
 
       &:focus-visible {
         outline: none !important;
@@ -466,12 +463,15 @@ header {
       border-radius: 50%;
       background: transparent;
       transition: all 0.3s ease-in-out;
-      background: #fff;
+      background: $bg-color;
+
       transition: all 0.3s ease-in-out;
 
+      &.active,
       &:hover {
-        background: $bg-color;
+        background: #fff;
         cursor: pointer;
+        box-shadow: 10px 10px 30px rgba(152, 151, 151, 0.09);
       }
     }
   }
@@ -806,7 +806,10 @@ header {
     padding-bottom: 40px;
 
     .bar {
-      background-color: #7531ab;
+      position: relative;
+    }
+    .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+      background: $assistance-color;
     }
 
     .btn-prev,
@@ -962,7 +965,7 @@ header {
 }
 
 .partners {
-  background: #FBFBFE;
+  background: #fbfbfe;
   padding: 120px 0px;
 
   h2 {
@@ -981,7 +984,7 @@ header {
 
 @media screen and (max-width: 768px) {
   .partners {
-    background: #FBFBFE;
+    background: #fbfbfe;
     padding: 40px 0px;
 
     h2 {
@@ -1194,7 +1197,6 @@ footer {
 
         &:hover {
           svg {
-
             circle {
               fill: #fff !important;
             }

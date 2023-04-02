@@ -17,7 +17,6 @@
 }
 
 @media screen and (max-width: 767px) {
-
   // btn btn_brand on mobile
   .btn_brand {
     background-color: $assistance-color;
@@ -151,10 +150,11 @@
   width: 59.09px;
   height: 59.09px;
   font-size: 18px;
-  /* padding: 20px; */
+
   cursor: pointer;
   display: grid;
   place-items: center;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
     background-color: $assistance-color;

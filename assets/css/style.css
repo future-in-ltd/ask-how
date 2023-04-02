@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
+  outline: 1px solid transparent !important;
 }
 
 body {
@@ -21,14 +21,14 @@ img {
   height: auto;
 }
 
-textarea,
+textarea:focus,
 input:focus {
   outline: none;
   box-shadow: 0px 0px 5px #d48f3f;
   border: 1px solid #d48f3f !important;
 }
 
-textarea,
+textarea:hover,
 input:focus:hover {
   outline: none;
   box-shadow: 0px 0px 5px #d48f3f;
@@ -41,14 +41,8 @@ input[type=radio]:focus {
   border: none;
 }
 
-select option {
-  margin: 40px;
-  background: #fff;
-  color: #7531ab;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-}
 select option:hover {
-  box-shadow: 0 0 10px 100px #03043f inset;
+  background-color: yellow !important;
 }
 
 body {
@@ -11811,10 +11805,10 @@ textarea.form-control-lg {
   width: 59.09px;
   height: 59.09px;
   font-size: 18px;
-  /* padding: 20px; */
   cursor: pointer;
   display: grid;
   place-items: center;
+  transition: all 0.3s ease-in-out;
 }
 .btn_close:hover {
   background-color: #d48f3f;
@@ -12190,7 +12184,7 @@ header nav .navbar-nav .nav-link:hover {
 .subject_area .subjects button {
   background: transparent;
   border: none;
-  outline: none !important;
+  outline: transparent !important;
 }
 .subject_area .subjects button:focus-visible {
   outline: none !important;
@@ -12200,12 +12194,13 @@ header nav .navbar-nav .nav-link:hover {
   border-radius: 50%;
   background: transparent;
   transition: all 0.3s ease-in-out;
-  background: #fff;
+  background: #f3f1fd;
   transition: all 0.3s ease-in-out;
 }
-.subject_area .subjects svg:hover {
-  background: #f3f1fd;
+.subject_area .subjects svg.active, .subject_area .subjects svg:hover {
+  background: #fff;
   cursor: pointer;
+  box-shadow: 10px 10px 30px rgba(152, 151, 151, 0.09);
 }
 .subject_area .details_subject h3, .subject_area .details_subject .h3 {
   font-size: 36px;
@@ -12478,7 +12473,10 @@ header nav .navbar-nav .nav-link:hover {
   padding-bottom: 40px;
 }
 .testimonials .navigation-area-of-slide .bar {
-  background-color: #7531ab;
+  position: relative;
+}
+.testimonials .navigation-area-of-slide .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: #d48f3f;
 }
 .testimonials .navigation-area-of-slide .btn-prev,
 .testimonials .navigation-area-of-slide .btn-next {
@@ -12618,7 +12616,7 @@ header nav .navbar-nav .nav-link:hover {
   }
 }
 .partners {
-  background: #FBFBFE;
+  background: #fbfbfe;
   padding: 120px 0px;
 }
 .partners h2, .partners .h2 {
@@ -12635,7 +12633,7 @@ header nav .navbar-nav .nav-link:hover {
 
 @media screen and (max-width: 768px) {
   .partners {
-    background: #FBFBFE;
+    background: #fbfbfe;
     padding: 40px 0px;
   }
   .partners h2, .partners .h2 {
@@ -12851,6 +12849,10 @@ footer .copyright_text p {
   border-radius: 30px;
   overflow: hidden;
   margin-top: 30px;
+  transition: all 0.3s ease-in-out;
+}
+.blogs .single_blog_card:hover {
+  box-shadow: 0px 30px 10px 0px rgba(152, 152, 152, 0.2);
 }
 .blogs .single_blog_card img {
   max-height: 280px;
@@ -13483,6 +13485,7 @@ footer .copyright_text p {
   justify-content: center;
   gap: 60px;
   margin-top: 60px;
+  margin-bottom: 120px;
 }
 .how-its-works .content .stepstoggle .nav-link {
   width: 260px;
@@ -13569,7 +13572,8 @@ footer .copyright_text p {
   background-position: center;
   background-size: cover;
   padding: 120px 0px;
-  background-color: #fbfbfe;
+  background-color: #f3f1fd;
+  margin-bottom: 120px;
 }
 
 @media (max-width: 767px) {
@@ -13662,7 +13666,7 @@ footer .copyright_text p {
   font-weight: 600;
   font-size: 48px;
   line-height: 59px;
-  color: #D48F3F;
+  color: #d48f3f;
 }
 .bg-arts .content p {
   font-style: normal;
