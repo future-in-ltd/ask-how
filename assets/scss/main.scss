@@ -12,7 +12,7 @@ $body-bg-color: #fbfbfe;
   padding: 0;
   box-sizing: border-box;
 
-  outline: 1px solid transparent !important;
+  // outline: 1px solid transparent !important;
   // outline: 1px solid red;
 }
 
@@ -66,6 +66,13 @@ body {
 
 .modal-xl {
   max-width: 1591px !important;
+}
+
+// only for mobile and tab
+@media (max-width: 991px) {
+  .container {
+    overflow: hidden;
+  }
 }
 
 //  import Bootstrap

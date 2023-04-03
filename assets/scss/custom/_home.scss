@@ -16,7 +16,7 @@ header {
         font-style: normal !important;
         font-weight: 400 !important;
         color: #000 !important;
-        transition: all ease-in-out 0.5s;
+        transition: all ease-in-out 0.3s;
       }
 
       .nav-item {
@@ -24,14 +24,14 @@ header {
       }
 
       .nav-link:after {
-        transition: all ease-in-out 0.5s;
+        transition: all ease-in-out 0.3s;
         background: none repeat scroll 0 0 #f35c14;
         content: "";
         display: block;
         height: 2px;
         width: 0;
         color: #d48f3f;
-        margin-top: 4px;
+        margin: 4px auto;
       }
 
       .active.nav-link:after,
@@ -384,8 +384,8 @@ header {
 }
 
 .partners-list {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: 120px;
   padding: 20px 0px;
 
@@ -398,7 +398,6 @@ header {
 @media screen and (max-width: 767px) {
   .partners-list {
     display: flex;
-    justify-content: center;
     gap: 20px;
     padding: 20px 0px;
 
@@ -716,7 +715,7 @@ header {
       text-align: center;
       color: #444444;
       padding-bottom: 40px;
-      width: 652px;
+      max-width: 652px;
       margin: 0 auto;
     }
   }
@@ -803,13 +802,32 @@ header {
   }
 
   .navigation-area-of-slide {
-    padding-bottom: 40px;
+    padding-top: 30px;
 
     .bar {
       position: relative;
+      height: 3px;
+      background-color: #ddd;
     }
     .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
       background: $assistance-color;
+    }
+
+    .swiper-scrollbar-drag {
+      position: relative;
+      background-color: $assistance-color !important;
+    }
+
+    .swiper-scrollbar-drag:before {
+      content: "";
+      background-color: $assistance-color;
+      position: relative;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      height: 10px;
+      width: 100%;
+      z-index: 999;
     }
 
     .btn-prev,
@@ -1008,7 +1026,6 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-color: $bg-color;
-  margin-bottom: 120px;
 
   .content {
     text-align: center;
@@ -1107,8 +1124,16 @@ footer {
     gap: 10px;
 
     a {
-      transition: all 0.3s ease-in-out;
+      svg circle {
+        fill: $assistance-color !important;
+        transition: all 0.3s ease-in-out;
+      }
 
+      svg path {
+        fill: $assistance-color !important;
+        transition: all 0.3s ease-in-out;
+        stroke: white !important;
+      }
       &:hover {
         svg circle {
           fill: #fff !important;
@@ -1116,6 +1141,7 @@ footer {
 
         svg path {
           fill: $assistance-color !important;
+          stroke: $assistance-color;
         }
       }
     }

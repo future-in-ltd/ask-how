@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid transparent !important;
 }
 
 body {
@@ -58,6 +57,11 @@ body {
   max-width: 1591px !important;
 }
 
+@media (max-width: 991px) {
+  .container {
+    overflow: hidden;
+  }
+}
 /*!
  * Bootstrap  v5.3.0-alpha1 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -11831,20 +11835,20 @@ header nav .navbar-nav .nav-link {
   font-style: normal !important;
   font-weight: 400 !important;
   color: #000 !important;
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.3s;
 }
 header nav .navbar-nav .nav-item {
   margin-right: 40px;
 }
 header nav .navbar-nav .nav-link:after {
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.3s;
   background: none repeat scroll 0 0 #f35c14;
   content: "";
   display: block;
   height: 2px;
   width: 0;
   color: #d48f3f;
-  margin-top: 4px;
+  margin: 4px auto;
 }
 header nav .navbar-nav .active.nav-link:after,
 header nav .navbar-nav .nav-link:hover:after {
@@ -12126,8 +12130,8 @@ header nav .navbar-nav .nav-link:hover {
   }
 }
 .partners-list {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: 120px;
   padding: 20px 0px;
 }
@@ -12139,7 +12143,6 @@ header nav .navbar-nav .nav-link:hover {
 @media screen and (max-width: 767px) {
   .partners-list {
     display: flex;
-    justify-content: center;
     gap: 20px;
     padding: 20px 0px;
   }
@@ -12399,7 +12402,7 @@ header nav .navbar-nav .nav-link:hover {
   text-align: center;
   color: #444444;
   padding-bottom: 40px;
-  width: 652px;
+  max-width: 652px;
   margin: 0 auto;
 }
 
@@ -12470,13 +12473,30 @@ header nav .navbar-nav .nav-link:hover {
   justify-content: end;
 }
 .testimonials .navigation-area-of-slide {
-  padding-bottom: 40px;
+  padding-top: 30px;
 }
 .testimonials .navigation-area-of-slide .bar {
   position: relative;
+  height: 3px;
+  background-color: #ddd;
 }
 .testimonials .navigation-area-of-slide .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   background: #d48f3f;
+}
+.testimonials .navigation-area-of-slide .swiper-scrollbar-drag {
+  position: relative;
+  background-color: #d48f3f !important;
+}
+.testimonials .navigation-area-of-slide .swiper-scrollbar-drag:before {
+  content: "";
+  background-color: #d48f3f;
+  position: relative;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 10px;
+  width: 100%;
+  z-index: 999;
 }
 .testimonials .navigation-area-of-slide .btn-prev,
 .testimonials .navigation-area-of-slide .btn-next {
@@ -12654,7 +12674,6 @@ header nav .navbar-nav .nav-link:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f3f1fd;
-  margin-bottom: 120px;
 }
 .our-tutor .content {
   text-align: center;
@@ -12738,14 +12757,21 @@ footer .social_icons {
   justify-content: end;
   gap: 10px;
 }
-footer .social_icons a {
+footer .social_icons a svg circle {
+  fill: #d48f3f !important;
   transition: all 0.3s ease-in-out;
+}
+footer .social_icons a svg path {
+  fill: #d48f3f !important;
+  transition: all 0.3s ease-in-out;
+  stroke: white !important;
 }
 footer .social_icons a:hover svg circle {
   fill: #fff !important;
 }
 footer .social_icons a:hover svg path {
   fill: #d48f3f !important;
+  stroke: #d48f3f;
 }
 footer .contact-info a {
   font-size: 14px !important;
