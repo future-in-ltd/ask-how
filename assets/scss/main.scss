@@ -7,85 +7,94 @@ $text-color3: #999999;
 $body-bg-color: #fbfbfe;
 
 * {
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 
-  // outline: 1px solid transparent !important;
-  // outline: 1px solid red;
+	// outline: 1px solid transparent !important;
+	outline: 1px solid red;
 }
 
 body {
-  background-color: #fbfbfe !important;
+	background-color: #fbfbfe !important;
 }
 
 a {
-  text-decoration: none !important;
-  cursor: pointer;
+	text-decoration: none !important;
+	cursor: pointer;
 }
 
 img {
-  width: 100%;
-  height: auto;
+	width: 100%;
+	height: auto;
 }
-
+.container {
+	// overflow: hidden;
+	padding: 0px !important;
+}
+.hero {
+	overflow: hidden;
+	.container {
+		overflow: visible;
+	}
+}
 // inputs
 textarea:focus,
 input:focus {
-  outline: none;
-  box-shadow: 0px 0px 5px $assistance-color;
-  border: 1px solid $assistance-color !important;
+	outline: none;
+	box-shadow: 0px 0px 5px $assistance-color;
+	border: 1px solid $assistance-color !important;
 }
 
 textarea:hover,
 input:focus:hover {
-  outline: none;
-  box-shadow: 0px 0px 5px $assistance-color;
-  border: 1px solid $assistance-color;
+	outline: none;
+	box-shadow: 0px 0px 5px $assistance-color;
+	border: 1px solid $assistance-color;
 }
 
-input[type="radio"]:focus {
-  outline: none;
-  box-shadow: none;
-  border: none;
+input[type='radio']:focus {
+	outline: none;
+	box-shadow: none;
+	border: none;
 }
 
 select option:hover {
-  background-color: yellow !important;
+	background-color: yellow !important;
 }
 
 body {
-  background-color: #f5f5f5;
+	background-color: #f5f5f5;
 }
 
 .youtube_video_area {
-  border-radius: 20px;
-  overflow: hidden;
+	border-radius: 20px;
+	overflow: hidden;
 }
 
 .modal-xl {
-  max-width: 1591px !important;
+	max-width: 1591px !important;
 }
 
 // only for mobile and tab
 @media (max-width: 991px) {
-  .container {
-    overflow: hidden;
-  }
+	.container {
+		overflow: hidden;
+	}
 }
 
 //  import Bootstrap
-@import "./bootstrap/bootstrap";
-@import "./custom/common";
+@import './bootstrap/bootstrap';
+@import './custom/common';
 
-@import "custom/home";
-@import "custom/blogs";
-@import "custom/blog-single";
-@import "custom/request-demo";
-@import "custom/school";
-@import "custom/how-it-works";
-@import "custom/sign-up";
-@import "custom/sign-up-2";
+@import 'custom/home';
+@import 'custom/blogs';
+@import 'custom/blog-single';
+@import 'custom/request-demo';
+@import 'custom/school';
+@import 'custom/how-it-works';
+@import 'custom/sign-up';
+@import 'custom/sign-up-2';
 
-@import "custom/line-design";
+@import 'custom/line-design';
