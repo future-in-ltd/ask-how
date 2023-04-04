@@ -13,7 +13,7 @@ $body-bg-color: #fbfbfe;
   box-sizing: border-box;
 
   // outline: 1px solid transparent !important;
-  // outline: 1px solid red;
+  outline: 1px solid red;
 }
 
 body {
@@ -29,7 +29,15 @@ img {
   width: 100%;
   height: auto;
 }
-
+.container {
+  overflow: hidden;
+  padding: 0px !important;
+}
+.hero {
+  .container {
+    overflow: visible;
+  }
+}
 // inputs
 textarea:focus,
 input:focus {

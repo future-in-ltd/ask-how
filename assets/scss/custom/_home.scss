@@ -47,10 +47,69 @@ header {
         color: #000 !important;
       }
     }
+    .header_buttons {
+      display: flex;
+    }
+  }
+}
+@media (max-width: 1399px) {
+  header {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+    nav {
+      margin: 22px 0px;
+      padding: 0px 0px !important;
+
+      a.navbar-brand {
+        width: 260px;
+      }
+
+      .navbar-nav {
+        margin-left: 20px;
+
+        .nav-link {
+          font-style: normal !important;
+          font-weight: 400 !important;
+          color: #000 !important;
+          transition: all ease-in-out 0.3s;
+        }
+
+        .nav-item {
+          margin-right: 10px;
+        }
+
+        .nav-link:after {
+          transition: all ease-in-out 0.3s;
+          background: none repeat scroll 0 0 #f35c14;
+          content: "";
+          display: block;
+          height: 2px;
+          width: 0;
+          color: #d48f3f;
+          margin: 4px auto;
+        }
+
+        .active.nav-link:after,
+        .nav-link:hover:after {
+          width: 29px;
+          margin: 0 auto;
+        }
+
+        .active.nav-link,
+        .nav-link:hover {
+          text-shadow: 0.25px 0px 0.1px, -0.25px 0px 0.1px;
+
+          color: #000 !important;
+        }
+      }
+      .header_buttons {
+        display: flex;
+      }
+    }
   }
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1199px) {
   header {
     nav {
       padding: 20px 0px;
@@ -384,29 +443,30 @@ header {
 }
 
 .partners-list {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 120px;
-  padding: 20px 0px;
-
+  max-width: 997.26px;
+  margin: 0 auto;
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
   .partner_logo {
     width: 100px !important;
     height: 100px !important;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .partners-list {
-    display: flex;
-    gap: 20px;
-    padding: 20px 0px;
+// @media screen and (max-width: 767px) {
+//   .partners-list {
+//     display: flex;
+//     gap: 20px;
+//     padding: 20px 0px;
 
-    .partner_logo {
-      width: 50px !important;
-      height: 50px !important;
-    }
-  }
-}
+//     .partner_logo {
+//       width: 50px !important;
+//       height: 50px !important;
+//     }
+//   }
+// }
 
 .subject_area {
   padding-top: 120px;
@@ -627,7 +687,7 @@ header {
       h3 {
         font-size: 18px;
         color: black;
-        font-weight: 600;
+        font-weight: 500;
         padding: 20px 0px;
       }
 
@@ -1124,25 +1184,15 @@ footer {
     gap: 10px;
 
     a {
-      svg circle {
-        fill: $assistance-color !important;
-        transition: all 0.3s ease-in-out;
-      }
-
-      svg path {
-        fill: $assistance-color !important;
-        transition: all 0.3s ease-in-out;
-        stroke: white !important;
-      }
+      display: grid;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      place-items: center;
+      background-color: $assistance-color;
       &:hover {
-        svg circle {
-          fill: #fff !important;
-        }
-
-        svg path {
-          fill: $assistance-color !important;
-          stroke: $assistance-color;
-        }
+        background-color: white;
+        color: $assistance-color;
       }
     }
   }

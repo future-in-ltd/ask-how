@@ -39,13 +39,10 @@
     border-radius: 12px 0px 12px 0px !important;
     font-size: 14px !important;
     padding: 5px 10px !important;
-
     &:hover {
-      background-color: $assistance-color;
-      color: #fff;
-
+      color: $assistance-color;
       path {
-        fill: #fff;
+        fill: $assistance-color;
       }
     }
   }
