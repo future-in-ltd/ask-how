@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
+  outline: 1px solid transparent !important;
 }
 
 body {
@@ -72,6 +72,7 @@ body {
 @media (max-width: 991px) {
   .container {
     overflow: hidden;
+    padding: 0px 15px !important;
   }
 }
 /*!
@@ -11691,9 +11692,9 @@ textarea.form-control-lg {
   background-color: #d48f3f;
   color: #fff;
   border: none;
-  border-radius: 32px 0px 32px 0px;
+  border-radius: 16px 0px;
   font-size: 18px;
-  padding: 18.5px 36px;
+  padding: 14.5px 30px;
   transition: all 0.3s ease-in-out;
 }
 .btn_brand:hover {
@@ -11731,7 +11732,7 @@ textarea.form-control-lg {
   background-color: transparent;
   color: #7531ab;
   border: none;
-  border-radius: 32px 0px 32px 0px;
+  border-radius: 16px 0px;
   font-size: 18px;
   padding: 18.5px 36px;
   transition: all 0.3s ease-in-out;
@@ -11747,9 +11748,9 @@ textarea.form-control-lg {
   background-color: #7531ab;
   color: #fff;
   border: none;
-  border-radius: 32px 0px 32px 0px;
+  border-radius: 16px 0px;
   font-size: 18px;
-  padding: 18.5px 36px;
+  padding: 14.5px 30px;
   transition: all 0.3s ease-in-out;
 }
 .btn_main:hover {
@@ -11760,9 +11761,9 @@ textarea.form-control-lg {
   background-color: #d48f3f;
   color: #fff;
   border: none;
-  border-radius: 32px 0px 32px 0px;
+  border-radius: 16px 0px;
   font-size: 18px;
-  padding: 18.5px 36px;
+  padding: 14.5px 30px;
   transition: all 0.3s ease-in-out;
 }
 .btn_asist:hover {
@@ -11777,9 +11778,9 @@ textarea.form-control-lg {
   background-color: transparent;
   color: #d48f3f;
   border: 2px solid #d48f3f;
-  border-radius: 32px 0px 32px 0px;
+  border-radius: 16px 0px;
   font-size: 18px;
-  padding: 18.5px 36px;
+  padding: 14.5px 30px;
   transition: all 0.3s ease-in-out;
 }
 .btn_border:hover {
@@ -11837,7 +11838,7 @@ header nav {
   padding: 0px 0px !important;
 }
 header nav a.navbar-brand {
-  width: 260px;
+  width: 282px;
 }
 header nav .navbar-nav {
   margin-left: 100px;
@@ -12145,8 +12146,12 @@ header nav .header_buttons {
 .our_services .service_card .content a {
   color: #d48f3f;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.our_services .service_card .content a:hover {
+  color: #7531ab;
 }
 
 @media (max-width: 767px) {
@@ -12926,7 +12931,7 @@ footer .copyright_text p {
   transition: all 0.3s ease-in-out;
 }
 .blogs .single_blog_card:hover {
-  box-shadow: 0px 30px 10px 0px rgba(152, 152, 152, 0.2);
+  box-shadow: 0px 30px 10px 0px rgba(152, 152, 152, 0.16);
 }
 .blogs .single_blog_card img {
   max-height: 280px;
@@ -12946,6 +12951,10 @@ footer .copyright_text p {
   color: black;
   font-weight: 600;
   padding: 20px 0px;
+  transition: all 0.3s ease-in-out;
+}
+.blogs .single_blog_card .content h3:hover, .blogs .single_blog_card .content .h3:hover {
+  color: #d48f3f;
 }
 .blogs .single_blog_card .content p {
   color: #444444;

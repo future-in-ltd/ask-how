@@ -6,7 +6,7 @@ header {
     padding: 0px 0px !important;
 
     a.navbar-brand {
-      width: 260px;
+      width: 282px;
     }
 
     .navbar-nav {
@@ -385,8 +385,12 @@ header {
       a {
         color: $assistance-color;
         font-size: 18px;
-        font-weight: 600;
+        font-weight: 500;
         text-decoration: none;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: $main-color;
+        }
       }
     }
   }
