@@ -6,8 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AskHow Landing Page</title>
+
+
     <!-- styles -->
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="stylesheet" href="./assets/css/phone-input.css" />
     <!-- fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,9 +21,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
-    <!-- countryCode -->
-    <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/css/intlTelInput.css" />
-    <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+
+
 </head>
 
 <body>
@@ -987,12 +990,14 @@
                             <div class="right_side_from">
                                 <div>
                                     <h2>First sign up page</h2>
-                                    <select id="countryCode">
-                                        <option value="us" data-icon="https://flagcdn.com/40x30/in.png">+91</option>
-                                        <option value="ca" data-icon="https://flagcdn.com/40x30/in.png">CA</option>
-                                        <option value="mx" data-icon="https://flagcdn.com/40x30/in.png">MX</option>
-                                    </select>
-                                    <div class="flag-icon" id="selectedFlag"></div>
+
+                                    <div class="pb-3">
+                                        <div class="iti">
+                                            <input type="tel" name="phone">
+                                        </div>
+                                    </div>
+
+
                                     <input type="email" placeholder="Email">
                                     <input type="text" placeholder="Mobile No">
                                     <div class="submit_area row">
@@ -1143,124 +1148,14 @@
     </div>
     <!-- modal  -->
 
-
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            freeMode: true,
-            scrollbar: {
-                el: '.bar',
-                hide: false,
-                draggable: true,
-            },
+    <!-- Initialize Swiper  slider-->
+    <script src="./assets/js/slider.js"></script>
 
-            navigation: {
-                nextEl: ".btn-next",
-                prevEl: ".btn-prev",
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                },
-                768: {
-                    slidesPerView: 3,
-                    spaceBetween: 40,
-                },
-                1024: {
-                    slidesPerView: 3.7,
-                    spaceBetween: 50,
-                },
-            },
-        });
-    </script>
-    <script>
-        var swiper = new Swiper(".partners-list", {
-
-            freeMode: true,
-            // Default parameters
-            slidesPerView: 2,
-            spaceBetween: 10,
-            breakpoints: {
-
-                768: {
-                    slidesPerView: 3,
-
-                },
-                1024: {
-                    slidesPerView: 5,
-
-                },
-            },
-        });
-    </script>
-
-    <script>
-        let navbar = document.getElementById('navbar');
-        let fixed_nav = document.getElementById('fixed_nav');
-
-        window.addEventListener('scroll', (e) => {
-            let scroll = this.scrollY;
-
-            if (scroll >= 70) {
-                navbar.classList.add('sticky');
-                fixed_nav.style.marginTop = 0;
-            } else {
-                navbar.classList.remove('sticky');
-                fixed_nav.style.marginTop = '20px';
-            }
-        });
-
-        // ===========================================================
-        // sidebar toggle
-        const sidebar_nav_item = document.querySelectorAll('.sidebar_nav_item');
-        const mySidenav = document.getElementById('mySidenav');
-        const child = mySidenav.children;
-        window.addEventListener('click', function (e) {
-            if (
-                !document.getElementById('toggle_btn').contains(e.target) &&
-                !document.getElementById('mySidenav').contains(e.target)
-            ) {
-                mySidenav.style.width = '0px';
-                for (let i = 0; i < child.length; i++) {
-                    child[i].style.opacity = 0;
-                }
-            }
-        });
-
-        function openNav(e) {
-            if (mySidenav.style.width === '0px') {
-                mySidenav.style.width = '270px';
-                if ((mySidenav.style.width = '270px')) {
-                    for (let i = 0; i < child.length; i++) {
-                        child[i].style.opacity = 1;
-                    }
-                } else {
-                    for (let i = 0; i < child.length; i++) {
-                        child[i].style.opacity = 0;
-                    }
-                }
-            } else {
-                mySidenav.style.width = '0';
-                for (let i = 0; i < child.length; i++) {
-                    child[i].style.opacity = 0;
-                }
-            }
-        }
-
-        function closeNav() {
-            document.getElementById('mySidenav').style.width = '0';
-            for (let i = 0; i < child.length; i++) {
-                child[i].style.opacity = 0;
-            }
-        }
-
-    </script>
+    <!-- country code  -->
+    <script src="./assets/js/phone-input.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
