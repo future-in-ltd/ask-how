@@ -12038,8 +12038,8 @@ header nav .header_buttons {
   font-size: 48px;
 }
 .hero .hero_left {
-  padding-top: 80px;
-  padding-bottom: 96px;
+  padding-top: 90px;
+  padding-bottom: 97px;
 }
 .hero .hero_top_text .bg_brand {
   color: #fff;
@@ -12070,7 +12070,7 @@ header nav .header_buttons {
 }
 .hero .hero_bottom_text p {
   color: #444444;
-  padding-top: 60px;
+  padding-top: 20px;
   padding-bottom: 40px;
   font-size: 20px;
   max-width: 512px;
@@ -12141,6 +12141,7 @@ header nav .header_buttons {
   color: #d48f3f;
   font-weight: 600;
   padding-bottom: 40px;
+  margin-bottom: 0px !important;
 }
 .our_services .service_card {
   background-color: #fff;
@@ -12247,7 +12248,7 @@ header nav .header_buttons {
   line-height: 59px;
   text-align: center;
   color: #d48f3f;
-  padding-bottom: 30px;
+  margin-bottom: 40px;
 }
 .subject_area .top_area p {
   font-weight: 400;
@@ -12262,6 +12263,7 @@ header nav .header_buttons {
   gap: 60px;
   justify-content: center;
   margin-top: 60px;
+  margin-bottom: 0 !important;
 }
 .subject_area .subjects li:focus-visible {
   outline: none !important;
@@ -12414,10 +12416,12 @@ header nav .header_buttons {
   color: black;
   font-weight: 500;
   padding: 20px 0px;
+  margin-bottom: 0px !important;
 }
 .our-features .features_card_content p {
   color: #444444;
   font-size: 14px;
+  font-weight: 400;
   padding-bottom: 0;
 }
 .our-features .get-start-btn {
@@ -12766,12 +12770,14 @@ header nav .header_buttons {
   font-size: 48px;
   color: #d48f3f;
   font-weight: 600;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
+  margin-bottom: 0px !important;
 }
 .our-tutor .content p {
   color: #444444;
   font-size: 16px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
+  margin-bottom: 0px !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -12820,8 +12826,8 @@ footer .footer_options {
 footer h2, footer .h2 {
   font-size: 24px;
   color: #fff;
-  font-weight: 600;
-  padding-bottom: 20px;
+  font-weight: 500;
+  margin-bottom: 16px;
 }
 footer a,
 footer p {
@@ -12839,6 +12845,7 @@ footer .social_icons {
   display: flex;
   justify-content: end;
   gap: 10px;
+  padding-top: 8.5px;
 }
 footer .social_icons a {
   display: grid;
@@ -12864,6 +12871,7 @@ footer .copyright_text {
 footer .copyright_text p {
   color: #999999;
   font-size: 16px;
+  margin-bottom: 0px !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -12940,7 +12948,7 @@ footer .copyright_text p {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f3f1fd;
-  padding: 120px 0px;
+  padding: 164px 0px 140px 0px;
 }
 .blog_page_heading h1, .blog_page_heading .h1 {
   font-size: 64px;
@@ -12956,7 +12964,7 @@ footer .copyright_text p {
   box-shadow: 0px 30px 10px 0px rgba(152, 152, 152, 0.06);
   border-radius: 30px;
   overflow: hidden;
-  margin-top: 30px;
+  margin-top: 27px;
   transition: all 0.3s ease-in-out;
 }
 .blogs .single_blog_card:hover {
@@ -12972,8 +12980,8 @@ footer .copyright_text p {
   color: #999999;
 }
 .blogs .single_blog_card .content .info p {
-  padding: 0;
-  margin: 0;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 .blogs .single_blog_card .content h3, .blogs .single_blog_card .content .h3 {
   font-size: 18px;
@@ -12981,6 +12989,7 @@ footer .copyright_text p {
   font-weight: 600;
   padding: 20px 0px;
   transition: all 0.3s ease-in-out;
+  margin-bottom: 0px !important;
 }
 .blogs .single_blog_card .content h3:hover, .blogs .single_blog_card .content .h3:hover {
   color: #d48f3f;
@@ -12988,6 +12997,7 @@ footer .copyright_text p {
 .blogs .single_blog_card .content p {
   color: #444444;
   font-size: 16px;
+  margin-bottom: 20px !important;
 }
 .blogs .single_blog_card .content a {
   color: #d48f3f;
@@ -13779,6 +13789,7 @@ footer .copyright_text p {
   font-size: 48px;
   line-height: 59px;
   color: #d48f3f;
+  margin-bottom: 20px;
 }
 .bg-arts .content p {
   font-style: normal;

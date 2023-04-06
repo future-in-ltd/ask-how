@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: $bg-color;
-  padding: 120px 0px;
+  padding: 164px 0px 140px 0px;
 
   h1 {
     font-size: 64px;
@@ -21,7 +21,7 @@
     box-shadow: 0px 30px 10px 0px rgba(152, 152, 152, 0.06);
     border-radius: 30px;
     overflow: hidden;
-    margin-top: 30px;
+    margin-top: 27px;
     transition: all 0.3s ease-in-out;
     &:hover {
       box-shadow: 0px 30px 10px 0px rgba(152, 152, 152, 0.16);
@@ -38,8 +38,8 @@
         color: $text-color3;
 
         p {
-          padding: 0;
-          margin: 0;
+          padding: 0 !important;
+          margin: 0 !important;
         }
       }
 
@@ -49,6 +49,7 @@
         font-weight: 600;
         padding: 20px 0px;
         transition: all 0.3s ease-in-out;
+        margin-bottom: 0px !important;
         &:hover {
           color: $assistance-color;
         }
@@ -57,6 +58,7 @@
       p {
         color: $text-color2;
         font-size: 16px;
+        margin-bottom: 20px !important;
       }
 
       a {

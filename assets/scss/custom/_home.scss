@@ -224,8 +224,8 @@ header {
   }
 
   .hero_left {
-    padding-top: 80px;
-    padding-bottom: 96px;
+    padding-top: 90px;
+    padding-bottom: 97px;
   }
 
   .hero_top_text {
@@ -265,7 +265,7 @@ header {
 
   .hero_bottom_text p {
     color: $text-color2;
-    padding-top: 60px;
+    padding-top: 20px;
     padding-bottom: 40px;
     font-size: 20px;
     max-width: 512px;
@@ -352,6 +352,8 @@ header {
     color: $assistance-color;
     font-weight: 600;
     padding-bottom: 40px;
+
+    margin-bottom: 0px !important;
   }
 
   .service_card {
@@ -487,7 +489,7 @@ header {
       line-height: 59px;
       text-align: center;
       color: $assistance-color;
-      padding-bottom: 30px;
+      margin-bottom: 40px;
     }
 
     p {
@@ -505,6 +507,7 @@ header {
     gap: 60px;
     justify-content: center;
     margin-top: 60px;
+    margin-bottom: 0 !important;
 
     li {
       &:focus-visible {
@@ -695,11 +698,13 @@ header {
         color: black;
         font-weight: 500;
         padding: 20px 0px;
+        margin-bottom: 0px !important;
       }
 
       p {
         color: $text-color2;
         font-size: 14px;
+        font-weight: 400;
         padding-bottom: 0;
       }
     }
@@ -1101,13 +1106,16 @@ header {
       font-size: 48px;
       color: $assistance-color;
       font-weight: 600;
-      padding-bottom: 40px;
+      padding-bottom: 20px;
+
+      margin-bottom: 0px !important;
     }
 
     p {
       color: $text-color2;
       font-size: 16px;
-      padding-bottom: 60px;
+      padding-bottom: 40px;
+      margin-bottom: 0px !important;
     }
   }
 }
@@ -1165,8 +1173,8 @@ footer {
   h2 {
     font-size: 24px;
     color: #fff;
-    font-weight: 600;
-    padding-bottom: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
   }
 
   a,
@@ -1188,7 +1196,7 @@ footer {
     display: flex;
     justify-content: end;
     gap: 10px;
-
+    padding-top: 8.5px;
     a {
       display: grid;
       width: 32px;
@@ -1218,6 +1226,7 @@ footer {
     p {
       color: #999999;
       font-size: 16px;
+      margin-bottom: 0px !important;
     }
   }
 }
