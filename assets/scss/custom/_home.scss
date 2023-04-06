@@ -454,8 +454,10 @@ header {
     justify-content: center;
   }
   .partner_logo {
-    width: 100px !important;
-    height: 100px !important;
+    width: 110px !important;
+    height: 120px !important;
+    display: grid;
+    place-items: center;
   }
 }
 
