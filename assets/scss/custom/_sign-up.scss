@@ -47,19 +47,32 @@
     place-items: center;
     height: 100%;
 
+    .row {
+      width: 100%;
+      margin-right: 40px;
+    }
+
     input,
     select {
-      width: 780px;
+      width: 100%;
       margin-bottom: 30px;
       padding: 10px;
-      width: 780px;
+
       height: 47px;
       border: 1px solid #999999;
       border-radius: 8px;
     }
 
+    input[type="radio"] {
+      margin-right: 10px;
+      height: auto;
+      border: 1px solid #999999;
+      border-radius: none;
+      margin-bottom: 0;
+    }
+
     .submit_area {
-      width: 780px;
+      max-width: 780px;
       display: flex;
     }
 
@@ -91,7 +104,6 @@
 }
 
 @media screen and (max-width: 768px) {
-
   // sign in page
   .sign-up-page {
     position: relative;
@@ -104,16 +116,15 @@
       margin-bottom: 20px;
     }
 
-    .logo img {
-      width: 195px;
-      height: 51px;
-    }
-
     .left_side_area {
       background: $main-color;
       color: #fff;
       padding: 20px;
-
+      .logo img {
+        margin-top: 60px;
+        width: 195px;
+        height: 51px;
+      }
       h2 {
         font-weight: 600;
         font-size: 24px;
@@ -133,7 +144,9 @@
 
     .right_side_from {
       padding: 20px;
-
+      .row {
+        margin-right: 0;
+      }
       input,
       select {
         width: 100%;
@@ -159,6 +172,17 @@
         font-size: 14px;
         line-height: 150%;
         color: #999999;
+      }
+      .btn_submit {
+        height: 47px;
+        background: $main-color;
+        color: #fff;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
       }
     }
 

@@ -160,7 +160,6 @@
 
 .iti {
   position: relative;
-  display: inline-block;
 }
 
 input[type="tel"] {
@@ -181,4 +180,22 @@ input[type="tel"] {
   font-family: inherit;
   font-size: 100%;
   color: inherit;
+}
+
+.btn_resend {
+  background: $assistance-color;
+  border-radius: 8px;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  text-align: center;
+  margin-bottom: 40px;
+  cursor: pointer;
+
+  &:hover {
+    background: #5a1f7a;
+  }
 }

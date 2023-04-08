@@ -47,8 +47,7 @@
 
   .right_side_from {
     padding: 100px 10px;
-    display: grid;
-    place-items: center;
+
     height: 100%;
     width: 100%;
 
@@ -59,27 +58,22 @@
       color: #000000;
     }
 
-    .w_full {
-
-      input,
-      select {
-        width: 780px;
-        margin-bottom: 30px;
-        padding: 10px;
-        width: 780px;
-        height: 47px;
-        border: 1px solid #999999;
-        border-radius: 8px;
-      }
+    input,
+    select {
+      margin-bottom: 30px;
+      padding: 10px;
+      width: 100%;
+      height: 47px;
+      border: 1px solid #999999;
+      border-radius: 8px;
     }
 
     .w_half {
-
       input,
       select {
         margin-bottom: 30px;
         padding: 10px;
-        width: 370px;
+        width: 50%;
         height: 47px;
         border: 1px solid #999999;
         border-radius: 8px;
@@ -87,7 +81,7 @@
     }
 
     .submit_area {
-      width: 780px;
+      width: 100%;
       display: flex;
     }
 
@@ -104,27 +98,7 @@
     }
 
     .inputss {
-      display: flex;
-      flex-wrap: wrap;
       gap: 40px;
-    }
-
-    .btn_resend {
-      background: $assistance-color;
-      border-radius: 8px;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 150%;
-      text-align: center;
-      margin-bottom: 40px;
-      cursor: pointer;
-
-      &:hover {
-        background: #5a1f7a;
-      }
     }
 
     .radios {
@@ -177,7 +151,6 @@
       }
 
       .w_full {
-
         input,
         select {
           width: 100%;
@@ -190,7 +163,6 @@
       }
 
       .w_half {
-
         input,
         select {
           margin-bottom: 10px;
@@ -220,9 +192,6 @@
       }
 
       .inputss {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
         gap: 15px;
       }
 
