@@ -351,10 +351,9 @@
         </div>
 
     </section>
-
     <footer>
         <div class="container">
-            <div class="row footer_options">
+            <div class="row footer_options text-center text-md-start">
 
                 <div class="col-md-3 ">
                     <img class="footer-logo" src="./assets/images/whitelogo.png" alt="">
@@ -584,15 +583,13 @@
     <div class="modal fade" id="regModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
-                <section class="sign_up-page-2">
-                    <div class="row">
+                <section class="sign-up-page">
+                    <div class="row ">
                         <div class="col-md-5">
-
-
-
                             <div class="left_side_area">
                                 <div>
-                                    <div class="logo text-center"><img src="/assets/images/whitelogo.png" alt=""></div>
+                                    <div class="logo text-center  "><img src="/assets/images/whitelogo.png" alt="">
+                                    </div>
                                     <h2>Get Started with AskHow !</h2>
                                     <p>
                                         <span><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
@@ -633,15 +630,16 @@
                         <div class="col-md-7">
                             <div class="right_side_from">
                                 <div>
-                                    <h2>Continue sign up </h2>
-                                    <div class="inputss">
-                                        <div class="w_half">
+                                    <h2>Continue sign up</h2>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
                                             <input type="text" placeholder="First Name">
                                         </div>
-                                        <div class="w_half">
+                                        <div class="col-md-6">
                                             <input type="text" placeholder="Last Name">
                                         </div>
-                                        <div class="w_half">
+                                        <div class="col-6">
                                             <select>
                                                 <option value="0">Select School</option>
                                                 <option value="1">India</option>
@@ -651,44 +649,45 @@
                                                 <option value="5">Australia</option>
                                             </select>
                                         </div>
-                                        <div class="w_half text-end">
+                                        <div class="col-6 text-end">
                                             <input type="text" placeholder="OTP"><br>
                                             <button class="btn_resend">
                                                 Resend
-                                            </button>
                                         </div>
                                     </div>
-                                    <div class="w_full">
-                                        <input type="password" placeholder="Password">
-                                    </div>
-                                    <div class="radios">
 
-                                        <div>
+                                    <div class="row">
+                                        <div class="col-12"><input type="password" placeholder="Password"></div>
+                                    </div>
+
+                                    <div class="row mb-4 gap-4">
+
+                                        <div class="col-3 d-flex align-items-center">
                                             <input type="radio" name="usertype" id="Student" value="student" checked>
                                             <label for="Student">Student</label>
                                         </div>
-                                        <div>
+                                        <div class="col-3 d-flex align-items-center">
                                             <input type="radio" name="usertype" id="Teacher" value="teacher"> <label
                                                 for="Teacher">Teacher</label>
                                         </div>
-                                        <div>
+                                        <div class="col-3 d-flex align-items-center">
                                             <input type="radio" name="usertype" id="Parent" value="Parent"> <label
                                                 for="Parent">Parent</label>
 
                                         </div>
 
                                     </div>
-                                    <div class="submit_area  d-flex justify-content-center">
 
-                                        <button class="btn_submit">JOIN NOW FOR FREE</button>
-
-
+                                    <div class="row mb-5">
+                                        <div class="text-center">
+                                            <button class="btn_submit">JOIN NOW FOR FREE</button>
+                                        </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row align-items-center">
                                         <div class="col-md-6">By joining you agree to our <a href="#">T&G</a></div>
                                         <div class="col-md-6 mt-2">
                                             <p>
-                                                Already have an Account<a data-bs-toggle="modal"
+                                                Already have an Account? <br><a data-bs-toggle="modal"
                                                     data-bs-target="#loginModal">Login Now</a>
                                             </p>
                                         </div>
@@ -698,12 +697,13 @@
                         </div>
                     </div>
                     <div class="close_btn">
-                        <span data-bs-dismiss="modal" class="btn_close">X</span>
+                        <span class="btn_close" data-bs-dismiss="modal" aria-label="Close">X</span>
                     </div>
                 </section>
             </div>
         </div>
     </div>
+
     <!-- modal  -->
 
     <!-- Swiper JS -->
