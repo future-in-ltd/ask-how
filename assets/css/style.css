@@ -12161,6 +12161,9 @@ header nav .header_buttons {
   border-radius: 0px 0px 30px 30px;
   transition: all 0.3s ease-in-out;
 }
+.our_services .service_card_img {
+  padding: 20px;
+}
 .our_services .service_card:hover {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
@@ -12416,6 +12419,9 @@ header nav .header_buttons {
   box-shadow: 10px 10px 30px rgba(152, 151, 151, 0.09);
   border-radius: 0px 0px 30px 30px;
   transition: all 0.3s ease-in-out;
+}
+.our-features .features_card_image {
+  padding: 15px;
 }
 .our-features .features_card:hover {
   box-shadow: 10px 10px 30px rgba(152, 151, 151, 0.2);
