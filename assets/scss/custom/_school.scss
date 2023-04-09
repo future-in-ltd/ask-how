@@ -6,6 +6,7 @@
     line-height: 150%;
     color: #222222;
     margin-bottom: 30px;
+    font-weight: 600 !important;
   }
 
   p {
@@ -31,15 +32,13 @@
     text-align: center;
   }
 
-
-
   .mt-60 {
     margin-top: 60px;
   }
 
   img {
     max-width: 648px;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 10px 10px 30px rgba(152, 151, 151, 0.09);
     border-radius: 30px;
     overflow: hidden;
