@@ -11920,9 +11920,6 @@ header nav .header_buttons {
     margin: 22px 0px;
     padding: 0px 0px !important;
   }
-  header nav a.navbar-brand {
-    width: 260px;
-  }
   header nav .navbar-nav {
     margin-left: 20px;
   }
@@ -12833,9 +12830,8 @@ footer a {
   text-decoration: none;
 }
 footer .footer-logo {
-  margin-bottom: 40px;
   width: 282px;
-  height: 30px;
+  margin-bottom: 20px;
 }
 footer .footer_options {
   padding-top: 66.5px;
@@ -13830,7 +13826,6 @@ footer .copyright_text p {
 }
 .sign-up-page .logo img {
   width: 282px;
-  height: 30.96px;
 }
 .sign-up-page .left_side_area {
   background: #7531ab;
@@ -13923,8 +13918,6 @@ footer .copyright_text p {
   }
   .sign-up-page .left_side_area .logo img {
     margin-top: 60px;
-    width: 195px;
-    height: 51px;
   }
   .sign-up-page .left_side_area h2, .sign-up-page .left_side_area .h2 {
     font-weight: 600;

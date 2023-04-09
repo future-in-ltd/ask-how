@@ -60,10 +60,6 @@ header {
       margin: 22px 0px;
       padding: 0px 0px !important;
 
-      a.navbar-brand {
-        width: 260px;
-      }
-
       .navbar-nav {
         margin-left: 20px;
 
@@ -1167,9 +1163,9 @@ footer {
   }
 
   .footer-logo {
-    margin-bottom: 40px;
     width: 282px;
-    height: 30px;
+
+    margin-bottom: 20px;
   }
 
   .footer_options {
