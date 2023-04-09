@@ -1226,8 +1226,9 @@ footer {
   .copyright_text {
     padding: 30px 0px;
 
+    a,
     p {
-      color: #999999;
+      color: #c0c0c0 !important;
       font-size: 16px;
       margin-bottom: 0px !important;
     }
@@ -1317,12 +1318,10 @@ footer {
     }
 
     .copyright_text {
-      padding: 10px 0px;
       text-align: center;
-
-      p {
-        color: #999999;
-        font-size: 16px;
+      flex-direction: column;
+      p.mx-3 {
+        display: none;
       }
     }
   }

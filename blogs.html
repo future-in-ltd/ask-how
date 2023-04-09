@@ -18,6 +18,8 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -38,7 +40,7 @@
 
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                                <a class="nav-link " href="./index.html">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./school.html">School</a>
@@ -47,7 +49,7 @@
                                 <a class="nav-link" href="./how-works.html">How it works</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./blogs.html">Blog Page</a>
+                                <a class="nav-link active" aria-current="page" href="./blogs.html">Blog Page</a>
                             </li>
 
                         </ul>
@@ -70,7 +72,7 @@
     </header>
     <section class="blog_page_heading">
         <div class="container">
-            <div class="row">
+            <div class="row" data-aos="zoom-in" data-aos-duration="1500">
                 <div class="col-md-12">
                     <h1>Blog</h1>
                 </div>
@@ -79,7 +81,7 @@
     </section>
     <section class="blogs">
         <div class="container">
-            <div class="row">
+            <div class="row" data-aos="fade-up" data-aos-duration="1500">
                 <div class="col-md-4">
                     <div class="single_blog_card">
                         <a href="./blog-single.html"> <img src="./assets/images/blog/blog1.png" alt=""> </a>
@@ -710,6 +712,11 @@
 
     <!-- modal  -->
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
@@ -722,6 +729,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
