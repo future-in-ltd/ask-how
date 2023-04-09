@@ -31,6 +31,9 @@ img {
 .hero .container {
   overflow: visible;
 }
+.hero .youtube_video_area {
+  width: 460px;
+}
 
 textarea:focus,
 input:focus {

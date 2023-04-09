@@ -30,7 +30,6 @@ img {
   height: auto;
 }
 .container {
-  // overflow: hidden;
   padding: 0px !important;
 }
 .hero {
@@ -38,7 +37,11 @@ img {
   .container {
     overflow: visible;
   }
+  .youtube_video_area {
+    width: 460px;
+  }
 }
+
 // inputs
 textarea:focus,
 input:focus {
