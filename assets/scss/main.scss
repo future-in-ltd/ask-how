@@ -12,8 +12,8 @@ $body-bg-color: #fbfbfe;
   padding: 0;
   box-sizing: border-box;
 
-  outline: 1px solid transparent !important;
-  // outline: 1px solid red;
+  // outline: 1px solid transparent !important;
+  outline: 1px solid red;
 }
 
 body {
@@ -29,14 +29,18 @@ img {
   width: 100%;
   height: auto;
 }
+
 .container {
   padding: 0px !important;
 }
+
 .hero {
   overflow: hidden;
+
   .container {
     overflow: visible;
   }
+
   .youtube_video_area {
     width: 460px;
   }

@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid transparent !important;
+  outline: 1px solid red;
 }
 
 body {
@@ -12050,7 +12050,7 @@ header nav .header_buttons {
   font-size: 48px;
 }
 .hero .hero_left {
-  padding-top: 90px;
+  padding-top: 80px;
   padding-bottom: 97px;
 }
 .hero .hero_top_text .bg_brand {
@@ -12068,6 +12068,7 @@ header nav .header_buttons {
   color: #7531ab;
   font-size: 64px;
   font-weight: 800;
+  line-height: 150%;
   padding: 0;
   margin: 0;
 }
@@ -12082,10 +12083,12 @@ header nav .header_buttons {
 }
 .hero .hero_bottom_text p {
   color: #444444;
-  padding-top: 20px;
+  padding-top: 3px;
   padding-bottom: 40px;
   font-size: 20px;
+  line-height: 150%;
   max-width: 512px;
+  margin-bottom: 0px;
 }
 .hero .hero_img img {
   width: unset;
@@ -12152,7 +12155,7 @@ header nav .header_buttons {
   font-size: 48px;
   color: #d48f3f;
   font-weight: 600;
-  padding-bottom: 120px;
+  padding-bottom: 40px;
   margin-bottom: 0px !important;
 }
 .our_services .service_card {
@@ -12160,15 +12163,13 @@ header nav .header_buttons {
   height: 100%;
   border-radius: 0px 0px 30px 30px;
   transition: all 0.3s ease-in-out;
-}
-.our_services .service_card_img {
-  padding: 20px;
+  padding: 22px;
 }
 .our_services .service_card:hover {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 .our_services .service_card .content {
-  padding: 20px 37px;
+  padding: 20px 22.5px;
 }
 .our_services .service_card .content h3, .our_services .service_card .content .h3 {
   font-size: 24px;
@@ -12251,7 +12252,7 @@ header nav .header_buttons {
 }
 
 .subject_area {
-  padding-top: 120px;
+  padding-top: 121px;
 }
 .subject_area .top_area {
   max-width: 1211px;
@@ -12271,6 +12272,7 @@ header nav .header_buttons {
   line-height: 150%;
   text-align: center;
   color: #444444;
+  margin-bottom: 0;
 }
 .subject_area .subjects {
   padding-bottom: 120px;
@@ -12412,6 +12414,8 @@ header nav .header_buttons {
 }
 .our-features p {
   padding-bottom: 60px;
+  margin-bottom: 0px;
+  font-size: 18px;
 }
 .our-features .features_card {
   background: #fff;
@@ -12443,7 +12447,7 @@ header nav .header_buttons {
   padding-bottom: 0;
 }
 .our-features .get-start-btn {
-  margin-top: 60px;
+  padding-top: 60px;
 }
 
 @media screen and (max-width: 768px) {
@@ -12492,7 +12496,7 @@ header nav .header_buttons {
 }
 .let_get_started {
   background-image: url(../images/let-start-bg.png);
-  padding-bottom: 218px;
+  padding-bottom: 221px;
   padding-top: 176px;
   background-color: rgba(243, 241, 253, 0.1);
 }
@@ -12540,10 +12544,10 @@ header nav .header_buttons {
   line-height: 59px;
   text-align: center;
   color: #000000;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 .testimonials .testimonials_list {
-  padding-bottom: 32px;
+  padding-bottom: 40px;
 }
 .testimonials .testimonials_list .swiper-slide {
   width: 398px;
@@ -12742,7 +12746,8 @@ header nav .header_buttons {
 }
 .partners {
   background: #fbfbfe;
-  padding: 120px 0px;
+  padding-top: 120px;
+  padding-bottom: 122px;
 }
 .partners h2, .partners .h2 {
   font-size: 48px;
@@ -12838,7 +12843,7 @@ footer .footer-logo {
 }
 footer .footer_options {
   padding-top: 66.5px;
-  padding-bottom: 69px;
+  padding-bottom: 89px;
 }
 footer h2, footer .h2 {
   font-size: 24px;
@@ -12883,7 +12888,7 @@ footer .contact-info a i {
   font-size: 16px;
 }
 footer .copyright_text {
-  padding: 30px 0px;
+  padding: 34px 0px;
 }
 footer .copyright_text a,
 footer .copyright_text p {
@@ -12975,7 +12980,7 @@ footer .copyright_text p {
 }
 
 .blogs {
-  padding: 120px 0px;
+  padding: 118px 0px;
 }
 .blogs .single_blog_card {
   box-shadow: 0px 30px 10px 0px rgba(152, 152, 152, 0.06);
@@ -12991,7 +12996,7 @@ footer .copyright_text p {
   max-height: 280px;
 }
 .blogs .single_blog_card .content {
-  padding: 30px;
+  padding: 38.5px 37.5px 27px 37.5px;
 }
 .blogs .single_blog_card .content .info {
   color: #999999;
@@ -13004,7 +13009,8 @@ footer .copyright_text p {
   font-size: 18px;
   color: black;
   font-weight: 600;
-  padding: 20px 0px;
+  padding-top: 28px;
+  padding-bottom: 20px;
   transition: all 0.3s ease-in-out;
   margin-bottom: 0px !important;
 }
@@ -13147,12 +13153,15 @@ footer .copyright_text p {
   font-size: 36px;
   color: black;
   font-weight: 600;
+  padding-bottom: 30px;
   max-width: 900px;
+  margin-bottom: 0px;
 }
 .article-blog article p {
   font-size: 18px;
   color: black;
-  padding: 20px 15px;
+  padding-bottom: 30px;
+  padding-left: 20px;
 }
 
 .commnet-wraper {
@@ -13508,6 +13517,7 @@ footer .copyright_text p {
 }
 .let_join img {
   max-width: 620px;
+  max-height: 400px;
 }
 
 .benefits h2, .benefits .h2 {

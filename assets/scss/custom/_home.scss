@@ -47,11 +47,13 @@ header {
         color: #000 !important;
       }
     }
+
     .header_buttons {
       display: flex;
     }
   }
 }
+
 @media (max-width: 1399px) {
   header {
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -98,6 +100,7 @@ header {
           color: #000 !important;
         }
       }
+
       .header_buttons {
         display: flex;
       }
@@ -220,7 +223,7 @@ header {
   }
 
   .hero_left {
-    padding-top: 90px;
+    padding-top: 80px;
     padding-bottom: 97px;
   }
 
@@ -244,6 +247,7 @@ header {
       color: $main-color;
       font-size: 64px;
       font-weight: 800;
+      line-height: 150%;
       padding: 0;
       margin: 0;
     }
@@ -261,10 +265,12 @@ header {
 
   .hero_bottom_text p {
     color: $text-color2;
-    padding-top: 20px;
+    padding-top: 3px;
     padding-bottom: 40px;
     font-size: 20px;
+    line-height: 150%;
     max-width: 512px;
+    margin-bottom: 0px;
   }
 
   .hero_img img {
@@ -347,7 +353,7 @@ header {
     font-size: 48px;
     color: $assistance-color;
     font-weight: 600;
-    padding-bottom: 120px;
+    padding-bottom: 40px;
 
     margin-bottom: 0px !important;
   }
@@ -357,16 +363,16 @@ header {
     height: 100%;
     border-radius: 0px 0px 30px 30px;
     transition: all 0.3s ease-in-out;
+    padding: 22px;
 
-    &_img {
-      padding: 20px;
-    }
+
+
     &:hover {
       box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     }
 
     .content {
-      padding: 20px 37px;
+      padding: 20px 22.5px;
 
       h3 {
         font-size: 24px;
@@ -389,6 +395,7 @@ header {
         font-weight: 500;
         text-decoration: none;
         transition: all 0.3s ease-in-out;
+
         &:hover {
           color: $main-color;
         }
@@ -450,10 +457,12 @@ header {
 .partners-list {
   max-width: 997.26px;
   margin: 0 auto;
+
   .swiper-slide {
     display: flex;
     justify-content: center;
   }
+
   .partner_logo {
     width: 110px !important;
     height: 120px !important;
@@ -462,21 +471,9 @@ header {
   }
 }
 
-// @media screen and (max-width: 767px) {
-//   .partners-list {
-//     display: flex;
-//     gap: 20px;
-//     padding: 20px 0px;
-
-//     .partner_logo {
-//       width: 50px !important;
-//       height: 50px !important;
-//     }
-//   }
-// }
 
 .subject_area {
-  padding-top: 120px;
+  padding-top: 121px;
 
   .top_area {
     max-width: 1211px;
@@ -497,6 +494,7 @@ header {
       line-height: 150%;
       text-align: center;
       color: #444444;
+      margin-bottom: 0;
     }
   }
 
@@ -676,6 +674,8 @@ header {
 
   p {
     padding-bottom: 60px;
+    margin-bottom: 0px;
+    font-size: 18px;
   }
 
   .features_card {
@@ -714,7 +714,7 @@ header {
   }
 
   .get-start-btn {
-    margin-top: 60px;
+    padding-top: 60px;
   }
 }
 
@@ -774,7 +774,7 @@ header {
 
 .let_get_started {
   background-image: url(../images/let-start-bg.png);
-  padding-bottom: 218px;
+  padding-bottom: 221px;
   padding-top: 176px;
   background-color: rgba(243, 241, 253, 0.1);
 
@@ -829,11 +829,11 @@ header {
     line-height: 59px;
     text-align: center;
     color: #000000;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
   }
 
   .testimonials_list {
-    padding-bottom: 32px;
+    padding-bottom: 40px;
 
     .swiper-slide {
       width: 398px;
@@ -883,6 +883,7 @@ header {
       height: 3px;
       background-color: #ddd;
     }
+
     .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
       background: $assistance-color;
     }
@@ -1058,7 +1059,8 @@ header {
 
 .partners {
   background: #fbfbfe;
-  padding: 120px 0px;
+  padding-top: 120px;
+  padding-bottom: 122px;
 
   h2 {
     font-size: 48px;
@@ -1170,7 +1172,7 @@ footer {
 
   .footer_options {
     padding-top: 66.5px;
-    padding-bottom: 69px;
+    padding-bottom: 89px;
   }
 
   h2 {
@@ -1200,6 +1202,7 @@ footer {
     justify-content: end;
     gap: 10px;
     padding-top: 8.5px;
+
     a {
       display: grid;
       width: 32px;
@@ -1207,6 +1210,7 @@ footer {
       border-radius: 50%;
       place-items: center;
       background-color: $assistance-color;
+
       &:hover {
         background-color: white;
         color: $assistance-color;
@@ -1217,6 +1221,7 @@ footer {
   .contact-info {
     a {
       font-size: 14px !important;
+
       i {
         font-size: 16px;
       }
@@ -1224,7 +1229,7 @@ footer {
   }
 
   .copyright_text {
-    padding: 30px 0px;
+    padding: 34px 0px;
 
     a,
     p {
@@ -1320,6 +1325,7 @@ footer {
     .copyright_text {
       text-align: center;
       flex-direction: column;
+
       p.mx-3 {
         display: none;
       }

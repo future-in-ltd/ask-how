@@ -15,7 +15,7 @@
 }
 
 .blogs {
-  padding: 120px 0px;
+  padding: 118px 0px;
 
   .single_blog_card {
     box-shadow: 0px 30px 10px 0px rgba(152, 152, 152, 0.06);
@@ -23,6 +23,7 @@
     overflow: hidden;
     margin-top: 27px;
     transition: all 0.3s ease-in-out;
+
     &:hover {
       box-shadow: 0px 30px 10px 0px rgba(152, 152, 152, 0.16);
     }
@@ -32,7 +33,7 @@
     }
 
     .content {
-      padding: 30px;
+      padding: 38.5px 37.5px 27px 37.5px;
 
       .info {
         color: $text-color3;
@@ -47,9 +48,11 @@
         font-size: 18px;
         color: black;
         font-weight: 600;
-        padding: 20px 0px;
+        padding-top: 28px;
+        padding-bottom: 20px;
         transition: all 0.3s ease-in-out;
         margin-bottom: 0px !important;
+
         &:hover {
           color: $assistance-color;
         }
