@@ -12211,6 +12211,7 @@ header nav .header_buttons {
   }
   .hero_bottom-button {
     display: flex;
+    margin-top: 30px;
   }
   .hero_bottom-button button {
     width: 50%;
