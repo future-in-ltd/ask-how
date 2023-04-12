@@ -116,7 +116,7 @@ body {
 }
 
 .navbar-toggler .navbar-toggler-icon {
-  filter: invert(15%) sepia(10%) saturate(3211%) hue-rotate(99deg) brightness(111%) contrast(80%);
+  filter: invert(6%) sepia(61%) saturate(3672%) hue-rotate(260deg) brightness(94%) contrast(84%);
 }
 
 /*!
@@ -12644,7 +12644,7 @@ header nav .header_buttons {
     padding-bottom: 0;
   }
   .our-features .get-start-btn {
-    margin-top: 60px;
+    margin-top: 0px;
   }
 }
 @media screen and (max-width: 420px) {
@@ -12690,7 +12690,7 @@ header nav .header_buttons {
     padding-bottom: 0;
   }
   .our-features .get-start-btn {
-    margin-top: 60px;
+    margin-top: 0px;
   }
 }
 .let_get_started {
