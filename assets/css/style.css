@@ -12209,6 +12209,14 @@ header nav .header_buttons {
     font-size: 25px;
     letter-spacing: -0.06em;
   }
+  .hero_bottom-button {
+    display: flex;
+  }
+  .hero_bottom-button button {
+    width: 50%;
+    padding-top: 8px;
+    padding-bottom: 9px;
+  }
 }
 .our_services {
   background: #fbfbfe;
