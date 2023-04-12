@@ -59,8 +59,9 @@ img {
   }
 }
 @media screen and (max-width: 550px) {
-  footer .copyright_text {
-    font-size: 13px;
+  footer .copyright_text p,
+  footer .copyright_text a {
+    font-size: 13px !important;
   }
 }
 textarea:focus,
