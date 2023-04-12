@@ -282,7 +282,7 @@ header {
 }
 
 //hero on mobile view
-@media (max-width: 960px) {
+@media (max-width: 992px) {
 
   .hero .hero_big_text h1,
   .hero .hero_big_text .h1,
@@ -294,6 +294,8 @@ header {
 
 
 }
+
+
 
 @media (max-width: 767px) {
   .hero {
@@ -368,6 +370,15 @@ header {
       margin-left: 0px;
       margin-bottom: 0px;
     }
+  }
+}
+
+@media (max-width: 420px) {
+
+  .hero .hero_big_text h1,
+  .hero .hero_big_text .h1 {
+    font-size: 25px;
+    letter-spacing: -0.06em;
   }
 }
 
