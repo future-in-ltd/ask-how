@@ -2,3 +2,4 @@
 assets/css/
 /assets/css/style.css.map
 assets/css/style.css.map
+sass .\assets\scss\main.scss .\assets\css\style.css -w

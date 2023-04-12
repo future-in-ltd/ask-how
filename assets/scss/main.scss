@@ -42,9 +42,31 @@ img {
   }
 
   .youtube_video_area {
-    width: 460px;
+
+    // width: 460px;
+    iframe {
+      border-radius: 20px;
+      height: 415px;
+    }
   }
 }
+
+@media screen and (max-width: 960px) {
+  .hero .youtube_video_area iframe {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .hero .youtube_video_area iframe {
+    margin-top: 30px;
+    height: 200px;
+    border-radius: 10px;
+
+  }
+}
+
+
 
 // inputs
 textarea:focus,
@@ -76,9 +98,11 @@ body {
 }
 
 .youtube_video_area {
-  border-radius: 20px;
+  // border-radius: 20px;
   overflow: hidden;
 }
+
+
 
 // .modal-xl {
 //   max-width: 1591px !important;
@@ -90,6 +114,8 @@ body {
     overflow: hidden;
     padding: 0px 15px !important;
   }
+
+
 }
 
 //  import Bootstrap

@@ -1,1219 +1,1922 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>FastTutor Landing Page</title>
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="./assets/images/icon/favicon.ico"
+		/>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AskHow Landing Page</title>
+		<!-- styles -->
+		<link rel="stylesheet" href="./assets/css/style.css" />
 
+		<!-- fonts  -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<script
+			src="https://kit.fontawesome.com/f13f5b2b08.js"
+			crossorigin="anonymous"
+		></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+		/>
 
-    <!-- styles -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	</head>
 
+	<body>
+		<header>
+			<div class="container">
+				<nav
+					class="navbar navbar-expand-xl m-0"
+					aria-label="Eleventh navbar example"
+				>
+					<div class="container-fluid">
+						<a class="navbar-brand" href="./index.html">
+							<img src="./assets/images/logo.png" alt="" />
+						</a>
+						<button
+							class="navbar-toggler collapsed"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#nav"
+							aria-controls="navbarsExample09"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<span class="navbar-toggler-icon"></span>
+						</button>
 
-    <!-- fonts  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://kit.fontawesome.com/f13f5b2b08.js" crossorigin="anonymous"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+						<div class="navbar-collapse collapse" id="nav">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+								<li class="nav-item">
+									<a
+										class="nav-link active"
+										aria-current="page"
+										href="./index.html"
+										>Home</a
+									>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="./school.html">School</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="./how-works.html">How it works</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="./blogs.html">Blog Page</a>
+								</li>
+							</ul>
+							<div class="header_buttons">
+								<button
+									data-bs-toggle="modal"
+									data-bs-target="#loginModal"
+									class="btn_border me-2"
+								>
+									Sign in
+								</button>
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-</head>
-
-<body>
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-xl   m-0 " aria-label="Eleventh navbar example">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="./index.html">
-                        <img src="./assets/images/logo.png" alt="">
-                    </a>
-                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#nav" aria-controls="navbarsExample09" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="navbar-collapse collapse" id="nav">
-
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./school.html">School</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./how-works.html">How it works</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./blogs.html">Blog Page</a>
-                            </li>
-
-                        </ul>
-                        <div class="header_buttons">
-
-                            <button data-bs-toggle="modal" data-bs-target="#loginModal" class="btn_border me-2">
-                                Sign in
-                            </button>
-
-                            <a href="./request-demo.html">
-                                <button class="btn_main">
-                                    Request Demo
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <section class="hero d-flex align-items-center">
-        <div class="container ">
-            <div class="row g-0 align-items-center">
-
-                <div data-aos="fade-right" data-aos-duration="1500" class="col-md-9 hero_left">
-
-                    <div class="hero_big_text">
-                        <h1>
-                            "Unlock your academic potential with<span class="hero_big_text_sheap text-nowrap">
-                                FastTutor<span class="text_main">'</span>s
-                            </span>
-                            lightning <br class="d-none md:d-md-block"> speed!"
-                        </h1>
-                    </div>
-                    <div class="hero_bottom_text">
-                        <p>Get the academic support you need at your fingertips, and unlock your true potential with
-                            our
-                            expert tutors.</p>
-                    </div>
-                    <div>
-
-                        <button class="btn_brand">Let’s Get Started</button>
-                        <button class="btn_transparent"> <svg width="15" height="21" viewBox="0 0 15 21" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M2.5 0.5C1.83696 0.5 1.20107 0.763392 0.732233 1.23223C0.263392 1.70107 0 2.33696 0 3V18C0 18.663 0.263392 19.2989 0.732233 19.7678C1.20107 20.2366 1.83696 20.5 2.5 20.5H14.375C14.5408 20.5 14.6997 20.4342 14.8169 20.3169C14.9342 20.1997 15 20.0408 15 19.875C15 19.7092 14.9342 19.5503 14.8169 19.4331C14.6997 19.3158 14.5408 19.25 14.375 19.25H2.5C2.16848 19.25 1.85054 19.1183 1.61612 18.8839C1.3817 18.6495 1.25 18.3315 1.25 18H13.75C14.0815 18 14.3995 17.8683 14.6339 17.6339C14.8683 17.3995 15 17.0815 15 16.75V3C15 2.33696 14.7366 1.70107 14.2678 1.23223C13.7989 0.763392 13.163 0.5 12.5 0.5H2.5ZM3.4375 3.625H11.5625C11.8111 3.625 12.0496 3.72377 12.2254 3.89959C12.4012 4.0754 12.5 4.31386 12.5 4.5625C12.5 4.81114 12.4012 5.0496 12.2254 5.22541C12.0496 5.40123 11.8111 5.5 11.5625 5.5H3.4375C3.18886 5.5 2.9504 5.40123 2.77459 5.22541C2.59877 5.0496 2.5 4.81114 2.5 4.5625C2.5 4.31386 2.59877 4.0754 2.77459 3.89959C2.9504 3.72377 3.18886 3.625 3.4375 3.625Z"
-                                    fill="#7531AB" />
-                            </svg>
-                            Get know more</button>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <!-- <div class="hero_img">
+								<a href="./request-demo.html">
+									<button class="btn_main">Request Demo</button>
+								</a>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<section class="hero d-flex align-items-center">
+			<div class="container">
+				<div class="row align-items-center flex-column-reverse flex-lg-row">
+					<div
+						data-aos="fade-right"
+						data-aos-duration="1500"
+						class="col-lg-6 pe-lg-0 hero_left"
+					>
+						<div class="hero_big_text">
+							<h1>
+								"Unlock your academic potential with<span
+									class="hero_big_text_sheap text-nowrap"
+									>FastTutor<span class="text_main">'</span>s
+								</span>
+								lightning <br class="d-none md:d-md-block" />
+								speed!"
+							</h1>
+						</div>
+						<div class="hero_bottom_text">
+							<p>
+								Get the academic support you need at your fingertips, and unlock
+								your true potential with our expert tutors.
+							</p>
+						</div>
+						<div class="hero_bottom-button">
+							<button class="btn_brand">Let’s Get Started</button>
+							<button class="btn_transparent">
+								<svg
+									width="15"
+									height="21"
+									viewBox="0 0 15 21"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M2.5 0.5C1.83696 0.5 1.20107 0.763392 0.732233 1.23223C0.263392 1.70107 0 2.33696 0 3V18C0 18.663 0.263392 19.2989 0.732233 19.7678C1.20107 20.2366 1.83696 20.5 2.5 20.5H14.375C14.5408 20.5 14.6997 20.4342 14.8169 20.3169C14.9342 20.1997 15 20.0408 15 19.875C15 19.7092 14.9342 19.5503 14.8169 19.4331C14.6997 19.3158 14.5408 19.25 14.375 19.25H2.5C2.16848 19.25 1.85054 19.1183 1.61612 18.8839C1.3817 18.6495 1.25 18.3315 1.25 18H13.75C14.0815 18 14.3995 17.8683 14.6339 17.6339C14.8683 17.3995 15 17.0815 15 16.75V3C15 2.33696 14.7366 1.70107 14.2678 1.23223C13.7989 0.763392 13.163 0.5 12.5 0.5H2.5ZM3.4375 3.625H11.5625C11.8111 3.625 12.0496 3.72377 12.2254 3.89959C12.4012 4.0754 12.5 4.31386 12.5 4.5625C12.5 4.81114 12.4012 5.0496 12.2254 5.22541C12.0496 5.40123 11.8111 5.5 11.5625 5.5H3.4375C3.18886 5.5 2.9504 5.40123 2.77459 5.22541C2.59877 5.0496 2.5 4.81114 2.5 4.5625C2.5 4.31386 2.59877 4.0754 2.77459 3.89959C2.9504 3.72377 3.18886 3.625 3.4375 3.625Z"
+										fill="#7531AB"
+									/>
+								</svg>
+								Get know more
+							</button>
+						</div>
+					</div>
+					<div class="col-lg-6 ps-lg-0">
+						<!-- <div class="hero_img">
                         <img src="./assets/images/hero-model.png" alt="">
 
                     </div> -->
-                    <div class="youtube_video_area">
-                        <iframe width="100%" height="415" src="https://www.youtube.com/embed/K-3cH6ZSzkY">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <section class="our_services text-center">
-        <div class="container">
-            <h2 data-aos="fade-up" data-aos-duration="1000">
-                Our services
-            </h2>
-            <div class="row ">
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
-                    <div class="service_card ">
-                        <div class="service_card_img">
-                            <img src="./assets/images/instahome.png" alt="">
-                        </div>
-                        <div class="content">
-                            <div class="service_card_text">
-                                <h3>InstaConnect</h3>
-                                <p>If you're uncertain and require prompt assistance, don't worry, as we provide
-                                    InstaConnect. You can reach out to our
-                                    skilled tutor at any time for guidance. Our tutor will assist you in learning
-                                    the
-                                    problem-solving method on our
-                                    user-friendly whiteboard and chat-based tutoring platform.</p>
-                            </div>
-                            <div>
-                                <a href="">Learn more
-                                    <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M13.0605 9.50002L6.53023 16.0303L5.46973 14.9698L10.9395 9.50002L5.46973 4.03027L6.53023 2.96977L13.0605 9.50002Z"
-                                            fill="#D48F3F" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
-                    <div class="service_card">
-                        <div class="service_card_img">
-                            <img src="./assets/images/qdrophome.png" alt="">
-                        </div>
-                        <div class="content">
-                            <div class="service_card_text">
-                                <h3>QDrop</h3>
-                                <p>If you're looking to avoid long wait times for assistance, you can simply submit
-                                    your
-                                    question in our "QDrop" feature.
-                                    Our experienced tutor will review it and offer you a solution and
-                                    problem-solving
-                                    technique. You can expect to receive
-                                    an answer to your question within six hours.</p>
-                            </div>
-                            <div>
-                                <a href="">Learn more
-                                    <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M13.0605 9.50002L6.53023 16.0303L5.46973 14.9698L10.9395 9.50002L5.46973 4.03027L6.53023 2.96977L13.0605 9.50002Z"
-                                            fill="#D48F3F" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
-                    <div class="service_card">
-                        <div class="service_card_img">
-                            <img src="./assets/images/sedhome.png" alt="">
-                        </div>
-                        <div class="content">
-                            <div class="service_card_text">
-                                <h3>ScheduleSmart</h3>
-                                <p>Would you like to arrange a tutoring session that fits your schedule? You can
-                                    utilize
-                                    ScheduleSmart,
-                                    which allows you to
-                                    schedule a session at your convenience. Our tutor will be available at the
-                                    designated
-                                    time to assist
-                                    you. However,
-                                    please remember to attend the scheduled sessions on time!</p>
-                            </div>
-                            <div>
-                                <a href="">Learn more
-                                    <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M13.0605 9.50002L6.53023 16.0303L5.46973 14.9698L10.9395 9.50002L5.46973 4.03027L6.53023 2.96977L13.0605 9.50002Z"
-                                            fill="#D48F3F" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="let_get_started">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div data-aos="fade-right" data-aos-duration="1500" class="col-md-5">
-                    <img src="./assets/images/macbook.png" alt="">
-                </div>
-                <div data-aos="fade-left" data-aos-duration="1500" class="col-md-6">
-                    <div class="content text-center pt-3 pt-md-0">
-                        <p>AskHow has helped students to improve their learning experiences. With a personalized
-                            dashboard,
-                            we strive to address
-                            the needs of students according to their convenience & time.</p>
-                        <div>
-                            <button class="btn_brand">
-                                Let’s Get Started
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="subject_area">
-        <div class="container ">
-            <div data-aos="fade-up" data-aos-duration="1500" class="text-center top_area">
-                <h2>Subjects</h2>
-                <p>
-                    We offer our services for a wide range of subjects because we have a pool of expert and
-                    well-trained
-                    tutors for each
-                    subject with years of experience. If you require tutoring in subjects other than these, we can
-                    do
-                    so.
-                </p>
-            </div>
-
-            <ul data-aos="fade-down" data-aos-duration="1500" class="nav nav-pills mb-3 subjects" id="pills-tab"
-                role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
-                        role="tab" aria-controls="pills-home" aria-selected="true">
-
-                        <svg role="presentation" class="active show" id="pills-home-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                            aria-selected="true" width="150" height="151" viewBox="0 0 150 151" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <mask id="mask0_322_3029" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
-                                width="150" height="151">
-                                <rect y="0.971436" width="150" height="150" rx="75" fill="#D9D9D9" />
-                            </mask>
-                            <g mask="url(#mask0_322_3029)">
-                                <path
-                                    d="M109.615 84.1445H86.5379C85.773 84.1445 85.039 84.4485 84.4981 84.9893C83.9572 85.5302 83.6533 86.2642 83.6533 87.0291V110.106C83.6533 110.871 83.9572 111.605 84.4981 112.146C85.039 112.687 85.773 112.991 86.5379 112.991H109.615C110.38 112.991 111.114 112.687 111.655 112.146C112.196 111.605 112.499 110.871 112.499 110.106V87.0291C112.499 86.2642 112.196 85.5302 111.655 84.9893C111.114 84.4485 110.38 84.1445 109.615 84.1445ZM109.615 92.7984H103.846V87.0291H109.615V92.7984ZM95.1918 101.452V95.683H100.961V101.452H95.1918ZM100.961 104.337V110.106H95.1918V104.337H100.961ZM92.3072 101.452H86.5379V95.683H92.3072V101.452ZM95.1918 92.7984V87.0291H100.961V92.7984H95.1918ZM103.846 95.683H109.615V101.452H103.846V95.683ZM92.3072 87.0291V92.7984H86.5379V87.0291H92.3072ZM86.5379 104.337H92.3072V110.106H86.5379V104.337ZM103.846 110.106V104.337H109.615V110.106H103.846Z"
-                                    fill="#7531AB" />
-                                <path
-                                    d="M115.384 61.3263V36.5483C115.381 35.4016 114.924 34.3031 114.113 33.4925C113.303 32.6818 112.204 32.2246 111.057 32.2214H36.0574C34.9106 32.2247 33.8122 32.6818 33.0015 33.4925C32.1908 34.3031 31.7337 35.4016 31.7305 36.5483V97.1252C31.7337 98.272 32.1909 99.3704 33.0015 100.181C33.8122 100.992 34.9106 101.449 36.0574 101.452H46.1535V106.169L45.9661 105.837C45.1928 104.497 43.7641 103.672 42.2175 103.671C40.6709 103.67 39.2414 104.495 38.4675 105.834C37.6935 107.174 37.6929 108.824 38.4662 110.164L43.8459 119.481L46.341 118.039L40.9613 108.722C40.5685 108.027 40.8061 107.147 41.4951 106.746C41.8254 106.554 42.2188 106.502 42.5871 106.602C42.9561 106.702 43.269 106.946 43.4564 107.279L46.341 112.269C46.6738 112.831 47.3377 113.108 47.9706 112.947C48.6029 112.777 49.0408 112.202 49.0382 111.548V94.2405C49.0382 93.444 49.684 92.7982 50.4805 92.7982C51.277 92.7982 51.9228 93.444 51.9228 94.2405V107.221C51.9228 108.018 52.5686 108.664 53.3651 108.664C54.1616 108.664 54.8074 108.018 54.8074 107.221V102.894C54.8589 102.12 55.4758 101.504 56.2497 101.452C56.6322 101.452 56.9992 101.604 57.2697 101.874C57.5401 102.145 57.692 102.512 57.692 102.894V107.221C57.692 108.018 58.3379 108.664 59.1344 108.664C59.9308 108.664 60.5767 108.018 60.5767 107.221V104.337C60.5767 103.54 61.2225 102.894 62.019 102.894C62.8154 102.894 63.4613 103.54 63.4613 104.337V108.664C63.4613 109.46 64.1071 110.106 64.9036 110.106C65.7001 110.106 66.3459 109.46 66.3459 108.664V105.779C66.3459 104.982 66.9917 104.337 67.7882 104.337C68.5847 104.337 69.2305 104.982 69.2305 105.779V118.76H72.1151V105.779C72.1119 104.632 71.6547 103.534 70.8441 102.723C70.0334 101.912 68.935 101.455 67.7882 101.452C67.0445 101.45 66.3131 101.644 65.6679 102.015C65.534 101.812 65.3795 101.623 65.2063 101.452H77.8844V114.433C77.8876 115.58 78.3448 116.678 79.1554 117.489C79.9661 118.299 81.0645 118.757 82.2113 118.76H113.942C115.089 118.757 116.187 118.299 116.998 117.489C117.809 116.678 118.266 115.58 118.269 114.433V65.3944C118.264 64.502 117.985 63.6333 117.469 62.9051C116.953 62.1775 116.225 61.6263 115.384 61.3269L115.384 61.3263ZM74.9996 35.106H111.057C111.44 35.106 111.807 35.258 112.077 35.5284C112.348 35.7989 112.5 36.1659 112.5 36.5483V61.0676H109.615V40.8753C109.612 40.111 109.308 39.3782 108.768 38.8381C108.227 38.2979 107.495 37.9933 106.73 37.9907H74.9997L74.9996 35.106ZM100.961 40.8753V44.6111L100.543 44.1784C99.9741 43.6201 99.0636 43.6201 98.495 44.1784L98.0765 44.6111V40.8753H100.961ZM72.115 98.5675H54.8073V95.6829H72.115V98.5675ZM72.115 49.5291H69.2304V52.4137H72.115V58.1829H69.2304V61.0676H72.115V66.8368H69.2304V69.7214H72.115V75.4906H69.2304V78.3752H72.115V84.1445H69.2304V87.0291H72.115V92.7983H54.5485C54.1519 91.667 53.3026 90.752 52.2041 90.273C51.1056 89.7933 49.8565 89.7933 48.7581 90.273C47.6596 90.7521 46.8104 91.667 46.4136 92.7983H40.3849V40.8753H72.1157L72.115 49.5291ZM72.115 37.9906H40.3843C39.62 37.9932 38.8872 38.2978 38.3471 38.838C37.8069 39.3782 37.5023 40.111 37.4997 40.8752V92.7982C37.5023 93.5625 37.8069 94.2953 38.3471 94.8354C38.8873 95.3756 39.62 95.6802 40.3843 95.6828H46.1535V98.5674H36.0574C35.2609 98.5674 34.615 97.9216 34.615 97.1251V36.5482C34.615 35.7517 35.2609 35.1059 36.0574 35.1059H72.115V37.9906ZM77.8842 98.5675H74.9996V95.6829H77.8842V98.5675ZM77.8842 92.7983H74.9996V87.0291H77.8842V92.7983ZM77.8842 84.1445H74.9996V78.3752H77.8842V84.1445ZM77.8842 75.4906H74.9996V69.7214H77.8842V75.4906ZM77.8842 65.3945V66.8368H74.9996V61.0676H77.8842V58.1829H74.9996V52.4137H77.8842V49.5291H74.9996V40.8753H95.1919V48.0868C95.19 48.6708 95.5441 49.1969 96.0863 49.4138C96.6233 49.6399 97.2433 49.5201 97.658 49.1106L99.5188 47.2356L101.38 49.1106C101.652 49.3797 102.02 49.5304 102.403 49.5291C102.593 49.5343 102.78 49.4943 102.951 49.4139C103.494 49.1969 103.848 48.6708 103.846 48.0868V40.8753H106.73V61.0676H82.2111C81.0644 61.0708 79.9659 61.5279 79.1553 62.3386C78.3446 63.1492 77.8875 64.2477 77.8842 65.3945ZM115.384 114.433C115.384 114.815 115.232 115.182 114.962 115.453C114.691 115.723 114.324 115.875 113.942 115.875H82.2112C81.4147 115.875 80.7689 115.229 80.7689 114.433V65.3945C80.7689 64.598 81.4147 63.9522 82.2112 63.9522H113.942C114.324 63.9522 114.691 64.1041 114.962 64.3746C115.232 64.645 115.384 65.012 115.384 65.3945V114.433Z"
-                                    fill="#7531AB" />
-                                <path
-                                    d="M109.615 66.8368H86.5379C85.773 66.8368 85.039 67.1407 84.4981 67.6816C83.9572 68.2224 83.6533 68.9565 83.6533 69.7214V78.3752C83.6533 79.1402 83.9572 79.8742 84.4981 80.4151C85.039 80.9559 85.773 81.2599 86.5379 81.2599H109.615C110.38 81.2599 111.114 80.9559 111.655 80.4151C112.196 79.8742 112.499 79.1402 112.499 78.3752V69.7214C112.499 68.9565 112.196 68.2224 111.655 67.6816C111.114 67.1407 110.38 66.8368 109.615 66.8368ZM109.615 78.3752H86.5379V69.7214H109.615V78.3752Z"
-                                    fill="#7531AB" />
-                                <path d="M102.403 72.606H105.288V75.4906H102.403V72.606Z" fill="#7531AB" />
-                                <path d="M96.6338 72.606H99.5184V75.4906H96.6338V72.606Z" fill="#7531AB" />
-                                <path d="M90.8652 72.606H93.7498V75.4906H90.8652V72.606Z" fill="#7531AB" />
-                                <path d="M43.2695 66.8368H63.4618V69.7214H43.2695V66.8368Z" fill="#7531AB" />
-                                <path d="M43.2695 78.3752H63.4618V81.2599H43.2695V78.3752Z" fill="#7531AB" />
-                                <path d="M43.2695 84.1445H63.4618V87.0291H43.2695V84.1445Z" fill="#7531AB" />
-                                <path d="M43.2695 72.606H57.6926V75.4906H43.2695V72.606Z" fill="#7531AB" />
-                                <path d="M60.5771 72.606H63.4618V75.4906H60.5771V72.606Z" fill="#7531AB" />
-                                <path
-                                    d="M47.8385 63.3109C48.1064 63.7121 48.5565 63.9529 49.0387 63.9529C49.1095 63.9529 49.1804 63.9471 49.2506 63.9368C49.803 63.8557 50.2589 63.4622 50.4205 62.9272L54.439 49.5299H66.3464V46.6453H53.3656C52.7282 46.6453 52.1667 47.0632 51.9838 47.6736L48.5384 59.1599L47.3543 57.3828V57.3835C47.0865 56.9823 46.6364 56.7415 46.1541 56.7415H43.2695V59.6261H45.3827L47.8385 63.3109Z"
-                                    fill="#7531AB" />
-                                <path
-                                    d="M62.1937 53.0846L59.1345 56.1438L56.0753 53.0846L54.0361 55.1238L57.0953 58.1829L54.0361 61.2421L56.0753 63.2813L59.1345 60.2221L62.1937 63.2813L64.2328 61.2421L61.1737 58.1829L64.2328 55.1238L62.1937 53.0846Z"
-                                    fill="#7531AB" />
-                            </g>
-                        </svg></button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button"
-                        role="tab" aria-controls="pills-profile" aria-selected="false"> <svg role="presentation"
-                            id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button"
-                            role="tab" aria-controls="pills-profile" aria-selected="false" width="150" height="151"
-                            viewBox="0 0 150 151" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <mask id="mask0_322_3047" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
-                                width="150" height="151">
-                                <rect y="0.971436" width="150" height="150" rx="75" fill="#D9D9D9" />
-                            </mask>
-                            <g mask="url(#mask0_322_3047)">
-                                <path
-                                    d="M69.5908 105.898H68.6069C67.798 106.874 66.9077 107.778 65.9454 108.603H68.2386V114.011H34.4348V108.603H36.7281C35.7659 107.778 34.8755 106.874 34.0666 105.898H33.0826C32.3359 105.898 31.7305 106.504 31.7305 107.251V115.364C31.7305 116.11 32.3359 116.716 33.0826 116.716H69.5908C70.3375 116.716 70.9429 116.11 70.9429 115.364V107.251C70.9429 106.504 70.3375 105.898 69.5908 105.898Z"
-                                    fill="#7531AB" />
-                                <path
-                                    d="M43.9117 82.7651C44.1797 82.5267 44.3421 82.1911 44.3626 81.8331C44.3837 81.4746 44.2606 81.1226 44.0215 80.8546C43.7831 80.5866 43.4469 80.4249 43.0889 80.4049C42.7303 80.385 42.3784 80.5081 42.111 80.7478C38.9419 83.7014 37.003 87.741 36.68 92.0606C36.6486 92.418 36.7609 92.7729 36.9909 93.0482C37.2214 93.3228 37.5516 93.4948 37.909 93.5256C37.9488 93.5299 37.9887 93.5311 38.0285 93.5311C38.7293 93.5305 39.3131 92.995 39.374 92.2972C39.6342 88.6622 41.2545 85.2594 43.9117 82.7651Z"
-                                    fill="#7531AB" />
-                                <path
-                                    d="M116.916 98.4625V97.7864C116.916 97.0397 116.311 96.4342 115.564 96.4342C114.817 96.4342 114.212 97.0397 114.212 97.7864V98.4625H111.508V79.659C112.546 79.0602 113.266 78.0323 113.474 76.8521C113.683 75.6714 113.357 74.4593 112.586 73.5411C111.815 72.6236 110.678 72.0936 109.479 72.0948H106.099V41.0895C106.099 38.0556 103.343 35.5868 99.9558 35.5868H98.8566C95.4689 35.5868 92.7127 38.0557 92.7127 41.0895V46.3091C92.7127 47.8526 91.1698 49.1082 89.2731 49.1082H88.1745C86.2779 49.1082 84.7349 47.8526 84.7349 46.3098V41.0901C84.7349 38.0556 81.9787 35.5868 78.591 35.5868H77.4918C74.1042 35.5868 71.3486 38.0557 71.3486 41.0895V46.3091C71.3486 47.8526 69.8057 49.1082 67.909 49.1082H66.8104C64.9138 49.1082 63.3708 47.8526 63.3708 46.3098V41.1674C63.3708 38.0907 60.6146 35.5868 57.2269 35.5868H56.1283C54.519 35.62 52.9839 36.2695 51.8406 37.4019C50.6974 38.535 50.0328 40.0634 49.9844 41.6721V51.8126H46.604C45.3943 51.8126 44.2474 52.3523 43.4766 53.2849C42.7058 54.2181 42.3919 55.4459 42.6206 56.6339C42.8494 57.8225 43.5961 58.8462 44.658 59.4269V73.7477C40.8786 75.0618 37.6033 77.5211 35.2859 80.7831C32.9692 84.0457 31.7263 87.9489 31.7305 91.9498C31.7697 97.1152 33.8553 102.054 37.5308 105.683C41.2064 109.312 46.1713 111.334 51.3367 111.307C56.5021 111.334 61.467 109.312 65.1426 105.683C68.8181 102.054 70.9037 97.1152 70.9429 91.9498C70.9472 87.9489 69.7043 84.0459 67.3875 80.7831C65.0701 77.5211 61.7948 75.0618 58.0154 73.7477V59.4269C59.0772 58.8462 59.8239 57.8224 60.0528 56.6339C60.2815 55.446 59.9676 54.2181 59.1968 53.2849C58.4259 52.3523 57.2791 51.8126 56.0694 51.8126H52.689V41.6721C52.7409 40.7823 53.1218 39.9438 53.7574 39.319C54.3931 38.6943 55.2382 38.3279 56.1286 38.2911H57.2278C59.1244 38.2911 60.6668 39.5816 60.6668 41.1674V46.3091C60.6668 49.3436 63.423 51.8124 66.8106 51.8124H67.9093C71.2969 51.8124 74.0531 49.3435 74.0531 46.3097V41.0901C74.0531 39.5466 75.5961 38.2911 77.4921 38.2911H78.5913C80.4879 38.2911 82.0309 39.5466 82.0309 41.0895V46.3091C82.0309 49.3436 84.7871 51.8124 88.1748 51.8124H89.274C92.6616 51.8124 95.4179 49.3435 95.4179 46.3097V41.0901C95.4173 39.5466 96.9602 38.2911 98.8568 38.2911H99.9561C101.852 38.2911 103.395 39.5466 103.395 41.0895V72.0947H100.015C98.8158 72.0935 97.6786 72.6235 96.9078 73.5411C96.1369 74.4592 95.8115 75.6713 96.0198 76.8521C96.2281 78.0322 96.9482 79.0602 97.9865 79.659V98.4624H95.2822V97.7863C95.2822 97.0396 94.6768 96.4342 93.9301 96.4342C93.1834 96.4342 92.5779 97.0396 92.5779 97.7863V98.4624C91.8312 98.4624 91.2258 99.0679 91.2258 99.8146C91.2258 100.561 91.8312 101.167 92.5779 101.167V115.364C92.5779 116.111 93.1834 116.716 93.9301 116.716C94.6768 116.716 95.2822 116.111 95.2822 115.364V101.167H97.9865V112.66C97.9877 113.736 98.4157 114.767 99.1757 115.527C99.9363 116.287 100.967 116.715 102.043 116.717H107.452C108.527 116.715 109.558 116.287 110.319 115.527C111.079 114.767 111.507 113.736 111.508 112.66V101.167H114.212V115.364C114.212 116.111 114.818 116.716 115.565 116.716C116.311 116.716 116.917 116.111 116.917 115.364V101.167C117.663 101.167 118.269 100.561 118.269 99.8146C118.269 99.0679 117.663 98.4624 116.917 98.4624L116.916 98.4625ZM68.2386 91.9503C68.2006 96.3985 66.3994 100.65 63.2309 103.771C60.0623 106.893 55.7849 108.631 51.3367 108.604C46.8885 108.631 42.6111 106.894 39.4425 103.771C36.274 100.65 34.4728 96.3985 34.4348 91.9503C34.4354 88.3581 35.6022 84.8624 37.7597 81.9903C39.9171 79.1175 42.9492 77.0229 46.3989 76.0221C46.9706 75.8501 47.3624 75.3243 47.3624 74.7273V59.9261H49.9846V80.2084C49.9846 80.9551 50.5901 81.5606 51.3368 81.5606C52.0835 81.5606 52.6889 80.9551 52.6889 80.2084V59.9261H55.3112V74.7273C55.3112 75.3243 55.7029 75.8501 56.2746 76.0215C59.7243 77.023 62.7564 79.1176 64.9138 81.9903C67.0713 84.8624 68.238 88.3581 68.2386 91.9503ZM56.0692 54.5181C56.8159 54.5181 57.4214 55.1235 57.4214 55.8702C57.4214 56.6169 56.8159 57.2224 56.0692 57.2224H46.6042C45.8575 57.2224 45.252 56.6169 45.252 55.8702C45.252 55.1235 45.8575 54.5181 46.6042 54.5181H56.0692ZM108.803 112.661C108.803 113.407 108.198 114.012 107.451 114.013H102.042C101.296 114.012 100.691 113.407 100.69 112.661V95.758H104.747C105.493 95.758 106.099 95.1525 106.099 94.4058C106.099 93.6591 105.493 93.0537 104.747 93.0537H100.69V80.2082H103.395V88.9972C103.395 89.7439 104 90.3494 104.747 90.3494C105.493 90.3494 106.099 89.7439 106.099 88.9972V80.2082H108.803V112.661ZM109.479 77.5047H100.014C99.2675 77.5047 98.6621 76.8992 98.6621 76.1525C98.6621 75.4058 99.2675 74.8004 100.014 74.8004H109.479C110.226 74.8004 110.831 75.4058 110.831 76.1525C110.831 76.8992 110.226 77.5047 109.479 77.5047Z"
-                                    fill="#7531AB" />
-                                <path
-                                    d="M61.4783 95.0813C62.5539 95.0813 63.5862 94.6539 64.3467 93.8933C65.1071 93.1327 65.5346 92.1004 65.5346 91.0249C65.5346 89.9493 65.1073 88.9169 64.3467 88.1565C63.5861 87.396 62.5538 86.9685 61.4783 86.9685C60.4027 86.9685 59.3703 87.3959 58.6098 88.1565C57.8494 88.9171 57.4219 89.9493 57.4219 91.0249C57.4231 92.1006 57.8511 93.1316 58.611 93.8922C59.3716 94.6522 60.4027 95.0802 61.4784 95.0814L61.4783 95.0813ZM61.4783 89.6727C62.0252 89.6727 62.5183 90.0022 62.7272 90.5075C62.9367 91.0127 62.8214 91.594 62.4344 91.981C62.0475 92.3679 61.4662 92.4832 60.9609 92.2737C60.4557 92.0649 60.1261 91.5717 60.1261 91.0248C60.1261 90.2781 60.7316 89.6727 61.4783 89.6727Z"
-                                    fill="#7531AB" />
-                                <path
-                                    d="M52.5802 100.912C52.5802 101.987 53.0076 103.019 53.7681 103.78C54.5293 104.541 55.561 104.968 56.6366 104.968C57.7121 104.968 58.7445 104.541 59.505 103.78C60.2656 103.019 60.693 101.987 60.693 100.912C60.693 99.8361 60.2656 98.8038 59.505 98.0433C58.7444 97.2827 57.7121 96.8553 56.6366 96.8553C55.5609 96.8566 54.5298 97.2839 53.7699 98.0445C53.0093 98.8051 52.5813 99.8362 52.5801 100.912L52.5802 100.912ZM56.6366 99.5596C57.1836 99.5596 57.6767 99.8892 57.8862 100.394C58.095 100.9 57.9797 101.481 57.5928 101.868C57.2059 102.254 56.6246 102.37 56.1193 102.161C55.6141 101.952 55.2845 101.459 55.2845 100.912C55.2845 100.165 55.8899 99.5596 56.6366 99.5596Z"
-                                    fill="#7531AB" />
-                                <path
-                                    d="M54.717 89.6726C54.717 90.4193 54.1115 91.0247 53.3648 91.0247C52.6182 91.0247 52.0127 90.4193 52.0127 89.6726C52.0127 88.9259 52.6182 88.3204 53.3648 88.3204C54.1115 88.3204 54.717 88.9259 54.717 89.6726Z"
-                                    fill="#7531AB" />
-                                <path
-                                    d="M106.099 104.968C106.099 105.715 105.493 106.32 104.747 106.32C104 106.32 103.395 105.715 103.395 104.968C103.395 104.222 104 103.616 104.747 103.616C105.493 103.616 106.099 104.222 106.099 104.968Z"
-                                    fill="#7531AB" />
-                                <path
-                                    d="M106.099 110.377C106.099 111.124 105.493 111.729 104.747 111.729C104 111.729 103.395 111.124 103.395 110.377C103.395 109.63 104 109.025 104.747 109.025C105.493 109.025 106.099 109.63 106.099 110.377Z"
-                                    fill="#7531AB" />
-                                <path
-                                    d="M52.0129 96.4335C52.0129 97.1801 51.4074 97.7856 50.6607 97.7856C49.914 97.7856 49.3086 97.1801 49.3086 96.4335C49.3086 95.6868 49.914 95.0813 50.6607 95.0813C51.4074 95.0813 52.0129 95.6868 52.0129 96.4335Z"
-                                    fill="#7531AB" />
-                                <path
-                                    d="M49.3088 89.6726C49.3088 90.4193 48.7033 91.0247 47.9566 91.0247C47.2099 91.0247 46.6045 90.4193 46.6045 89.6726C46.6045 88.9259 47.2099 88.3204 47.9566 88.3204C48.7033 88.3204 49.3088 88.9259 49.3088 89.6726Z"
-                                    fill="#7531AB" />
-                                <path
-                                    d="M43.1115 100.912C43.1115 101.658 42.5061 102.264 41.7594 102.264C41.0121 102.264 40.4072 101.658 40.4072 100.912C40.4072 100.165 41.0121 99.5596 41.7594 99.5596C42.5061 99.5596 43.1115 100.165 43.1115 100.912Z"
-                                    fill="#7531AB" />
-                                <path
-                                    d="M44.4641 93.7291C44.4641 94.4758 43.8586 95.0813 43.1119 95.0813C42.3646 95.0813 41.7598 94.4758 41.7598 93.7291C41.7598 92.9824 42.3646 92.377 43.1119 92.377C43.8586 92.377 44.4641 92.9824 44.4641 93.7291Z"
-                                    fill="#7531AB" />
-                                <path
-                                    d="M50.6613 103.871C50.6613 104.618 50.0559 105.223 49.3092 105.223C48.5625 105.223 47.957 104.618 47.957 103.871C47.957 103.124 48.5625 102.519 49.3092 102.519C50.0559 102.519 50.6613 103.124 50.6613 103.871Z"
-                                    fill="#7531AB" />
-                            </g>
-                        </svg></button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button"
-                        role="tab" aria-controls="pills-contact" aria-selected="false"> <svg role="presentation"
-                            id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button"
-                            role="tab" aria-controls="pills-contact" aria-selected="false" width="150" height="151"
-                            viewBox="0 0 150 151" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <mask id="mask0_322_3065" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
-                                width="150" height="151">
-                                <rect y="0.971436" width="150" height="150" rx="75" fill="#D9D9D9" />
-                            </mask>
-                            <g mask="url(#mask0_322_3065)">
-                                <path
-                                    d="M49.8751 52.2432C51.4148 52.2432 52.6667 53.495 52.6667 55.0347H55.4582C55.4582 52.4413 53.6718 50.2734 51.2709 49.6497V46.66H48.4793V49.4516H44.292V55.0347C44.292 58.1136 46.7963 60.6178 49.8751 60.6178C51.4148 60.6178 52.6667 61.8697 52.6667 63.4094V66.201H49.8751C48.3354 66.201 47.0836 64.9491 47.0836 63.4094H44.292C44.292 66.0029 46.0784 68.1707 48.4793 68.7944V71.7841H51.2709V68.9925H55.4582V63.4094C55.4582 60.3306 52.954 57.8263 49.8751 57.8263C48.3354 57.8263 47.0836 56.5744 47.0836 55.0347V52.2432H49.8751Z"
-                                    fill="#7531AB" />
-                                <path
-                                    d="M112.686 63.5497V39.6811C112.686 35.8327 109.555 32.7021 105.707 32.7021H83.3744C79.526 32.7021 76.3955 35.8327 76.3955 39.6811V63.4093H67.5142C67.8339 62.0622 68.0208 60.6652 68.0208 59.222C68.0208 49.2172 59.8804 41.0768 49.8756 41.0768C39.8708 41.0768 31.7305 49.2172 31.7305 59.222C31.7305 65.69 35.1421 71.3627 40.249 74.5756H31.7305V85.7419H34.522V94.1165H54.063V101.095C54.063 104.944 57.1935 108.074 61.0419 108.074H73.6039V111.123C71.9832 111.7 70.8124 113.236 70.8124 115.053V119.241H101.52V115.053C101.52 113.236 100.349 111.701 98.728 111.123V108.074H111.29C115.138 108.074 118.269 104.944 118.269 101.095V70.3883C118.269 67.0191 115.867 64.1994 112.686 63.5502L112.686 63.5497ZM79.1871 39.6811C79.1871 37.3724 81.0657 35.4937 83.3744 35.4937H105.707C108.016 35.4937 109.894 37.3724 109.894 39.6811V73.1798C109.894 75.4885 108.016 77.3672 105.707 77.3672H83.3744C81.0657 77.3672 79.1871 75.4885 79.1871 73.1798V39.6811ZM34.5221 59.222C34.5221 50.7564 41.41 43.8684 49.8757 43.8684C58.3413 43.8684 65.2293 50.7564 65.2293 59.222C65.2293 67.6876 58.3413 74.5756 49.8757 74.5756C41.41 74.5756 34.5221 67.6876 34.5221 59.222ZM34.5221 77.3672H65.2293V82.9503H62.4377V80.1587H59.6461V82.9503H56.8546V80.1587H54.063V82.9503H51.2714V80.1587H48.4799V82.9503H45.6883V80.1587H42.8968V82.9503H40.1052V80.1587H37.3136V82.9503H34.5221V77.3672ZM37.3136 85.7419H68.0208V91.325H65.2293V88.5334H62.4377V91.325H59.6461V88.5334H56.8546V91.325H54.063V88.5334H51.2714V91.325H48.4799V88.5334H45.6883V91.325H42.8968V88.5334H40.1052V91.325H37.3136V85.7419ZM70.8124 94.1165V82.9503H68.0208V74.5756H59.5022C62.6564 72.591 65.1677 69.6747 66.622 66.2009H76.3957V73.1798C76.3957 77.0282 79.5262 80.1587 83.3746 80.1587H105.707C109.555 80.1587 112.686 77.0282 112.686 73.1798V66.4576C114.307 67.0352 115.478 68.5705 115.478 70.3883V96.9081H99.3056L96.5141 94.1165H75.8182L73.0267 96.9081H56.8547V94.1165H70.8124ZM98.728 116.449H73.6039V115.053C73.6039 114.284 74.2308 113.657 74.9997 113.657H97.3322C98.1012 113.657 98.728 114.284 98.728 115.053V116.449ZM95.9365 110.866H76.3955V108.074H95.9365V110.866ZM111.29 105.283H61.0419C58.7332 105.283 56.8546 103.404 56.8546 101.095V99.6997H74.1814L76.973 96.9081H95.3574L98.149 99.6997H115.476V101.095C115.476 103.404 113.597 105.283 111.288 105.283H111.29Z"
-                                    fill="#7531AB" />
-                                <path d="M77.792 99.6997H80.5836V102.491H77.792V99.6997Z" fill="#7531AB" />
-                                <path d="M83.375 99.6997H88.9581V102.491H83.375V99.6997Z" fill="#7531AB" />
-                                <path d="M91.75 99.6997H94.5416V102.491H91.75V99.6997Z" fill="#7531AB" />
-                                <path
-                                    d="M107.103 38.2853H81.9785V52.2431H107.103V38.2853ZM104.311 49.4515H84.7701V41.0768H104.311V49.4515Z"
-                                    fill="#7531AB" />
-                                <path
-                                    d="M84.7701 74.5756H104.311C105.851 74.5756 107.103 73.3238 107.103 71.784V57.8262C107.103 56.2865 105.851 55.0347 104.311 55.0347H84.7701C83.2304 55.0347 81.9785 56.2865 81.9785 57.8262V71.784C81.9785 73.3238 83.2304 74.5756 84.7701 74.5756ZM84.7701 68.9925H87.5616V71.784H84.7701V68.9925ZM98.7279 66.2009H95.9363V63.4094H98.7279V66.2009ZM101.519 63.4094H104.312V66.2009H101.519V63.4094ZM95.9363 68.9925H98.7279V71.784H95.9363V68.9925ZM93.1448 71.784H90.3532V68.9925H93.1448V71.784ZM95.9363 60.6178V57.8262H98.7279V60.6178H95.9363ZM93.1448 60.6178H90.3532V57.8262H93.1448V60.6178ZM93.1448 63.4094V66.2009H90.3532V63.4094H93.1448ZM87.5616 66.2009H84.7701V63.4094H87.5616V66.2009ZM101.519 71.784V68.9925H104.312V71.784H101.519ZM104.311 60.6178H101.519V57.8262H104.311V60.6178ZM87.5616 57.8262V60.6178H84.7701V57.8262H87.5616Z"
-                                    fill="#7531AB" />
-                                <path d="M73.6035 82.9503H76.3951V85.7419H73.6035V82.9503Z" fill="#7531AB" />
-                                <path d="M79.1875 82.9503H112.686V85.7419H79.1875V82.9503Z" fill="#7531AB" />
-                                <path d="M73.6035 88.5334H107.102V91.325H73.6035V88.5334Z" fill="#7531AB" />
-                                <path d="M109.895 88.5334H112.686V91.325H109.895V88.5334Z" fill="#7531AB" />
-                                <path d="M98.7285 43.8684H101.52V46.66H98.7285V43.8684Z" fill="#7531AB" />
-                                <path d="M93.1445 43.8684H95.9361V46.66H93.1445V43.8684Z" fill="#7531AB" />
-                            </g>
-                        </svg></button>
-                </li>
-            </ul>
-            <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                    <div class="details_subject">
-
-                        <h3>Mathematics</h3>
-
-                        <div class="row">
-                            <div class="col-md-4" data-aos="fade-left" data-aos-delay="100" data-aos-duration="800">
-                                <p><svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="6" cy="6.97144" r="6" fill="#444444" />
-                                    </svg>
-                                    Basic mathematics</p>
-                            </div>
-                            <div class="col-md-4" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
-                                <p><svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="6" cy="6.97144" r="6" fill="#444444" />
-                                    </svg>
-                                    Algebra</p>
-                            </div>
-                            <div class="col-md-4" data-aos="fade-left" data-aos-delay="300" data-aos-duration="800">
-                                <p><svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="6" cy="6.97144" r="6" fill="#444444" />
-                                    </svg>
-                                    Pre-calculus</p>
-                            </div>
-                            <div class="col-md-4" data-aos="fade-left" data-aos-delay="400" data-aos-duration="800">
-                                <p><svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="6" cy="6.97144" r="6" fill="#444444" />
-                                    </svg>
-                                    Trigonometry</p>
-                            </div>
-                            <div class="col-md-4" data-aos="fade-left" data-aos-delay="500" data-aos-duration="800">
-                                <p><svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="6" cy="6.97144" r="6" fill="#444444" />
-                                    </svg>
-                                    Calculus</p>
-                            </div>
-                            <div class="col-md-4" data-aos="fade-left" data-aos-delay="600" data-aos-duration="800">
-                                <p><svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="6" cy="6.97144" r="6" fill="#444444" />
-                                    </svg>
-                                    Geometry</p>
-                            </div>
-                            <div class="col-md-4" data-aos="fade-left" data-aos-delay="700" data-aos-duration="500">
-                                <p><svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="6" cy="6.97144" r="6" fill="#444444" />
-                                    </svg>
-                                    Differential equations</p>
-                            </div>
-                            <div class="col-md-4" data-aos="fade-left" data-aos-delay="800" data-aos-duration="500">
-                                <p><svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="6" cy="6.97144" r="6" fill="#444444" />
-                                    </svg>
-                                    Applied Calculus</p>
-                            </div>
-                            <div class="col-md-4" data-aos="fade-left" data-aos-delay="900" data-aos-duration="500">
-                                <p><svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="6" cy="6.97144" r="6" fill="#444444" />
-                                    </svg>
-                                    Statistics</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                    <div class="details_subject">
-                        <h3>Science</h3>
-                        <div class="row">
-                            <div class="col-md-4" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1500">
-                                <p><svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="6" cy="6.97144" r="6" fill="#444444" />
-                                    </svg>
-                                    Biology</p>
-                            </div>
-                            <div class="col-md-4" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1500">
-                                <p><svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="6" cy="6.97144" r="6" fill="#444444" />
-                                    </svg>
-                                    Biology: Microbiology
-                                </p>
-                            </div>
-                            <div class="col-md-4" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1500">
-                                <p><svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="6" cy="6.97144" r="6" fill="#444444" />
-                                    </svg>
-                                    General Chemistry</p>
-                            </div>
-                            <div class="col-md-4" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1500">
-                                <p><svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="6" cy="6.97144" r="6" fill="#444444" />
-                                    </svg>
-                                    Chemistry: Analytical Chemistry</p>
-                            </div>
-                            <div class="col-md-4" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1500">
-                                <p><svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="6" cy="6.97144" r="6" fill="#444444" />
-                                    </svg>
-                                    Calculus</p>
-                            </div>
-                            <div class="col-md-4" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1500">
-                                <p><svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="6" cy="6.97144" r="6" fill="#444444" />
-                                    </svg>
-                                    Chemistry: Inorganic</p>
-                            </div>
-                            <div class="col-md-4" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1500">
-                                <p><svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="6" cy="6.97144" r="6" fill="#444444" />
-                                    </svg>
-                                    Chemistry: Organic Chemistry</p>
-                            </div>
-                            <div class="col-md-4" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1500">
-                                <p><svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="6" cy="6.97144" r="6" fill="#444444" />
-                                    </svg>
-                                    Chemistry: Physical Chemistry</p>
-                            </div>
-                            <div class="col-md-4" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1500">
-                                <p><svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="6" cy="6.97144" r="6" fill="#444444" />
-                                    </svg>
-                                    Physics</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                    <div class="details_subject">
-
-
-
-                        <h3>Business and Management</h3>
-
-
-
-                        <div class="row">
-                            <div class="col-md-4" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1500">
-                                <p><svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="6" cy="6.97144" r="6" fill="#444444" />
-                                    </svg>
-                                    Accounting</p>
-                            </div>
-                            <div class="col-md-4" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1500">
-                                <p><svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="6" cy="6.97144" r="6" fill="#444444" />
-                                    </svg>
-                                    Economics
-                                </p>
-                            </div>
-                            <div class="col-md-4" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1500">
-                                <p><svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="6" cy="6.97144" r="6" fill="#444444" />
-                                    </svg>
-                                    Finance</p>
-                            </div>
-                            <div class="col-md-4" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1500">
-                                <p><svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="6" cy="6.97144" r="6" fill="#444444" />
-                                    </svg>
-                                    Cost Accounting
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-        </div>
-    </section>
-    <section class="our-features">
-        <div class="container text-center">
-            <h2>Our features</h2>
-            <div class="row">
-                <div class="col-md-3" data-aos="fade-up" data-aos-duration="1500">
-                    <div class="features_card ">
-                        <div class="features_card_image">
-                            <img src="./assets/images/our-features/247.png" alt="">
-                        </div>
-                        <div class="features_card_content">
-                            <h3>24*7 Tutor availability</h3>
-                            <p>Our tutors are always available for study support and guidance regardless of location
-                                or
-                                time zone. In addition to being
-                                convenient, flexible, and accessible to learners of all ages and backgrounds, this
-                                one-to-one approach to tutoring
-                                offers many benefits which are  not found in traditional classroom environments. Our
-                                dedicated team of tutors are always
-                                there to assist students after school and before exams.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-duration="1500">
-                    <div class="features_card ">
-                        <div class="features_card_image">
-                            <img src="./assets/images/our-features/interactive.png" alt="">
-                        </div>
-                        <div class="features_card_content">
-                            <h3>Interactive Whiteboard</h3>
-                            <p>Getting help through online tutoring can be difficult but our Whiteboard makes it
-                                easy.
-                                Using the whiteboard students
-                                have the opportunity to engage with tutors online effectively. Our Whiteboard is
-                                equipped with all essential tools,
-                                including a pencil, text tool, and equation editor, to facilitate effective
-                                communication. The Whiteboard ensures that
-                                there is no lag, creating a seamless experience that mirrors an actual in-person
-                                session
-                                between the tutor and the
-                                student.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-duration="1500">
-                    <div class="features_card ">
-                        <div class="features_card_image">
-                            <img src="./assets/images/our-features/multi.png" alt="">
-                        </div>
-                        <div class="features_card_content">
-                            <h3>Multi-device compatibility</h3>
-                            <p>Laptops, iPads, mobile phones, and other compatible devices can be used to access
-                                assistance</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3" data-aos="fade-up" data-aos-duration="1500">
-                    <div class="features_card ">
-                        <div class="features_card_image">
-                            <img src="./assets/images/our-features/customized.png" alt="">
-                        </div>
-                        <div class="features_card_content">
-                            <h3>Customized service</h3>
-                            <p>Tutoring services that are tailored to meet the specific academic needs of a school
-                                or
-                                educational institution. These
-                                services are created to support the curriculum, instructional strategies, and
-                                learning
-                                goals of the institution. And are
-                                well-planned for students’ understanding and improvement in their performance. Along
-                                with the subject and homework help,
-                                we also help students with their test preps.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-    </section>
-    <section class="testimonials">
-        <div class="container">
-            <p class="sub_heading">Testimonials</p>
-            <h2>What Our Student Says</h2>
-            <div data-aos="fade-left" data-aos-duration="1500" class="testimonials_list ">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="tumbnile_area">
-                                <img src="./assets/images/slider/slide1.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h3>Ryan Azhari</h3>
-                                <p>Osaka University</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="tumbnile_area">
-                                <img src="./assets/images/slider/slide1.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h3>Ryan Azhari</h3>
-                                <p>Osaka University</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="tumbnile_area">
-                                <img src="./assets/images/slider/slide1.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h3>Ryan Azhari</h3>
-                                <p>Osaka University</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="tumbnile_area">
-                                <img src="./assets/images/slider/slide1.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h3>Ryan Azhari</h3>
-                                <p>Osaka University</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="tumbnile_area">
-                                <img src="./assets/images/slider/slide1.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h3>Ryan Azhari</h3>
-                                <p>Osaka University</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="navigation-area-of-slide row align-items-center">
-                        <div class="col-md-6">
-                            <div class="bar">
-
-                            </div>
-
-                        </div>
-                        <div class="col-md-6">
-                            <div class="btnsof-nav">
-                                <div class="btn-prev">
-                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7 0.971191L1 6.97119L7 12.9712" stroke="white" stroke-width="1.2"
-                                            stroke-linecap="square" />
-                                    </svg>
-
-                                </div>
-                                <div class="btn-next">
-                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 12.9712L7 6.97119L1 0.971191" stroke="white" stroke-width="1.2"
-                                            stroke-linecap="square" />
-                                    </svg>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-    <section class="partners">
-        <div class="container text-center">
-            <h2>Our partner schools</h2>
-            <p>We collaborate with 200+ leading universities and companies</p>
-            <div data-aos="fade-left" data-aos-duration="1500" class="partners-list swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="partner_logo ">
-                            <img src="./assets/images/patnars/Group 13047.png" alt="">
-                        </div>
-                    </div>
-
-
-                    <div class="swiper-slide">
-
-                        <div class="partner_logo ">
-
-                            <img src="./assets/images/patnars/Group 13055.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-
-                        <div class="partner_logo ">
-                            <img src="./assets/images/patnars/Group 13064.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-
-                        <div class="partner_logo ">
-                            <img src="./assets/images/patnars/Group 13071.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-
-                        <div class="partner_logo ">
-                            <img src="./assets/images/patnars/Group 13080.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <section class="our-tutor">
-        <div class="container">
-            <div class="row align-items-center">
-                <div data-aos="fade-right" data-aos-duration="1500" class="col-md-6">
-                    <div class="youtube_video_area">
-                        <iframe width="100%" height="415" src="https://www.youtube.com/embed/K-3cH6ZSzkY">
-                        </iframe>
-                    </div>
-                </div>
-                <div data-aos="fade-left" data-aos-duration="1500" class="col-md-6">
-                    <div class="content">
-                        <h2>Our Tutor</h2>
-                        <p>At FastTutor, we strive to provide the best quality tutoring service by hiring highly
-                            qualified tutors who hold Master's
-                            degrees in the subject they teach and have been tutoring for years. It is challenging to
-                            find such skilled tutors having
-                            a thorough knowledge of their subject matter, but our team dedicatedly conducts
-                            standardized
-                            training to ensure that we
-                            recruit only the best tutor. The tutor training module is designed considering various
-                            aspects such as subject
-                            knowledge, fluency in speaking English, Methodology of tutoring, and technical skills
-                            for
-                            online tutoring. Our tutors
-                            can address advanced subject matters up to the college-level with ease and do have the
-                            experience of coursework provided
-                            by the schools. We have have expert tutors  in various subjects such as Calculus,
-                            Statistics, Pre-calculus, Physics,
-                            Chemistry, Biology, Business, Economics, Finance, etc. Tutoring online makes it very
-                            easy
-                            for the tutors to share their
-                            wisdom of knowledge with the students.
-                        </p>
-                        <a href="./request-demo.html"><button class="btn_brand">
-                                Request Demo
-                            </button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <footer>
-        <div class="container">
-            <div class="row footer_options text-center text-md-start">
-
-                <div class="col-md-3 ">
-                    <img class="footer-logo" src="./assets/images/whitelogo.png" alt="">
-                    <p>Get the academic support you need at your fingertips, and unlock your true potential with our
-                        expert tutors.</p>
-                </div>
-                <div class="col-md-2 offset-md-1">
-
-                    <h2>
-                        Menu
-                    </h2>
-                    <a href="#">Assignment Help</a>
-                    <a href="#">Online Tutoring</a>
-                    <a href="#">Homework Help</a>
-                    <a href="#">Writing Help</a>
-                    <a href="#">Physics</a>
-
-
-                </div>
-                <div class="col-md-2">
-                    <h2>Links</h2>
-                    <a href="#">Blog</a>
-                    <a href="#">Join as a Tutor</a>
-                    <a href="#">Make Payment</a>
-                    <a href="#">About Us</a>
-                    <a href="#">Refund Policy</a>
-
-                </div>
-                <div class="col-md-2 contact-info">
-                    <h2>Contact Info</h2>
-                    <div>
-                        <a class="flex" href="tel:+910000000000"> <i class="fa-solid fa-phone me-2"></i>
-                            <span>
-                                +91 0000000000
-                            </span></a>
-                    </div>
-                    <div>
-                        <a class="flex" href="mailto:support@fasttutor.co">
-                            <i class="fa-regular fa-envelope me-2"></i>
-                            <span>support@fasttutor.co</span></a>
-                    </div>
-                </div>
-                <div class="col-md-2 text-center text-md-end">
-                    <h2>Social Media</h2>
-                    <div class="social_icons">
-                        <a href="" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                        <a href="" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright_text d-flex">
-                <p>Copyright © 2023 Fasttutor.co All Rights Reserved.</p>
-                <p class="mx-3 ">|</p>
-                <p>
-                    <a target="_blank" href="https://futureinltd.com/"> Designed By Future Innovation LTD</a>
-                </p>
-            </div>
-        </div>
-    </footer>
-
-
-
-
-    <!-- modal  -->
-    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-                <section class="sign-up-page">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <div class="left_side_area">
-                                <div>
-                                    <div class="logo text-center"><img src="/assets/images/whitelogo.png" alt=""></div>
-                                    <h2>Get Started with AskHow !</h2>
-                                    <p>
-                                        <span><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
-                                                    fill="white" />
-                                            </svg></span>
-
-                                        24*7 Tutor availability
-                                    </p>
-                                    <p>
-                                        <span><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
-                                                    fill="white" />
-                                            </svg></span>
-                                        Interactive Whiteboard
-                                    </p>
-                                    <p> <span><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
-                                                    fill="white" />
-                                            </svg></span>
-                                        Multi-device compatibility</p>
-                                    <p> <span><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
-                                                    fill="white" />
-                                            </svg></span>
-                                        Customized service</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="right_side_from">
-                                <div>
-                                    <h2>Sign In to Continue</h2>
-
-                                    <input type="text" placeholder="Username/Email">
-                                    <input type="Password" placeholder="Password">
-                                    <div class="submit_area  row">
-                                        <div class="col-md-7  order-2 order-md-1">
-                                            <p class="text_brand">
-                                                <a href="#" class="text_brand">Forgot Password?</a>
-                                            </p>
-                                            <p>
-                                                Don't have an account yet? <a data-bs-toggle="modal"
-                                                    data-bs-target="#regModal">Register Now</a>
-                                            </p>
-                                        </div>
-                                        <div class="col-md-5 text-center order-1 order-md-2 text-md-end mb-3">
-                                            <button class="btn_submit">continue</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="close_btn">
-                        <span data-bs-dismiss="modal" aria-label="Close" class="btn_close">X</span>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="regModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-                <section class="sign-up-page">
-                    <div class="row ">
-                        <div class="col-md-5">
-                            <div class="left_side_area">
-                                <div>
-                                    <div class="logo text-center"><img src="/assets/images/whitelogo.png" alt=""></div>
-                                    <h2>Get Started with AskHow !</h2>
-                                    <p>
-                                        <span><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
-                                                    fill="white" />
-                                            </svg></span>
-
-                                        24*7 Tutor availability
-                                    </p>
-                                    <p>
-                                        <span><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
-                                                    fill="white" />
-                                            </svg></span>
-                                        Interactive Whiteboard
-                                    </p>
-                                    <p> <span><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
-                                                    fill="white" />
-                                            </svg></span>
-                                        Multi-device compatibility</p>
-                                    <p> <span><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
-                                                    fill="white" />
-                                            </svg></span>
-                                        Customized service</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="right_side_from">
-                                <div>
-                                    <h2>First sign up page</h2>
-
-                                    <div class="pb-3">
-                                        <div class="iti">
-                                            <input type="tel" name="phone">
-                                        </div>
-                                    </div>
-
-
-                                    <input type="email" placeholder="Email">
-                                    <input type="text" placeholder="Mobile No">
-                                    <div class="submit_area row">
-                                        <div class="col-md-7 order-2 order-md-1">
-                                            <p>
-                                                Already have an Account ? <a data-bs-toggle="modal"
-                                                    data-bs-target="#loginModal">Login Now</a>
-                                            </p>
-                                        </div>
-                                        <div class="col-md-5 order-1 order-md-2 text-center text-md-end mb-3">
-                                            <button data-bs-toggle="modal" data-bs-target="#regModal2"
-                                                class="btn_submit">continue</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="close_btn">
-                        <span class="btn_close" data-bs-dismiss="modal" aria-label="Close">X</span>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="regModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-                <section class="sign-up-page">
-                    <div class="row ">
-                        <div class="col-md-5">
-                            <div class="left_side_area">
-                                <div>
-                                    <div class="logo text-center  "><img src="/assets/images/whitelogo.png" alt="">
-                                    </div>
-                                    <h2>Get Started with AskHow !</h2>
-                                    <p>
-                                        <span><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
-                                                    fill="white" />
-                                            </svg></span>
-
-                                        24*7 Tutor availability
-                                    </p>
-                                    <p>
-                                        <span><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
-                                                    fill="white" />
-                                            </svg></span>
-                                        Interactive Whiteboard
-                                    </p>
-                                    <p> <span><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
-                                                    fill="white" />
-                                            </svg></span>
-                                        Multi-device compatibility</p>
-                                    <p> <span><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
-                                                    fill="white" />
-                                            </svg></span>
-                                        Customized service</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="right_side_from">
-                                <div>
-                                    <h2>Continue sign up</h2>
-
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <input type="text" placeholder="First Name">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <input type="text" placeholder="Last Name">
-                                        </div>
-                                        <div class="col-6">
-                                            <select>
-                                                <option value="0">Select School</option>
-                                                <option value="1">India</option>
-                                                <option value="2">USA</option>
-                                                <option value="3">UK</option>
-                                                <option value="4">Canada</option>
-                                                <option value="5">Australia</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-6 text-end">
-                                            <input type="text" placeholder="OTP"><br>
-                                            <button class="btn_resend">
-                                                Resend
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-12"><input type="password" placeholder="Password"></div>
-                                    </div>
-
-                                    <div class="row mb-4 gap-4">
-
-                                        <div class="col-3 d-flex align-items-center">
-                                            <input type="radio" name="usertype" id="Student" value="student" checked>
-                                            <label for="Student">Student</label>
-                                        </div>
-                                        <div class="col-3 d-flex align-items-center">
-                                            <input type="radio" name="usertype" id="Teacher" value="teacher"> <label
-                                                for="Teacher">Teacher</label>
-                                        </div>
-                                        <div class="col-3 d-flex align-items-center">
-                                            <input type="radio" name="usertype" id="Parent" value="Parent"> <label
-                                                for="Parent">Parent</label>
-
-                                        </div>
-
-                                    </div>
-
-                                    <div class="row mb-5">
-                                        <div class="text-center">
-                                            <button class="btn_submit">JOIN NOW FOR FREE</button>
-                                        </div>
-                                    </div>
-                                    <div class="row align-items-center">
-                                        <div class="col-md-6">By joining you agree to our <a href="#">T&G</a></div>
-                                        <div class="col-md-6 mt-2">
-                                            <p>
-                                                Already have an Account? <br><a data-bs-toggle="modal"
-                                                    data-bs-target="#loginModal">Login Now</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="close_btn">
-                        <span class="btn_close" data-bs-dismiss="modal" aria-label="Close">X</span>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
-
-    <!-- modal  -->
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper  slider-->
-    <script src="./assets/js/slider.js"></script>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
-
-    <!-- country code  -->
-    <script src="./assets/js/phone-input.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-
-
-</body>
-
+						<div class="youtube_video_area rounded-0">
+							<iframe
+								width="100%"
+								src="https://www.youtube.com/embed/K-3cH6ZSzkY?rel=0&amp;controls=0&amp&amp;showinfo=0&amp;modestbranding=0?rel=0&amp;controls=0"
+								frameborder="0"
+							>
+							</iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="our_services text-center">
+			<div class="container">
+				<h2 data-aos="fade-up" data-aos-duration="1000">Our services</h2>
+				<div class="row gy-4">
+					<div
+						class="col-md-6 col-xl-4"
+						data-aos="fade-up"
+						data-aos-duration="1000"
+						data-aos-offset="0"
+					>
+						<div class="service_card">
+							<div class="service_card_img">
+								<img src="./assets/images/instahome.png" alt="" />
+							</div>
+							<div class="content">
+								<div class="service_card_text">
+									<h3>InstaConnect</h3>
+									<p>
+										If you're uncertain and require prompt assistance, don't
+										worry, as we provide InstaConnect. You can reach out to our
+										skilled tutor at any time for guidance. Our tutor will
+										assist you in learning the problem-solving method on our
+										user-friendly whiteboard and chat-based tutoring platform.
+									</p>
+								</div>
+								<div>
+									<a href=""
+										>Learn more
+										<svg
+											width="18"
+											height="19"
+											viewBox="0 0 18 19"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M13.0605 9.50002L6.53023 16.0303L5.46973 14.9698L10.9395 9.50002L5.46973 4.03027L6.53023 2.96977L13.0605 9.50002Z"
+												fill="#D48F3F"
+											/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="col-md-6 col-xl-4"
+						data-aos="fade-up"
+						data-aos-duration="1000"
+						data-aos-offset="0"
+					>
+						<div class="service_card">
+							<div class="service_card_img">
+								<img src="./assets/images/qdrophome.png" alt="" />
+							</div>
+							<div class="content">
+								<div class="service_card_text">
+									<h3>QDrop</h3>
+									<p>
+										If you're looking to avoid long wait times for assistance,
+										you can simply submit your question in our "QDrop" feature.
+										Our experienced tutor will review it and offer you a
+										solution and problem-solving technique. You can expect to
+										receive an answer to your question within six hours.
+									</p>
+								</div>
+								<div>
+									<a href=""
+										>Learn more
+										<svg
+											width="18"
+											height="19"
+											viewBox="0 0 18 19"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M13.0605 9.50002L6.53023 16.0303L5.46973 14.9698L10.9395 9.50002L5.46973 4.03027L6.53023 2.96977L13.0605 9.50002Z"
+												fill="#D48F3F"
+											/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-md-6 col-xl-4"
+						data-aos="fade-up"
+						data-aos-duration="1000"
+						data-aos-offset="0"
+					>
+						<div class="service_card">
+							<div class="service_card_img">
+								<img src="./assets/images/sedhome.png" alt="" />
+							</div>
+							<div class="content">
+								<div class="service_card_text">
+									<h3>ScheduleSmart</h3>
+									<p>
+										Would you like to arrange a tutoring session that fits your
+										schedule? You can utilize ScheduleSmart, which allows you to
+										schedule a session at your convenience. Our tutor will be
+										available at the designated time to assist you. However,
+										please remember to attend the scheduled sessions on time!
+									</p>
+								</div>
+								<div>
+									<a href=""
+										>Learn more
+										<svg
+											width="18"
+											height="19"
+											viewBox="0 0 18 19"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M13.0605 9.50002L6.53023 16.0303L5.46973 14.9698L10.9395 9.50002L5.46973 4.03027L6.53023 2.96977L13.0605 9.50002Z"
+												fill="#D48F3F"
+											/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="let_get_started">
+			<div class="container">
+				<div class="row align-items-center justify-content-between">
+					<div data-aos="fade-right" data-aos-duration="1500" class="col-md-5">
+						<img src="./assets/images/macbook.png" alt="" />
+					</div>
+					<div data-aos="fade-left" data-aos-duration="1500" class="col-md-6">
+						<div class="content text-center pt-3 pt-md-0">
+							<p>
+								FastTutor has helped students to improve their learning
+								experiences. With a personalized dashboard, we strive to address
+								the needs of students according to their convenience & time.
+							</p>
+							<div>
+								<button class="btn_brand">Let’s Get Started</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="subject_area">
+			<div class="container">
+				<div
+					data-aos="fade-up"
+					data-aos-duration="1500"
+					class="text-center top_area"
+				>
+					<h2>Subjects</h2>
+					<p>
+						We offer our services for a wide range of subjects because we have a
+						pool of expert and well-trained tutors for each subject with years
+						of experience. If you require tutoring in subjects other than these,
+						we can do so.
+					</p>
+				</div>
+
+				<ul
+					data-aos="fade-down"
+					data-aos-duration="1500"
+					class="nav nav-pills mb-3 subjects"
+					id="pills-tab"
+					role="tablist"
+				>
+					<li class="nav-item" role="presentation">
+						<button
+							id="pills-home-tab"
+							data-bs-toggle="pill"
+							data-bs-target="#pills-home"
+							type="button"
+							role="tab"
+							aria-controls="pills-home"
+							aria-selected="true"
+						>
+							<svg
+								role="presentation"
+								class="active show"
+								id="pills-home-tab"
+								data-bs-toggle="pill"
+								data-bs-target="#pills-home"
+								type="button"
+								role="tab"
+								aria-controls="pills-home"
+								aria-selected="true"
+								width="150"
+								height="151"
+								viewBox="0 0 150 151"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<mask
+									id="mask0_322_3029"
+									style="mask-type: alpha"
+									maskUnits="userSpaceOnUse"
+									x="0"
+									y="0"
+									width="150"
+									height="151"
+								>
+									<rect
+										y="0.971436"
+										width="150"
+										height="150"
+										rx="75"
+										fill="#D9D9D9"
+									/>
+								</mask>
+								<g mask="url(#mask0_322_3029)">
+									<path
+										d="M109.615 84.1445H86.5379C85.773 84.1445 85.039 84.4485 84.4981 84.9893C83.9572 85.5302 83.6533 86.2642 83.6533 87.0291V110.106C83.6533 110.871 83.9572 111.605 84.4981 112.146C85.039 112.687 85.773 112.991 86.5379 112.991H109.615C110.38 112.991 111.114 112.687 111.655 112.146C112.196 111.605 112.499 110.871 112.499 110.106V87.0291C112.499 86.2642 112.196 85.5302 111.655 84.9893C111.114 84.4485 110.38 84.1445 109.615 84.1445ZM109.615 92.7984H103.846V87.0291H109.615V92.7984ZM95.1918 101.452V95.683H100.961V101.452H95.1918ZM100.961 104.337V110.106H95.1918V104.337H100.961ZM92.3072 101.452H86.5379V95.683H92.3072V101.452ZM95.1918 92.7984V87.0291H100.961V92.7984H95.1918ZM103.846 95.683H109.615V101.452H103.846V95.683ZM92.3072 87.0291V92.7984H86.5379V87.0291H92.3072ZM86.5379 104.337H92.3072V110.106H86.5379V104.337ZM103.846 110.106V104.337H109.615V110.106H103.846Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M115.384 61.3263V36.5483C115.381 35.4016 114.924 34.3031 114.113 33.4925C113.303 32.6818 112.204 32.2246 111.057 32.2214H36.0574C34.9106 32.2247 33.8122 32.6818 33.0015 33.4925C32.1908 34.3031 31.7337 35.4016 31.7305 36.5483V97.1252C31.7337 98.272 32.1909 99.3704 33.0015 100.181C33.8122 100.992 34.9106 101.449 36.0574 101.452H46.1535V106.169L45.9661 105.837C45.1928 104.497 43.7641 103.672 42.2175 103.671C40.6709 103.67 39.2414 104.495 38.4675 105.834C37.6935 107.174 37.6929 108.824 38.4662 110.164L43.8459 119.481L46.341 118.039L40.9613 108.722C40.5685 108.027 40.8061 107.147 41.4951 106.746C41.8254 106.554 42.2188 106.502 42.5871 106.602C42.9561 106.702 43.269 106.946 43.4564 107.279L46.341 112.269C46.6738 112.831 47.3377 113.108 47.9706 112.947C48.6029 112.777 49.0408 112.202 49.0382 111.548V94.2405C49.0382 93.444 49.684 92.7982 50.4805 92.7982C51.277 92.7982 51.9228 93.444 51.9228 94.2405V107.221C51.9228 108.018 52.5686 108.664 53.3651 108.664C54.1616 108.664 54.8074 108.018 54.8074 107.221V102.894C54.8589 102.12 55.4758 101.504 56.2497 101.452C56.6322 101.452 56.9992 101.604 57.2697 101.874C57.5401 102.145 57.692 102.512 57.692 102.894V107.221C57.692 108.018 58.3379 108.664 59.1344 108.664C59.9308 108.664 60.5767 108.018 60.5767 107.221V104.337C60.5767 103.54 61.2225 102.894 62.019 102.894C62.8154 102.894 63.4613 103.54 63.4613 104.337V108.664C63.4613 109.46 64.1071 110.106 64.9036 110.106C65.7001 110.106 66.3459 109.46 66.3459 108.664V105.779C66.3459 104.982 66.9917 104.337 67.7882 104.337C68.5847 104.337 69.2305 104.982 69.2305 105.779V118.76H72.1151V105.779C72.1119 104.632 71.6547 103.534 70.8441 102.723C70.0334 101.912 68.935 101.455 67.7882 101.452C67.0445 101.45 66.3131 101.644 65.6679 102.015C65.534 101.812 65.3795 101.623 65.2063 101.452H77.8844V114.433C77.8876 115.58 78.3448 116.678 79.1554 117.489C79.9661 118.299 81.0645 118.757 82.2113 118.76H113.942C115.089 118.757 116.187 118.299 116.998 117.489C117.809 116.678 118.266 115.58 118.269 114.433V65.3944C118.264 64.502 117.985 63.6333 117.469 62.9051C116.953 62.1775 116.225 61.6263 115.384 61.3269L115.384 61.3263ZM74.9996 35.106H111.057C111.44 35.106 111.807 35.258 112.077 35.5284C112.348 35.7989 112.5 36.1659 112.5 36.5483V61.0676H109.615V40.8753C109.612 40.111 109.308 39.3782 108.768 38.8381C108.227 38.2979 107.495 37.9933 106.73 37.9907H74.9997L74.9996 35.106ZM100.961 40.8753V44.6111L100.543 44.1784C99.9741 43.6201 99.0636 43.6201 98.495 44.1784L98.0765 44.6111V40.8753H100.961ZM72.115 98.5675H54.8073V95.6829H72.115V98.5675ZM72.115 49.5291H69.2304V52.4137H72.115V58.1829H69.2304V61.0676H72.115V66.8368H69.2304V69.7214H72.115V75.4906H69.2304V78.3752H72.115V84.1445H69.2304V87.0291H72.115V92.7983H54.5485C54.1519 91.667 53.3026 90.752 52.2041 90.273C51.1056 89.7933 49.8565 89.7933 48.7581 90.273C47.6596 90.7521 46.8104 91.667 46.4136 92.7983H40.3849V40.8753H72.1157L72.115 49.5291ZM72.115 37.9906H40.3843C39.62 37.9932 38.8872 38.2978 38.3471 38.838C37.8069 39.3782 37.5023 40.111 37.4997 40.8752V92.7982C37.5023 93.5625 37.8069 94.2953 38.3471 94.8354C38.8873 95.3756 39.62 95.6802 40.3843 95.6828H46.1535V98.5674H36.0574C35.2609 98.5674 34.615 97.9216 34.615 97.1251V36.5482C34.615 35.7517 35.2609 35.1059 36.0574 35.1059H72.115V37.9906ZM77.8842 98.5675H74.9996V95.6829H77.8842V98.5675ZM77.8842 92.7983H74.9996V87.0291H77.8842V92.7983ZM77.8842 84.1445H74.9996V78.3752H77.8842V84.1445ZM77.8842 75.4906H74.9996V69.7214H77.8842V75.4906ZM77.8842 65.3945V66.8368H74.9996V61.0676H77.8842V58.1829H74.9996V52.4137H77.8842V49.5291H74.9996V40.8753H95.1919V48.0868C95.19 48.6708 95.5441 49.1969 96.0863 49.4138C96.6233 49.6399 97.2433 49.5201 97.658 49.1106L99.5188 47.2356L101.38 49.1106C101.652 49.3797 102.02 49.5304 102.403 49.5291C102.593 49.5343 102.78 49.4943 102.951 49.4139C103.494 49.1969 103.848 48.6708 103.846 48.0868V40.8753H106.73V61.0676H82.2111C81.0644 61.0708 79.9659 61.5279 79.1553 62.3386C78.3446 63.1492 77.8875 64.2477 77.8842 65.3945ZM115.384 114.433C115.384 114.815 115.232 115.182 114.962 115.453C114.691 115.723 114.324 115.875 113.942 115.875H82.2112C81.4147 115.875 80.7689 115.229 80.7689 114.433V65.3945C80.7689 64.598 81.4147 63.9522 82.2112 63.9522H113.942C114.324 63.9522 114.691 64.1041 114.962 64.3746C115.232 64.645 115.384 65.012 115.384 65.3945V114.433Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M109.615 66.8368H86.5379C85.773 66.8368 85.039 67.1407 84.4981 67.6816C83.9572 68.2224 83.6533 68.9565 83.6533 69.7214V78.3752C83.6533 79.1402 83.9572 79.8742 84.4981 80.4151C85.039 80.9559 85.773 81.2599 86.5379 81.2599H109.615C110.38 81.2599 111.114 80.9559 111.655 80.4151C112.196 79.8742 112.499 79.1402 112.499 78.3752V69.7214C112.499 68.9565 112.196 68.2224 111.655 67.6816C111.114 67.1407 110.38 66.8368 109.615 66.8368ZM109.615 78.3752H86.5379V69.7214H109.615V78.3752Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M102.403 72.606H105.288V75.4906H102.403V72.606Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M96.6338 72.606H99.5184V75.4906H96.6338V72.606Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M90.8652 72.606H93.7498V75.4906H90.8652V72.606Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M43.2695 66.8368H63.4618V69.7214H43.2695V66.8368Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M43.2695 78.3752H63.4618V81.2599H43.2695V78.3752Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M43.2695 84.1445H63.4618V87.0291H43.2695V84.1445Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M43.2695 72.606H57.6926V75.4906H43.2695V72.606Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M60.5771 72.606H63.4618V75.4906H60.5771V72.606Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M47.8385 63.3109C48.1064 63.7121 48.5565 63.9529 49.0387 63.9529C49.1095 63.9529 49.1804 63.9471 49.2506 63.9368C49.803 63.8557 50.2589 63.4622 50.4205 62.9272L54.439 49.5299H66.3464V46.6453H53.3656C52.7282 46.6453 52.1667 47.0632 51.9838 47.6736L48.5384 59.1599L47.3543 57.3828V57.3835C47.0865 56.9823 46.6364 56.7415 46.1541 56.7415H43.2695V59.6261H45.3827L47.8385 63.3109Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M62.1937 53.0846L59.1345 56.1438L56.0753 53.0846L54.0361 55.1238L57.0953 58.1829L54.0361 61.2421L56.0753 63.2813L59.1345 60.2221L62.1937 63.2813L64.2328 61.2421L61.1737 58.1829L64.2328 55.1238L62.1937 53.0846Z"
+										fill="#7531AB"
+									/>
+								</g>
+							</svg>
+						</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button
+							id="pills-profile-tab"
+							data-bs-toggle="pill"
+							data-bs-target="#pills-profile"
+							type="button"
+							role="tab"
+							aria-controls="pills-profile"
+							aria-selected="false"
+						>
+							<svg
+								role="presentation"
+								id="pills-profile-tab"
+								data-bs-toggle="pill"
+								data-bs-target="#pills-profile"
+								type="button"
+								role="tab"
+								aria-controls="pills-profile"
+								aria-selected="false"
+								width="150"
+								height="151"
+								viewBox="0 0 150 151"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<mask
+									id="mask0_322_3047"
+									style="mask-type: alpha"
+									maskUnits="userSpaceOnUse"
+									x="0"
+									y="0"
+									width="150"
+									height="151"
+								>
+									<rect
+										y="0.971436"
+										width="150"
+										height="150"
+										rx="75"
+										fill="#D9D9D9"
+									/>
+								</mask>
+								<g mask="url(#mask0_322_3047)">
+									<path
+										d="M69.5908 105.898H68.6069C67.798 106.874 66.9077 107.778 65.9454 108.603H68.2386V114.011H34.4348V108.603H36.7281C35.7659 107.778 34.8755 106.874 34.0666 105.898H33.0826C32.3359 105.898 31.7305 106.504 31.7305 107.251V115.364C31.7305 116.11 32.3359 116.716 33.0826 116.716H69.5908C70.3375 116.716 70.9429 116.11 70.9429 115.364V107.251C70.9429 106.504 70.3375 105.898 69.5908 105.898Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M43.9117 82.7651C44.1797 82.5267 44.3421 82.1911 44.3626 81.8331C44.3837 81.4746 44.2606 81.1226 44.0215 80.8546C43.7831 80.5866 43.4469 80.4249 43.0889 80.4049C42.7303 80.385 42.3784 80.5081 42.111 80.7478C38.9419 83.7014 37.003 87.741 36.68 92.0606C36.6486 92.418 36.7609 92.7729 36.9909 93.0482C37.2214 93.3228 37.5516 93.4948 37.909 93.5256C37.9488 93.5299 37.9887 93.5311 38.0285 93.5311C38.7293 93.5305 39.3131 92.995 39.374 92.2972C39.6342 88.6622 41.2545 85.2594 43.9117 82.7651Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M116.916 98.4625V97.7864C116.916 97.0397 116.311 96.4342 115.564 96.4342C114.817 96.4342 114.212 97.0397 114.212 97.7864V98.4625H111.508V79.659C112.546 79.0602 113.266 78.0323 113.474 76.8521C113.683 75.6714 113.357 74.4593 112.586 73.5411C111.815 72.6236 110.678 72.0936 109.479 72.0948H106.099V41.0895C106.099 38.0556 103.343 35.5868 99.9558 35.5868H98.8566C95.4689 35.5868 92.7127 38.0557 92.7127 41.0895V46.3091C92.7127 47.8526 91.1698 49.1082 89.2731 49.1082H88.1745C86.2779 49.1082 84.7349 47.8526 84.7349 46.3098V41.0901C84.7349 38.0556 81.9787 35.5868 78.591 35.5868H77.4918C74.1042 35.5868 71.3486 38.0557 71.3486 41.0895V46.3091C71.3486 47.8526 69.8057 49.1082 67.909 49.1082H66.8104C64.9138 49.1082 63.3708 47.8526 63.3708 46.3098V41.1674C63.3708 38.0907 60.6146 35.5868 57.2269 35.5868H56.1283C54.519 35.62 52.9839 36.2695 51.8406 37.4019C50.6974 38.535 50.0328 40.0634 49.9844 41.6721V51.8126H46.604C45.3943 51.8126 44.2474 52.3523 43.4766 53.2849C42.7058 54.2181 42.3919 55.4459 42.6206 56.6339C42.8494 57.8225 43.5961 58.8462 44.658 59.4269V73.7477C40.8786 75.0618 37.6033 77.5211 35.2859 80.7831C32.9692 84.0457 31.7263 87.9489 31.7305 91.9498C31.7697 97.1152 33.8553 102.054 37.5308 105.683C41.2064 109.312 46.1713 111.334 51.3367 111.307C56.5021 111.334 61.467 109.312 65.1426 105.683C68.8181 102.054 70.9037 97.1152 70.9429 91.9498C70.9472 87.9489 69.7043 84.0459 67.3875 80.7831C65.0701 77.5211 61.7948 75.0618 58.0154 73.7477V59.4269C59.0772 58.8462 59.8239 57.8224 60.0528 56.6339C60.2815 55.446 59.9676 54.2181 59.1968 53.2849C58.4259 52.3523 57.2791 51.8126 56.0694 51.8126H52.689V41.6721C52.7409 40.7823 53.1218 39.9438 53.7574 39.319C54.3931 38.6943 55.2382 38.3279 56.1286 38.2911H57.2278C59.1244 38.2911 60.6668 39.5816 60.6668 41.1674V46.3091C60.6668 49.3436 63.423 51.8124 66.8106 51.8124H67.9093C71.2969 51.8124 74.0531 49.3435 74.0531 46.3097V41.0901C74.0531 39.5466 75.5961 38.2911 77.4921 38.2911H78.5913C80.4879 38.2911 82.0309 39.5466 82.0309 41.0895V46.3091C82.0309 49.3436 84.7871 51.8124 88.1748 51.8124H89.274C92.6616 51.8124 95.4179 49.3435 95.4179 46.3097V41.0901C95.4173 39.5466 96.9602 38.2911 98.8568 38.2911H99.9561C101.852 38.2911 103.395 39.5466 103.395 41.0895V72.0947H100.015C98.8158 72.0935 97.6786 72.6235 96.9078 73.5411C96.1369 74.4592 95.8115 75.6713 96.0198 76.8521C96.2281 78.0322 96.9482 79.0602 97.9865 79.659V98.4624H95.2822V97.7863C95.2822 97.0396 94.6768 96.4342 93.9301 96.4342C93.1834 96.4342 92.5779 97.0396 92.5779 97.7863V98.4624C91.8312 98.4624 91.2258 99.0679 91.2258 99.8146C91.2258 100.561 91.8312 101.167 92.5779 101.167V115.364C92.5779 116.111 93.1834 116.716 93.9301 116.716C94.6768 116.716 95.2822 116.111 95.2822 115.364V101.167H97.9865V112.66C97.9877 113.736 98.4157 114.767 99.1757 115.527C99.9363 116.287 100.967 116.715 102.043 116.717H107.452C108.527 116.715 109.558 116.287 110.319 115.527C111.079 114.767 111.507 113.736 111.508 112.66V101.167H114.212V115.364C114.212 116.111 114.818 116.716 115.565 116.716C116.311 116.716 116.917 116.111 116.917 115.364V101.167C117.663 101.167 118.269 100.561 118.269 99.8146C118.269 99.0679 117.663 98.4624 116.917 98.4624L116.916 98.4625ZM68.2386 91.9503C68.2006 96.3985 66.3994 100.65 63.2309 103.771C60.0623 106.893 55.7849 108.631 51.3367 108.604C46.8885 108.631 42.6111 106.894 39.4425 103.771C36.274 100.65 34.4728 96.3985 34.4348 91.9503C34.4354 88.3581 35.6022 84.8624 37.7597 81.9903C39.9171 79.1175 42.9492 77.0229 46.3989 76.0221C46.9706 75.8501 47.3624 75.3243 47.3624 74.7273V59.9261H49.9846V80.2084C49.9846 80.9551 50.5901 81.5606 51.3368 81.5606C52.0835 81.5606 52.6889 80.9551 52.6889 80.2084V59.9261H55.3112V74.7273C55.3112 75.3243 55.7029 75.8501 56.2746 76.0215C59.7243 77.023 62.7564 79.1176 64.9138 81.9903C67.0713 84.8624 68.238 88.3581 68.2386 91.9503ZM56.0692 54.5181C56.8159 54.5181 57.4214 55.1235 57.4214 55.8702C57.4214 56.6169 56.8159 57.2224 56.0692 57.2224H46.6042C45.8575 57.2224 45.252 56.6169 45.252 55.8702C45.252 55.1235 45.8575 54.5181 46.6042 54.5181H56.0692ZM108.803 112.661C108.803 113.407 108.198 114.012 107.451 114.013H102.042C101.296 114.012 100.691 113.407 100.69 112.661V95.758H104.747C105.493 95.758 106.099 95.1525 106.099 94.4058C106.099 93.6591 105.493 93.0537 104.747 93.0537H100.69V80.2082H103.395V88.9972C103.395 89.7439 104 90.3494 104.747 90.3494C105.493 90.3494 106.099 89.7439 106.099 88.9972V80.2082H108.803V112.661ZM109.479 77.5047H100.014C99.2675 77.5047 98.6621 76.8992 98.6621 76.1525C98.6621 75.4058 99.2675 74.8004 100.014 74.8004H109.479C110.226 74.8004 110.831 75.4058 110.831 76.1525C110.831 76.8992 110.226 77.5047 109.479 77.5047Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M61.4783 95.0813C62.5539 95.0813 63.5862 94.6539 64.3467 93.8933C65.1071 93.1327 65.5346 92.1004 65.5346 91.0249C65.5346 89.9493 65.1073 88.9169 64.3467 88.1565C63.5861 87.396 62.5538 86.9685 61.4783 86.9685C60.4027 86.9685 59.3703 87.3959 58.6098 88.1565C57.8494 88.9171 57.4219 89.9493 57.4219 91.0249C57.4231 92.1006 57.8511 93.1316 58.611 93.8922C59.3716 94.6522 60.4027 95.0802 61.4784 95.0814L61.4783 95.0813ZM61.4783 89.6727C62.0252 89.6727 62.5183 90.0022 62.7272 90.5075C62.9367 91.0127 62.8214 91.594 62.4344 91.981C62.0475 92.3679 61.4662 92.4832 60.9609 92.2737C60.4557 92.0649 60.1261 91.5717 60.1261 91.0248C60.1261 90.2781 60.7316 89.6727 61.4783 89.6727Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M52.5802 100.912C52.5802 101.987 53.0076 103.019 53.7681 103.78C54.5293 104.541 55.561 104.968 56.6366 104.968C57.7121 104.968 58.7445 104.541 59.505 103.78C60.2656 103.019 60.693 101.987 60.693 100.912C60.693 99.8361 60.2656 98.8038 59.505 98.0433C58.7444 97.2827 57.7121 96.8553 56.6366 96.8553C55.5609 96.8566 54.5298 97.2839 53.7699 98.0445C53.0093 98.8051 52.5813 99.8362 52.5801 100.912L52.5802 100.912ZM56.6366 99.5596C57.1836 99.5596 57.6767 99.8892 57.8862 100.394C58.095 100.9 57.9797 101.481 57.5928 101.868C57.2059 102.254 56.6246 102.37 56.1193 102.161C55.6141 101.952 55.2845 101.459 55.2845 100.912C55.2845 100.165 55.8899 99.5596 56.6366 99.5596Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M54.717 89.6726C54.717 90.4193 54.1115 91.0247 53.3648 91.0247C52.6182 91.0247 52.0127 90.4193 52.0127 89.6726C52.0127 88.9259 52.6182 88.3204 53.3648 88.3204C54.1115 88.3204 54.717 88.9259 54.717 89.6726Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M106.099 104.968C106.099 105.715 105.493 106.32 104.747 106.32C104 106.32 103.395 105.715 103.395 104.968C103.395 104.222 104 103.616 104.747 103.616C105.493 103.616 106.099 104.222 106.099 104.968Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M106.099 110.377C106.099 111.124 105.493 111.729 104.747 111.729C104 111.729 103.395 111.124 103.395 110.377C103.395 109.63 104 109.025 104.747 109.025C105.493 109.025 106.099 109.63 106.099 110.377Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M52.0129 96.4335C52.0129 97.1801 51.4074 97.7856 50.6607 97.7856C49.914 97.7856 49.3086 97.1801 49.3086 96.4335C49.3086 95.6868 49.914 95.0813 50.6607 95.0813C51.4074 95.0813 52.0129 95.6868 52.0129 96.4335Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M49.3088 89.6726C49.3088 90.4193 48.7033 91.0247 47.9566 91.0247C47.2099 91.0247 46.6045 90.4193 46.6045 89.6726C46.6045 88.9259 47.2099 88.3204 47.9566 88.3204C48.7033 88.3204 49.3088 88.9259 49.3088 89.6726Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M43.1115 100.912C43.1115 101.658 42.5061 102.264 41.7594 102.264C41.0121 102.264 40.4072 101.658 40.4072 100.912C40.4072 100.165 41.0121 99.5596 41.7594 99.5596C42.5061 99.5596 43.1115 100.165 43.1115 100.912Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M44.4641 93.7291C44.4641 94.4758 43.8586 95.0813 43.1119 95.0813C42.3646 95.0813 41.7598 94.4758 41.7598 93.7291C41.7598 92.9824 42.3646 92.377 43.1119 92.377C43.8586 92.377 44.4641 92.9824 44.4641 93.7291Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M50.6613 103.871C50.6613 104.618 50.0559 105.223 49.3092 105.223C48.5625 105.223 47.957 104.618 47.957 103.871C47.957 103.124 48.5625 102.519 49.3092 102.519C50.0559 102.519 50.6613 103.124 50.6613 103.871Z"
+										fill="#7531AB"
+									/>
+								</g>
+							</svg>
+						</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button
+							id="pills-contact-tab"
+							data-bs-toggle="pill"
+							data-bs-target="#pills-contact"
+							type="button"
+							role="tab"
+							aria-controls="pills-contact"
+							aria-selected="false"
+						>
+							<svg
+								role="presentation"
+								id="pills-contact-tab"
+								data-bs-toggle="pill"
+								data-bs-target="#pills-contact"
+								type="button"
+								role="tab"
+								aria-controls="pills-contact"
+								aria-selected="false"
+								width="150"
+								height="151"
+								viewBox="0 0 150 151"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<mask
+									id="mask0_322_3065"
+									style="mask-type: alpha"
+									maskUnits="userSpaceOnUse"
+									x="0"
+									y="0"
+									width="150"
+									height="151"
+								>
+									<rect
+										y="0.971436"
+										width="150"
+										height="150"
+										rx="75"
+										fill="#D9D9D9"
+									/>
+								</mask>
+								<g mask="url(#mask0_322_3065)">
+									<path
+										d="M49.8751 52.2432C51.4148 52.2432 52.6667 53.495 52.6667 55.0347H55.4582C55.4582 52.4413 53.6718 50.2734 51.2709 49.6497V46.66H48.4793V49.4516H44.292V55.0347C44.292 58.1136 46.7963 60.6178 49.8751 60.6178C51.4148 60.6178 52.6667 61.8697 52.6667 63.4094V66.201H49.8751C48.3354 66.201 47.0836 64.9491 47.0836 63.4094H44.292C44.292 66.0029 46.0784 68.1707 48.4793 68.7944V71.7841H51.2709V68.9925H55.4582V63.4094C55.4582 60.3306 52.954 57.8263 49.8751 57.8263C48.3354 57.8263 47.0836 56.5744 47.0836 55.0347V52.2432H49.8751Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M112.686 63.5497V39.6811C112.686 35.8327 109.555 32.7021 105.707 32.7021H83.3744C79.526 32.7021 76.3955 35.8327 76.3955 39.6811V63.4093H67.5142C67.8339 62.0622 68.0208 60.6652 68.0208 59.222C68.0208 49.2172 59.8804 41.0768 49.8756 41.0768C39.8708 41.0768 31.7305 49.2172 31.7305 59.222C31.7305 65.69 35.1421 71.3627 40.249 74.5756H31.7305V85.7419H34.522V94.1165H54.063V101.095C54.063 104.944 57.1935 108.074 61.0419 108.074H73.6039V111.123C71.9832 111.7 70.8124 113.236 70.8124 115.053V119.241H101.52V115.053C101.52 113.236 100.349 111.701 98.728 111.123V108.074H111.29C115.138 108.074 118.269 104.944 118.269 101.095V70.3883C118.269 67.0191 115.867 64.1994 112.686 63.5502L112.686 63.5497ZM79.1871 39.6811C79.1871 37.3724 81.0657 35.4937 83.3744 35.4937H105.707C108.016 35.4937 109.894 37.3724 109.894 39.6811V73.1798C109.894 75.4885 108.016 77.3672 105.707 77.3672H83.3744C81.0657 77.3672 79.1871 75.4885 79.1871 73.1798V39.6811ZM34.5221 59.222C34.5221 50.7564 41.41 43.8684 49.8757 43.8684C58.3413 43.8684 65.2293 50.7564 65.2293 59.222C65.2293 67.6876 58.3413 74.5756 49.8757 74.5756C41.41 74.5756 34.5221 67.6876 34.5221 59.222ZM34.5221 77.3672H65.2293V82.9503H62.4377V80.1587H59.6461V82.9503H56.8546V80.1587H54.063V82.9503H51.2714V80.1587H48.4799V82.9503H45.6883V80.1587H42.8968V82.9503H40.1052V80.1587H37.3136V82.9503H34.5221V77.3672ZM37.3136 85.7419H68.0208V91.325H65.2293V88.5334H62.4377V91.325H59.6461V88.5334H56.8546V91.325H54.063V88.5334H51.2714V91.325H48.4799V88.5334H45.6883V91.325H42.8968V88.5334H40.1052V91.325H37.3136V85.7419ZM70.8124 94.1165V82.9503H68.0208V74.5756H59.5022C62.6564 72.591 65.1677 69.6747 66.622 66.2009H76.3957V73.1798C76.3957 77.0282 79.5262 80.1587 83.3746 80.1587H105.707C109.555 80.1587 112.686 77.0282 112.686 73.1798V66.4576C114.307 67.0352 115.478 68.5705 115.478 70.3883V96.9081H99.3056L96.5141 94.1165H75.8182L73.0267 96.9081H56.8547V94.1165H70.8124ZM98.728 116.449H73.6039V115.053C73.6039 114.284 74.2308 113.657 74.9997 113.657H97.3322C98.1012 113.657 98.728 114.284 98.728 115.053V116.449ZM95.9365 110.866H76.3955V108.074H95.9365V110.866ZM111.29 105.283H61.0419C58.7332 105.283 56.8546 103.404 56.8546 101.095V99.6997H74.1814L76.973 96.9081H95.3574L98.149 99.6997H115.476V101.095C115.476 103.404 113.597 105.283 111.288 105.283H111.29Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M77.792 99.6997H80.5836V102.491H77.792V99.6997Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M83.375 99.6997H88.9581V102.491H83.375V99.6997Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M91.75 99.6997H94.5416V102.491H91.75V99.6997Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M107.103 38.2853H81.9785V52.2431H107.103V38.2853ZM104.311 49.4515H84.7701V41.0768H104.311V49.4515Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M84.7701 74.5756H104.311C105.851 74.5756 107.103 73.3238 107.103 71.784V57.8262C107.103 56.2865 105.851 55.0347 104.311 55.0347H84.7701C83.2304 55.0347 81.9785 56.2865 81.9785 57.8262V71.784C81.9785 73.3238 83.2304 74.5756 84.7701 74.5756ZM84.7701 68.9925H87.5616V71.784H84.7701V68.9925ZM98.7279 66.2009H95.9363V63.4094H98.7279V66.2009ZM101.519 63.4094H104.312V66.2009H101.519V63.4094ZM95.9363 68.9925H98.7279V71.784H95.9363V68.9925ZM93.1448 71.784H90.3532V68.9925H93.1448V71.784ZM95.9363 60.6178V57.8262H98.7279V60.6178H95.9363ZM93.1448 60.6178H90.3532V57.8262H93.1448V60.6178ZM93.1448 63.4094V66.2009H90.3532V63.4094H93.1448ZM87.5616 66.2009H84.7701V63.4094H87.5616V66.2009ZM101.519 71.784V68.9925H104.312V71.784H101.519ZM104.311 60.6178H101.519V57.8262H104.311V60.6178ZM87.5616 57.8262V60.6178H84.7701V57.8262H87.5616Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M73.6035 82.9503H76.3951V85.7419H73.6035V82.9503Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M79.1875 82.9503H112.686V85.7419H79.1875V82.9503Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M73.6035 88.5334H107.102V91.325H73.6035V88.5334Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M109.895 88.5334H112.686V91.325H109.895V88.5334Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M98.7285 43.8684H101.52V46.66H98.7285V43.8684Z"
+										fill="#7531AB"
+									/>
+									<path
+										d="M93.1445 43.8684H95.9361V46.66H93.1445V43.8684Z"
+										fill="#7531AB"
+									/>
+								</g>
+							</svg>
+						</button>
+					</li>
+				</ul>
+				<div class="tab-content" id="pills-tabContent">
+					<div
+						class="tab-pane fade show active"
+						id="pills-home"
+						role="tabpanel"
+						aria-labelledby="pills-home-tab"
+					>
+						<div class="details_subject">
+							<h3>Mathematics</h3>
+
+							<div class="row">
+								<div
+									class="col-md-4"
+									data-aos="fade-left"
+									data-aos-delay="100"
+									data-aos-duration="800"
+								>
+									<p>
+										<svg
+											width="12"
+											height="13"
+											viewBox="0 0 12 13"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<circle cx="6" cy="6.97144" r="6" fill="#444444" />
+										</svg>
+										Basic mathematics
+									</p>
+								</div>
+								<div
+									class="col-md-4"
+									data-aos="fade-left"
+									data-aos-delay="200"
+									data-aos-duration="800"
+								>
+									<p>
+										<svg
+											width="12"
+											height="13"
+											viewBox="0 0 12 13"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<circle cx="6" cy="6.97144" r="6" fill="#444444" />
+										</svg>
+										Algebra
+									</p>
+								</div>
+								<div
+									class="col-md-4"
+									data-aos="fade-left"
+									data-aos-delay="300"
+									data-aos-duration="800"
+								>
+									<p>
+										<svg
+											width="12"
+											height="13"
+											viewBox="0 0 12 13"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<circle cx="6" cy="6.97144" r="6" fill="#444444" />
+										</svg>
+										Pre-calculus
+									</p>
+								</div>
+								<div
+									class="col-md-4"
+									data-aos="fade-left"
+									data-aos-delay="400"
+									data-aos-duration="800"
+								>
+									<p>
+										<svg
+											width="12"
+											height="13"
+											viewBox="0 0 12 13"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<circle cx="6" cy="6.97144" r="6" fill="#444444" />
+										</svg>
+										Trigonometry
+									</p>
+								</div>
+								<div
+									class="col-md-4"
+									data-aos="fade-left"
+									data-aos-delay="500"
+									data-aos-duration="800"
+								>
+									<p>
+										<svg
+											width="12"
+											height="13"
+											viewBox="0 0 12 13"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<circle cx="6" cy="6.97144" r="6" fill="#444444" />
+										</svg>
+										Calculus
+									</p>
+								</div>
+								<div
+									class="col-md-4"
+									data-aos="fade-left"
+									data-aos-delay="600"
+									data-aos-duration="800"
+								>
+									<p>
+										<svg
+											width="12"
+											height="13"
+											viewBox="0 0 12 13"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<circle cx="6" cy="6.97144" r="6" fill="#444444" />
+										</svg>
+										Geometry
+									</p>
+								</div>
+								<div
+									class="col-md-4"
+									data-aos="fade-left"
+									data-aos-delay="700"
+									data-aos-duration="500"
+								>
+									<p>
+										<svg
+											width="12"
+											height="13"
+											viewBox="0 0 12 13"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<circle cx="6" cy="6.97144" r="6" fill="#444444" />
+										</svg>
+										Differential equations
+									</p>
+								</div>
+								<div
+									class="col-md-4"
+									data-aos="fade-left"
+									data-aos-delay="800"
+									data-aos-duration="500"
+								>
+									<p>
+										<svg
+											width="12"
+											height="13"
+											viewBox="0 0 12 13"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<circle cx="6" cy="6.97144" r="6" fill="#444444" />
+										</svg>
+										Applied Calculus
+									</p>
+								</div>
+								<div
+									class="col-md-4"
+									data-aos="fade-left"
+									data-aos-delay="900"
+									data-aos-duration="500"
+								>
+									<p>
+										<svg
+											width="12"
+											height="13"
+											viewBox="0 0 12 13"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<circle cx="6" cy="6.97144" r="6" fill="#444444" />
+										</svg>
+										Statistics
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="tab-pane fade"
+						id="pills-profile"
+						role="tabpanel"
+						aria-labelledby="pills-profile-tab"
+					>
+						<div class="details_subject">
+							<h3>Science</h3>
+							<div class="row">
+								<div
+									class="col-md-4"
+									data-aos="fade-left"
+									data-aos-delay="100"
+									data-aos-duration="1500"
+								>
+									<p>
+										<svg
+											width="12"
+											height="13"
+											viewBox="0 0 12 13"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<circle cx="6" cy="6.97144" r="6" fill="#444444" />
+										</svg>
+										Biology
+									</p>
+								</div>
+								<div
+									class="col-md-4"
+									data-aos="fade-left"
+									data-aos-delay="100"
+									data-aos-duration="1500"
+								>
+									<p>
+										<svg
+											width="12"
+											height="13"
+											viewBox="0 0 12 13"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<circle cx="6" cy="6.97144" r="6" fill="#444444" />
+										</svg>
+										Biology: Microbiology
+									</p>
+								</div>
+								<div
+									class="col-md-4"
+									data-aos="fade-left"
+									data-aos-delay="100"
+									data-aos-duration="1500"
+								>
+									<p>
+										<svg
+											width="12"
+											height="13"
+											viewBox="0 0 12 13"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<circle cx="6" cy="6.97144" r="6" fill="#444444" />
+										</svg>
+										General Chemistry
+									</p>
+								</div>
+								<div
+									class="col-md-4"
+									data-aos="fade-left"
+									data-aos-delay="100"
+									data-aos-duration="1500"
+								>
+									<p>
+										<svg
+											width="12"
+											height="13"
+											viewBox="0 0 12 13"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<circle cx="6" cy="6.97144" r="6" fill="#444444" />
+										</svg>
+										Chemistry: Analytical Chemistry
+									</p>
+								</div>
+								<div
+									class="col-md-4"
+									data-aos="fade-left"
+									data-aos-delay="100"
+									data-aos-duration="1500"
+								>
+									<p>
+										<svg
+											width="12"
+											height="13"
+											viewBox="0 0 12 13"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<circle cx="6" cy="6.97144" r="6" fill="#444444" />
+										</svg>
+										Calculus
+									</p>
+								</div>
+								<div
+									class="col-md-4"
+									data-aos="fade-left"
+									data-aos-delay="100"
+									data-aos-duration="1500"
+								>
+									<p>
+										<svg
+											width="12"
+											height="13"
+											viewBox="0 0 12 13"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<circle cx="6" cy="6.97144" r="6" fill="#444444" />
+										</svg>
+										Chemistry: Inorganic
+									</p>
+								</div>
+								<div
+									class="col-md-4"
+									data-aos="fade-left"
+									data-aos-delay="100"
+									data-aos-duration="1500"
+								>
+									<p>
+										<svg
+											width="12"
+											height="13"
+											viewBox="0 0 12 13"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<circle cx="6" cy="6.97144" r="6" fill="#444444" />
+										</svg>
+										Chemistry: Organic Chemistry
+									</p>
+								</div>
+								<div
+									class="col-md-4"
+									data-aos="fade-left"
+									data-aos-delay="100"
+									data-aos-duration="1500"
+								>
+									<p>
+										<svg
+											width="12"
+											height="13"
+											viewBox="0 0 12 13"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<circle cx="6" cy="6.97144" r="6" fill="#444444" />
+										</svg>
+										Chemistry: Physical Chemistry
+									</p>
+								</div>
+								<div
+									class="col-md-4"
+									data-aos="fade-left"
+									data-aos-delay="100"
+									data-aos-duration="1500"
+								>
+									<p>
+										<svg
+											width="12"
+											height="13"
+											viewBox="0 0 12 13"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<circle cx="6" cy="6.97144" r="6" fill="#444444" />
+										</svg>
+										Physics
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="tab-pane fade"
+						id="pills-contact"
+						role="tabpanel"
+						aria-labelledby="pills-contact-tab"
+					>
+						<div class="details_subject">
+							<h3>Business and Management</h3>
+
+							<div class="row">
+								<div
+									class="col-md-4"
+									data-aos="fade-left"
+									data-aos-delay="100"
+									data-aos-duration="1500"
+								>
+									<p>
+										<svg
+											width="12"
+											height="13"
+											viewBox="0 0 12 13"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<circle cx="6" cy="6.97144" r="6" fill="#444444" />
+										</svg>
+										Accounting
+									</p>
+								</div>
+								<div
+									class="col-md-4"
+									data-aos="fade-left"
+									data-aos-delay="100"
+									data-aos-duration="1500"
+								>
+									<p>
+										<svg
+											width="12"
+											height="13"
+											viewBox="0 0 12 13"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<circle cx="6" cy="6.97144" r="6" fill="#444444" />
+										</svg>
+										Economics
+									</p>
+								</div>
+								<div
+									class="col-md-4"
+									data-aos="fade-left"
+									data-aos-delay="100"
+									data-aos-duration="1500"
+								>
+									<p>
+										<svg
+											width="12"
+											height="13"
+											viewBox="0 0 12 13"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<circle cx="6" cy="6.97144" r="6" fill="#444444" />
+										</svg>
+										Finance
+									</p>
+								</div>
+								<div
+									class="col-md-4"
+									data-aos="fade-left"
+									data-aos-delay="100"
+									data-aos-duration="1500"
+								>
+									<p>
+										<svg
+											width="12"
+											height="13"
+											viewBox="0 0 12 13"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<circle cx="6" cy="6.97144" r="6" fill="#444444" />
+										</svg>
+										Cost Accounting
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="our-features">
+			<div class="container text-center">
+				<h2>Our features</h2>
+				<div class="row gy-4">
+					<div
+						class="col-md-6 col-xl-3"
+						data-aos="fade-up"
+						data-aos-duration="1500"
+					>
+						<div class="features_card">
+							<div class="features_card_image">
+								<img src="./assets/images/our-features/247.png" alt="" />
+							</div>
+							<div class="features_card_content">
+								<h3>24*7 Tutor availability</h3>
+								<p>
+									Our tutors are always available for study support and guidance
+									regardless of location or time zone. In addition to being
+									convenient, flexible, and accessible to learners of all ages
+									and backgrounds, this one-to-one approach to tutoring offers
+									many benefits which are  not found in traditional classroom
+									environments. Our dedicated team of tutors are always there to
+									assist students after school and before exams.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-md-6 col-xl-3"
+						data-aos="fade-up"
+						data-aos-duration="1500"
+					>
+						<div class="features_card">
+							<div class="features_card_image">
+								<img
+									src="./assets/images/our-features/interactive.png"
+									alt=""
+								/>
+							</div>
+							<div class="features_card_content">
+								<h3>Interactive Whiteboard</h3>
+								<p>
+									Getting help through online tutoring can be difficult but our
+									Whiteboard makes it easy. Using the whiteboard students have
+									the opportunity to engage with tutors online effectively. Our
+									Whiteboard is equipped with all essential tools, including a
+									pencil, text tool, and equation editor, to facilitate
+									effective communication. The Whiteboard ensures that there is
+									no lag, creating a seamless experience that mirrors an actual
+									in-person session between the tutor and the student.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-md-6 col-xl-3"
+						data-aos="fade-up"
+						data-aos-duration="1500"
+					>
+						<div class="features_card">
+							<div class="features_card_image">
+								<img src="./assets/images/our-features/multi.png" alt="" />
+							</div>
+							<div class="features_card_content">
+								<h3>Multi-device compatibility</h3>
+								<p>
+									Laptops, iPads, mobile phones, and other compatible devices
+									can be used to access assistance
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="col-md-6 col-xl-3"
+						data-aos="fade-up"
+						data-aos-duration="1500"
+					>
+						<div class="features_card">
+							<div class="features_card_image">
+								<img src="./assets/images/our-features/customized.png" alt="" />
+							</div>
+							<div class="features_card_content">
+								<h3>Customized service</h3>
+								<p>
+									Tutoring services that are tailored to meet the specific
+									academic needs of a school or educational institution. These
+									services are created to support the curriculum, instructional
+									strategies, and learning goals of the institution. And are
+									well-planned for students’ understanding and improvement in
+									their performance. Along with the subject and homework help,
+									we also help students with their test preps.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="testimonials">
+			<div class="container">
+				<p class="sub_heading">Testimonials</p>
+				<h2>What Our Student Says</h2>
+				<div
+					data-aos="fade-left"
+					data-aos-duration="1500"
+					class="testimonials_list"
+				>
+					<div class="swiper mySwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="tumbnile_area">
+									<img src="./assets/images/slider/slide1.png" alt="" />
+								</div>
+								<div class="content">
+									<h3>Ryan Azhari</h3>
+									<p>Osaka University</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="tumbnile_area">
+									<img src="./assets/images/slider/slide1.png" alt="" />
+								</div>
+								<div class="content">
+									<h3>Ryan Azhari</h3>
+									<p>Osaka University</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="tumbnile_area">
+									<img src="./assets/images/slider/slide1.png" alt="" />
+								</div>
+								<div class="content">
+									<h3>Ryan Azhari</h3>
+									<p>Osaka University</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="tumbnile_area">
+									<img src="./assets/images/slider/slide1.png" alt="" />
+								</div>
+								<div class="content">
+									<h3>Ryan Azhari</h3>
+									<p>Osaka University</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="tumbnile_area">
+									<img src="./assets/images/slider/slide1.png" alt="" />
+								</div>
+								<div class="content">
+									<h3>Ryan Azhari</h3>
+									<p>Osaka University</p>
+								</div>
+							</div>
+						</div>
+						<div class="navigation-area-of-slide row align-items-center">
+							<div class="col-md-6">
+								<div class="bar"></div>
+							</div>
+							<div class="col-md-6">
+								<div class="btnsof-nav">
+									<div class="btn-prev">
+										<svg
+											width="8"
+											height="14"
+											viewBox="0 0 8 14"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M7 0.971191L1 6.97119L7 12.9712"
+												stroke="white"
+												stroke-width="1.2"
+												stroke-linecap="square"
+											/>
+										</svg>
+									</div>
+									<div class="btn-next">
+										<svg
+											width="8"
+											height="14"
+											viewBox="0 0 8 14"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M1 12.9712L7 6.97119L1 0.971191"
+												stroke="white"
+												stroke-width="1.2"
+												stroke-linecap="square"
+											/>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="partners">
+			<div class="container text-center">
+				<h2>Our partner schools</h2>
+				<p>We collaborate with 200+ leading universities and companies</p>
+				<div
+					data-aos="fade-left"
+					data-aos-duration="1500"
+					class="partners-list swiper"
+				>
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="partner_logo">
+								<img src="./assets/images/patnars/Group 13047.png" alt="" />
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="partner_logo">
+								<img src="./assets/images/patnars/Group 13055.png" alt="" />
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="partner_logo">
+								<img src="./assets/images/patnars/Group 13064.png" alt="" />
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="partner_logo">
+								<img src="./assets/images/patnars/Group 13071.png" alt="" />
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="partner_logo">
+								<img src="./assets/images/patnars/Group 13080.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="our-tutor">
+			<div class="container">
+				<div class="row align-items-center">
+					<div data-aos="fade-right" data-aos-duration="1500" class="col-lg-6">
+						<div class="youtube_video_area">
+							<iframe
+								width="100%"
+								height="415"
+								src="https://www.youtube.com/embed/K-3cH6ZSzkY"
+							>
+							</iframe>
+						</div>
+					</div>
+					<div data-aos="fade-left" data-aos-duration="1500" class="col-lg-6">
+						<div class="content">
+							<h2>Our Tutor</h2>
+							<p>
+								At FastTutor, we strive to provide the best quality tutoring
+								service by hiring highly qualified tutors who hold Master's
+								degrees in the subject they teach and have been tutoring for
+								years. It is challenging to find such skilled tutors having a
+								thorough knowledge of their subject matter, but our team
+								dedicatedly conducts standardized training to ensure that we
+								recruit only the best tutor. The tutor training module is
+								designed considering various aspects such as subject knowledge,
+								fluency in speaking English, Methodology of tutoring, and
+								technical skills for online tutoring. Our tutors can address
+								advanced subject matters up to the college-level with ease and
+								do have the experience of coursework provided by the schools. We
+								have have expert tutors  in various subjects such as Calculus,
+								Statistics, Pre-calculus, Physics, Chemistry, Biology, Business,
+								Economics, Finance, etc. Tutoring online makes it very easy for
+								the tutors to share their wisdom of knowledge with the students.
+							</p>
+							<a href="./request-demo.html"
+								><button class="btn_brand">Request Demo</button></a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<div class="row footer_options text-center text-md-start">
+					<div class="col-md-3">
+						<img
+							class="footer-logo"
+							src="./assets/images/whitelogo.png"
+							alt=""
+						/>
+						<p>
+							Get the academic support you need at your fingertips, and unlock
+							your true potential with our expert tutors.
+						</p>
+					</div>
+					<div class="col-md-2 offset-md-1">
+						<h2>Menu</h2>
+						<a href="#">Assignment Help</a>
+						<a href="#">Online Tutoring</a>
+						<a href="#">Homework Help</a>
+						<a href="#">Writing Help</a>
+						<a href="#">Physics</a>
+					</div>
+					<div class="col-md-2">
+						<h2>Links</h2>
+						<a href="#">Blog</a>
+						<a href="#">Join as a Tutor</a>
+						<a href="#">Make Payment</a>
+						<a href="#">About Us</a>
+						<a href="#">Refund Policy</a>
+					</div>
+					<div class="col-md-2 contact-info">
+						<h2>Contact Info</h2>
+						<div>
+							<a class="flex" href="tel:+910000000000">
+								<i class="fa-solid fa-phone me-2"></i>
+								<span> +91 0000000000 </span></a
+							>
+						</div>
+						<div>
+							<a class="flex" href="mailto:support@fasttutor.co">
+								<i class="fa-regular fa-envelope me-2"></i>
+								<span>support@fasttutor.co</span></a
+							>
+						</div>
+					</div>
+					<div class="col-md-2 text-center text-md-end">
+						<h2>Social Media</h2>
+						<div class="social_icons">
+							<a href="" target="_blank" rel="noopener noreferrer">
+								<i class="fa-brands fa-facebook-f"></i
+							></a>
+							<a href="" target="_blank" rel="noopener noreferrer">
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+							<a href="" target="_blank" rel="noopener noreferrer">
+								<i class="fa-brands fa-youtube"></i>
+							</a>
+							<a href="" target="_blank" rel="noopener noreferrer">
+								<i class="fa-brands fa-twitter"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="copyright_text d-flex">
+					<p>Copyright © 2023 Fasttutor.co All Rights Reserved.</p>
+					<p class="mx-3">|</p>
+					<p>
+						<a target="_blank" href="https://futureinltd.com/">
+							Designed By Future Innovation LTD</a
+						>
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<!-- modal  -->
+		<div
+			class="modal fade"
+			id="loginModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-xl modal-dialog-centered">
+				<div class="modal-content">
+					<section class="sign-up-page">
+						<div class="row">
+							<div class="col-md-5">
+								<div class="left_side_area">
+									<div>
+										<div class="logo text-center">
+											<img src="/assets/images/whitelogo.png" alt="" />
+										</div>
+										<h2>Get Started with FastTutor !</h2>
+										<p>
+											<span
+												><svg
+													width="36"
+													height="36"
+													viewBox="0 0 36 36"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
+														fill="white"
+													/></svg
+											></span>
+
+											24*7 Tutor availability
+										</p>
+										<p>
+											<span
+												><svg
+													width="36"
+													height="36"
+													viewBox="0 0 36 36"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
+														fill="white"
+													/></svg
+											></span>
+											Interactive Whiteboard
+										</p>
+										<p>
+											<span
+												><svg
+													width="36"
+													height="36"
+													viewBox="0 0 36 36"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
+														fill="white"
+													/></svg
+											></span>
+											Multi-device compatibility
+										</p>
+										<p>
+											<span
+												><svg
+													width="36"
+													height="36"
+													viewBox="0 0 36 36"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
+														fill="white"
+													/></svg
+											></span>
+											Customized service
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-7">
+								<div class="right_side_from">
+									<div>
+										<h2>Sign In to Continue</h2>
+
+										<input type="text" placeholder="Username/Email" />
+										<input type="Password" placeholder="Password" />
+										<div class="submit_area row">
+											<div class="col-md-7 order-2 order-md-1">
+												<p class="text_brand">
+													<a href="#" class="text_brand">Forgot Password?</a>
+												</p>
+												<p>
+													Don't have an account yet?
+													<a data-bs-toggle="modal" data-bs-target="#regModal"
+														>Register Now</a
+													>
+												</p>
+											</div>
+											<div
+												class="col-md-5 text-center order-1 order-md-2 text-md-end mb-3"
+											>
+												<button class="btn_submit">continue</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="close_btn">
+							<span data-bs-dismiss="modal" aria-label="Close" class="btn_close"
+								>X</span
+							>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div
+			class="modal fade"
+			id="regModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-xl modal-dialog-centered">
+				<div class="modal-content">
+					<section class="sign-up-page">
+						<div class="row">
+							<div class="col-md-5">
+								<div class="left_side_area">
+									<div>
+										<div class="logo text-center">
+											<img src="/assets/images/whitelogo.png" alt="" />
+										</div>
+										<h2>Get Started with FastTutor !</h2>
+										<p>
+											<span
+												><svg
+													width="36"
+													height="36"
+													viewBox="0 0 36 36"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
+														fill="white"
+													/></svg
+											></span>
+
+											24*7 Tutor availability
+										</p>
+										<p>
+											<span
+												><svg
+													width="36"
+													height="36"
+													viewBox="0 0 36 36"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
+														fill="white"
+													/></svg
+											></span>
+											Interactive Whiteboard
+										</p>
+										<p>
+											<span
+												><svg
+													width="36"
+													height="36"
+													viewBox="0 0 36 36"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
+														fill="white"
+													/></svg
+											></span>
+											Multi-device compatibility
+										</p>
+										<p>
+											<span
+												><svg
+													width="36"
+													height="36"
+													viewBox="0 0 36 36"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
+														fill="white"
+													/></svg
+											></span>
+											Customized service
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-7">
+								<div class="right_side_from">
+									<div>
+										<h2>First sign up page</h2>
+
+										<div class="pb-3">
+											<div class="iti">
+												<input type="tel" name="phone" />
+											</div>
+										</div>
+
+										<input type="email" placeholder="Email" />
+										<input type="text" placeholder="Mobile No" />
+										<div class="submit_area row">
+											<div class="col-md-7 order-2 order-md-1">
+												<p>
+													Already have an Account ?
+													<a data-bs-toggle="modal" data-bs-target="#loginModal"
+														>Login Now</a
+													>
+												</p>
+											</div>
+											<div
+												class="col-md-5 order-1 order-md-2 text-center text-md-end mb-3"
+											>
+												<button
+													data-bs-toggle="modal"
+													data-bs-target="#regModal2"
+													class="btn_submit"
+												>
+													continue
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="close_btn">
+							<span class="btn_close" data-bs-dismiss="modal" aria-label="Close"
+								>X</span
+							>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div
+			class="modal fade"
+			id="regModal2"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-xl modal-dialog-centered">
+				<div class="modal-content">
+					<section class="sign-up-page">
+						<div class="row">
+							<div class="col-md-5">
+								<div class="left_side_area">
+									<div>
+										<div class="logo text-center">
+											<img src="/assets/images/whitelogo.png" alt="" />
+										</div>
+										<h2>Get Started with FastTutor !</h2>
+										<p>
+											<span
+												><svg
+													width="36"
+													height="36"
+													viewBox="0 0 36 36"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
+														fill="white"
+													/></svg
+											></span>
+
+											24*7 Tutor availability
+										</p>
+										<p>
+											<span
+												><svg
+													width="36"
+													height="36"
+													viewBox="0 0 36 36"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
+														fill="white"
+													/></svg
+											></span>
+											Interactive Whiteboard
+										</p>
+										<p>
+											<span
+												><svg
+													width="36"
+													height="36"
+													viewBox="0 0 36 36"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
+														fill="white"
+													/></svg
+											></span>
+											Multi-device compatibility
+										</p>
+										<p>
+											<span
+												><svg
+													width="36"
+													height="36"
+													viewBox="0 0 36 36"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
+														fill="white"
+													/></svg
+											></span>
+											Customized service
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-7">
+								<div class="right_side_from">
+									<div>
+										<h2>Continue sign up</h2>
+
+										<div class="row">
+											<div class="col-md-6">
+												<input type="text" placeholder="First Name" />
+											</div>
+											<div class="col-md-6">
+												<input type="text" placeholder="Last Name" />
+											</div>
+											<div class="col-6">
+												<select>
+													<option value="0">Select School</option>
+													<option value="1">India</option>
+													<option value="2">USA</option>
+													<option value="3">UK</option>
+													<option value="4">Canada</option>
+													<option value="5">Australia</option>
+												</select>
+											</div>
+											<div class="col-6 text-end">
+												<input type="text" placeholder="OTP" /><br />
+												<button class="btn_resend">Resend</button>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-12">
+												<input type="password" placeholder="Password" />
+											</div>
+										</div>
+
+										<div class="row mb-4 gap-4">
+											<div class="col-3 d-flex align-items-center">
+												<input
+													type="radio"
+													name="usertype"
+													id="Student"
+													value="student"
+													checked
+												/>
+												<label for="Student">Student</label>
+											</div>
+											<div class="col-3 d-flex align-items-center">
+												<input
+													type="radio"
+													name="usertype"
+													id="Teacher"
+													value="teacher"
+												/>
+												<label for="Teacher">Teacher</label>
+											</div>
+											<div class="col-3 d-flex align-items-center">
+												<input
+													type="radio"
+													name="usertype"
+													id="Parent"
+													value="Parent"
+												/>
+												<label for="Parent">Parent</label>
+											</div>
+										</div>
+
+										<div class="row mb-5">
+											<div class="text-center">
+												<button class="btn_submit">JOIN NOW FOR FREE</button>
+											</div>
+										</div>
+										<div class="row align-items-center">
+											<div class="col-md-6">
+												By joining you agree to our <a href="#">T&G</a>
+											</div>
+											<div class="col-md-6 mt-2">
+												<p>
+													Already have an Account? <br /><a
+														data-bs-toggle="modal"
+														data-bs-target="#loginModal"
+														>Login Now</a
+													>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="close_btn">
+							<span class="btn_close" data-bs-dismiss="modal" aria-label="Close"
+								>X</span
+							>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+
+		<!-- modal  -->
+
+		<!-- Swiper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+		<!-- Initialize Swiper  slider-->
+		<script src="./assets/js/slider.js"></script>
+
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+
+		<!-- country code  -->
+		<script src="./assets/js/phone-input.js"></script>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>
