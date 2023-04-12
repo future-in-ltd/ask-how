@@ -140,6 +140,25 @@ body {
   }
 }
 
+.tumbnile_area {
+  border: 1px solid #7531AB;
+  border-radius: 32px 32px 0px 0px;
+  overflow: hidden;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 1px #7531AB !important;
+}
+
+.navbar-toggler {
+  border: 2px solid #7531AB !important
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  filter: invert(15%) sepia(10%) saturate(3211%) hue-rotate(99deg) brightness(111%) contrast(80%);
+
+}
+
 
 //  import Bootstrap
 @import "./bootstrap/bootstrap";
