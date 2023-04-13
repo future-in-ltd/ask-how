@@ -3,7 +3,7 @@ const pillsProfileTab = document.getElementById('pills-profile-tab');
 const pillsHomeTab = document.getElementById('pills-home-tab');
 const pillsHomeTabItems = document.getElementById('pills-home-tab-items');
 const pillsProfileTabItems = document.getElementById('pills-profile-tab-items');
-const pillsContactTabItems = document.getElementById('pills-contact-items');
+const pillsContactTabItems = document.getElementById('pills-contact-tab-items');
 let activeTab = document.querySelectorAll('.tab-pane.fade.active.show');
 
 // const getAnimation = () => {
@@ -15,9 +15,23 @@ let activeTab = document.querySelectorAll('.tab-pane.fade.active.show');
 // 	});
 // };
 // getAnimation();
+
 pillsContactTab.addEventListener('click', () => {
-	let node = pillsContactTabItems;
+	let node = pillsContactTabItems.childNodes;
+	node.forEach((e) => {
+		if (e.className === 'col-md-4 aos-init aos-animate') {
+			console.log(e);
+			e.style.marginLeft = '0px';
+		}
+	});
+});
+
+pillsProfileTab.addEventListener('click', () => {
+	let node = pillsProfileTabItems.childNodes;
 	console.log(node);
 });
-pillsProfileTab.addEventListener('click', () => {});
-pillsHomeTab.addEventListener('click', () => {});
+
+pillsHomeTab.addEventListener('click', () => {
+	let node = pillsHomeTabItems.childNodes;
+	console.log(node);
+});

@@ -13044,7 +13044,7 @@ footer a {
   text-decoration: none;
 }
 footer .footer-logo {
-  width: 282px;
+  max-width: 282px;
   margin-bottom: 20px;
 }
 footer .footer_options {
@@ -13071,16 +13071,17 @@ footer a:hover {
 }
 footer .social_icons {
   display: flex;
-  justify-content: end;
   gap: 10px;
   padding-top: 8.5px;
+  flex-wrap: wrap;
 }
 footer .social_icons a {
-  display: grid;
+  display: flex;
   width: 32px;
   height: 32px;
   border-radius: 50%;
   place-items: center;
+  justify-content: center;
   background-color: #d48f3f;
 }
 footer .social_icons a:hover {
