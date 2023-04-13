@@ -802,8 +802,8 @@ header {
     }
 
     &_content {
-      padding: 0px 23.5px;
-      padding-bottom: 15px;
+      padding: 20px 20px 30px 20px;
+
 
       h3 {
         font-size: 18px;
@@ -943,8 +943,8 @@ header {
 
 .let_get_started {
   background-image: url(../images/let-start-bg.png);
-  padding-bottom: 221px;
-  padding-top: 176px;
+  padding-bottom: 120px;
+  padding-top: 120px;
   background-color: rgba(243, 241, 253, 0.1);
 
   .content {
@@ -1410,6 +1410,11 @@ footer {
       margin-bottom: 0px !important;
     }
   }
+}
+
+footer .copyright_text a {
+  font-weight: 600;
+  color: #fff5f5 !important;
 }
 
 @media screen and (max-width: 768px) {
