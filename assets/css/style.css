@@ -14066,6 +14066,7 @@ footer .copyright_text a {
   background: #7531ab;
   color: #fff;
   padding: 100px 75px;
+  height: 100%;
   display: grid;
   place-items: center;
 }
@@ -14082,7 +14083,7 @@ footer .copyright_text a {
   font-size: 18px;
   line-height: 150%;
   color: #ffffff;
-  margin-left: 60px;
+  margin-left: 30px;
 }
 .sign-up-page .right_side_from {
   display: grid;
@@ -14135,6 +14136,20 @@ footer .copyright_text a {
   line-height: 1.6;
 }
 
+@media screen and (max-width: 1199px) {
+  .sign-up-page .left_side_area {
+    padding: 20px;
+  }
+  .sign-up-page .left_side_area h2, .sign-up-page .left_side_area .h2 {
+    font-size: 25px;
+  }
+  .sign-up-page .left_side_area p {
+    margin-left: 0px;
+  }
+  .sign-up-page .right_side_from {
+    padding: 20px;
+  }
+}
 @media screen and (max-width: 768px) {
   .sign-up-page {
     position: relative;
