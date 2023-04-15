@@ -12770,6 +12770,7 @@ header nav .header_buttons {
   border-radius: 32px;
   overflow: hidden;
   background-color: #fff;
+  height: auto;
 }
 .testimonials .testimonials_list .swiper-slide .thumbnile_area img {
   width: 398px;
