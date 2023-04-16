@@ -1,1084 +1,1443 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>How it Works</title>
+		<!-- styles -->
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<!-- fonts  -->
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>How it Works</title>
-	<!-- styles -->
-	<link rel="stylesheet" href="./assets/css/style.css" />
-	<!-- fonts  -->
+		<link rel="stylesheet" href="./assets/css/phoneinput.css" />
 
-	<link rel="stylesheet" href="./assets/css/phoneinput.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<script
+			src="https://kit.fontawesome.com/f13f5b2b08.js"
+			crossorigin="anonymous"
+		></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
 
-	<script src="https://kit.fontawesome.com/f13f5b2b08.js" crossorigin="anonymous"></script>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-		rel="stylesheet" />
-</head>
+	<body>
+		<header>
+			<div class="container">
+				<nav
+					class="navbar navbar-expand-xl m-0"
+					aria-label="Eleventh navbar example"
+				>
+					<div class="container-fluid">
+						<a class="navbar-brand" href="./index.html">
+							<img src="./assets/images/logo.png" alt="" />
+						</a>
+						<button
+							class="navbar-toggler collapsed"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#nav"
+							aria-controls="navbarsExample09"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<span class="navbar-toggler-icon"></span>
+						</button>
 
-<body>
-	<header>
-		<div class="container">
-			<nav class="navbar navbar-expand-xl m-0" aria-label="Eleventh navbar example">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="./index.html">
-						<img src="./assets/images/logo.png" alt="" />
-					</a>
-					<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-						data-bs-target="#nav" aria-controls="navbarsExample09" aria-expanded="false"
-						aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
+						<div class="navbar-collapse collapse" id="nav">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+								<li class="nav-item">
+									<a class="nav-link" href="./index.html">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="./school.html">School</a>
+								</li>
+								<li class="nav-item">
+									<a
+										class="nav-link active"
+										aria-current="page"
+										href="./how-works.html"
+										>How it works</a
+									>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="./blogs.html">Blog Page</a>
+								</li>
+							</ul>
+							<div class="header_buttons">
+								<button
+									data-bs-toggle="modal"
+									data-bs-target="#loginModal"
+									class="btn_border me-2"
+								>
+									Sign in
+								</button>
 
-					<div class="navbar-collapse collapse" id="nav">
-						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-							<li class="nav-item">
-								<a class="nav-link" href="./index.html">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="./school.html">School</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="./how-works.html">How it works</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="./blogs.html">Blog Page</a>
-							</li>
-						</ul>
-						<div class="header_buttons">
-							<button data-bs-toggle="modal" data-bs-target="#loginModal" class="btn_border me-2">
-								Sign in
-							</button>
-
-							<a href="./request-demo.html">
-								<button class="btn_main">Request Demo</button>
-							</a>
+								<a href="./request-demo.html">
+									<button class="btn_main">Request Demo</button>
+								</a>
+							</div>
 						</div>
 					</div>
-				</div>
-			</nav>
-		</div>
-	</header>
-
-	<section class="how-its-works">
-		<div>
-			<div class="container">
-				<div class="top_part">
-					<h2>How it works</h2>
-					<p>
-						FastTutor can help academic support you need at your fingertips,
-						and unlock your true potential with our expert tutors.
-					</p>
-				</div>
+				</nav>
 			</div>
-			<div class="content">
-				<ul class="stepstoggle" id="pills-tab" role="tablist" style="overflow-x: auto">
-					<div role="presentation">
-						<button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-							data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-							aria-selected="true">
-							Instaconnect
-						</button>
+		</header>
+
+		<section class="how-its-works">
+			<div>
+				<div class="container">
+					<div class="top_part">
+						<h2>How it works</h2>
+						<p>
+							FastTutor can help academic support you need at your fingertips,
+							and unlock your true potential with our expert tutors.
+						</p>
 					</div>
-					<div role="presentation">
-						<button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-							data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-							aria-selected="false">
-							Qdrop
-						</button>
-					</div>
-					<div role="presentation">
-						<button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-							data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
-							aria-selected="false">
-							ScheduleSmart
-						</button>
-					</div>
-				</ul>
-				<div class="tab-content" id="pills-tabContent">
-					<!-- start tab 1  -->
-					<div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-						aria-labelledby="pills-home-tab" tabindex="0">
-						<section class="bg-arts">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-6">
-										<div class="content">
-											<h2>InstaConnect</h2>
-											<p>
-												Need assistance with an assignment or your homework?
-												Be at ease; we offer InstaConnect. You can contact our
-												knowledgeable tutor for online tutoring at any moment.
-												On our whiteboard and chat-based tutoring platform,
-												our tutor will work with you one-on-one to help you
-												solve problems.
-											</p>
+				</div>
+				<div class="content">
+					<ul
+						class="stepstoggle"
+						id="pills-tab"
+						role="tablist"
+						style="overflow-x: auto"
+					>
+						<div role="presentation">
+							<button
+								class="nav-link active"
+								id="pills-home-tab"
+								data-bs-toggle="pill"
+								data-bs-target="#pills-home"
+								type="button"
+								role="tab"
+								aria-controls="pills-home"
+								aria-selected="true"
+							>
+								Instaconnect
+							</button>
+						</div>
+						<div role="presentation">
+							<button
+								class="nav-link"
+								id="pills-profile-tab"
+								data-bs-toggle="pill"
+								data-bs-target="#pills-profile"
+								type="button"
+								role="tab"
+								aria-controls="pills-profile"
+								aria-selected="false"
+							>
+								Qdrop
+							</button>
+						</div>
+						<div role="presentation">
+							<button
+								class="nav-link"
+								id="pills-contact-tab"
+								data-bs-toggle="pill"
+								data-bs-target="#pills-contact"
+								type="button"
+								role="tab"
+								aria-controls="pills-contact"
+								aria-selected="false"
+							>
+								ScheduleSmart
+							</button>
+						</div>
+					</ul>
+					<div class="tab-content" id="pills-tabContent">
+						<!-- start tab 1  -->
+						<div
+							class="tab-pane fade show active"
+							id="pills-home"
+							role="tabpanel"
+							aria-labelledby="pills-home-tab"
+							tabindex="0"
+						>
+							<section class="bg-arts">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="content">
+												<h2>InstaConnect</h2>
+												<p>
+													Need assistance with an assignment or your homework?
+													Be at ease; we offer InstaConnect. You can contact our
+													knowledgeable tutor for online tutoring at any moment.
+													On our whiteboard and chat-based tutoring platform,
+													our tutor will work with you one-on-one to help you
+													solve problems.
+												</p>
+											</div>
 										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="youtube_video_area">
-											<!-- <img src="./assets/images/youtube video placement.png" alt=""> -->
-											<iframe width="100%" height="415"
-												src="https://www.youtube.com/embed/tgbNymZ7vqY">
-											</iframe>
+										<div class="col-md-6">
+											<div class="youtube_video_area">
+												<!-- <img src="./assets/images/youtube video placement.png" alt=""> -->
+												<iframe
+													width="100%"
+													height="415"
+													src="https://www.youtube.com/embed/tgbNymZ7vqY"
+												>
+												</iframe>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-						</section>
-						<div class="container main-section-for-line">
-							<!-- group one  -->
-							<div class="d-flex line-design-wrap">
-								<!-- group one left  -->
-								<div class="d-flex line-design-content first">
-									<div class="line-design-body">
+							</section>
+							<div class="container main-section-for-line">
+								<div>
+									<svg viewBox="0 0 3000 3400">
+										<path
+											fill="none"
+											id="Path_440"
+											class="st0"
+											d="M1183.51,83.5s191.66-5,295.33,105,261.67,93,261.67,93l29,16s-32.62,251.14-313.81,227.07S1154.51,742.5,1154.51,742.5l29,51.5s191.66-5,295.33,105,261.67,93,261.67,93l29,16s-32.62,251.14-313.81,227.07S1154.51,1453,1154.51,1453l29,51.5s191.66-5,295.33,105,261.67,93,261.67,93l29,16s-32.62,251.14-313.81,227.07-301.19,217.93-301.19,217.93"
+										/>
+										<use
+											xlink:href="#Path_440"
+											stroke="#000"
+											stroke-width="2"
+											stroke-dasharray="8"
+										/>
+										<use
+											id="theFill"
+											xlink:href="#Path_440"
+											stroke="#000"
+											stroke-width="3"
+										/>
+									</svg>
+								</div>
+								<!-- group one  -->
+								<div class="d-flex line-design-wrap">
+									<!-- group one left  -->
+									<div class="d-flex line-design-content first">
+										<div class="line-design-body">
+											<div>
+												<img src="./assets/images/how/i1.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">Login</h5>
+										</div>
 										<div>
-											<img src="./assets/images/how/i1.svg" alt="" />
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-1.svg"
+													alt=""
+													aria-colspan="count-1"
+												/>
+											</div>
 										</div>
-										<h5 class="text-center mt-3">Login</h5>
+										<div class="mobile-line-art first"></div>
 									</div>
-									<div>
-										<div class="number-count-box">
-											<img data-aos="zoom-in" class="shadow rounded-circle"
-												src="./assets/images/how/count-1.svg" alt="" aria-colspan="count-1" />
+									<!-- group one middle  -->
+									<div class="d-flex flex-column line-middle-column">
+										<div class="mt-4">
+											<img src="./assets/images/how/line-1.svg" alt="" />
 										</div>
-									</div>
-									<div class="mobile-line-art first"></div>
-								</div>
-								<!-- group one middle  -->
-								<div class="d-flex flex-column line-middle-column">
-									<div class="mt-4">
-										<img src="./assets/images/how/line-1.svg" alt="" />
-
-									</div>
-									<div class="mt-4">
-										<img src="./assets/images/how/line-2.svg" alt="" />
-									</div>
-								</div>
-
-								<!-- group one right  -->
-
-								<div style="padding-top: 16%" class="d-flex line-design-content">
-									<div>
-										<div class="number-count-box">
-											<img data-aos="zoom-in" data-aos-anchor=".count-1"
-												class="shadow rounded-circle" src="./assets/images/how/count-2.svg"
-												alt="" />
+										<div class="mt-4">
+											<img src="./assets/images/how/line-2.svg" alt="" />
 										</div>
 									</div>
-									<div class="line-design-body">
+
+									<!-- group one right  -->
+
+									<div
+										style="padding-top: 16%"
+										class="d-flex line-design-content"
+									>
 										<div>
-											<img src="./assets/images/how/i2.svg" alt="" />
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													data-aos-anchor=".count-1"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-2.svg"
+													alt=""
+												/>
+											</div>
 										</div>
-										<h5 class="text-center mt-3">
-											Clicks on Instaconnect button
-										</h5>
+										<div class="line-design-body">
+											<div>
+												<img src="./assets/images/how/i2.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">
+												Clicks on Instaconnect button
+											</h5>
+										</div>
+
+										<div class="mobile-line-art"></div>
 									</div>
-
-									<div class="mobile-line-art"></div>
 								</div>
-							</div>
 
-							<!-- group two  -->
-							<div class="d-flex line-design-wrap">
-								<!-- group two left  -->
-								<div class="d-flex line-design-content first">
-									<div class="line-design-body">
+								<!-- group two  -->
+								<div class="d-flex line-design-wrap">
+									<!-- group two left  -->
+									<div class="d-flex line-design-content first">
+										<div class="line-design-body">
+											<div>
+												<img src="./assets/images/how/i3.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">select subject</h5>
+										</div>
 										<div>
-											<img src="./assets/images/how/i3.svg" alt="" />
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-3.svg"
+													alt=""
+												/>
+											</div>
 										</div>
-										<h5 class="text-center mt-3">select subject</h5>
+										<div class="mobile-line-art"></div>
 									</div>
-									<div>
-										<div class="number-count-box">
-											<img data-aos="zoom-in" class="shadow rounded-circle"
-												src="./assets/images/how/count-3.svg" alt="" />
+
+									<!-- group two middle  -->
+									<div class="d-flex flex-column line-middle-column">
+										<div class="mt-4">
+											<img src="./assets/images/how/line-1.svg" alt="" />
 										</div>
-									</div>
-									<div class="mobile-line-art"></div>
-								</div>
-
-								<!-- group two middle  -->
-								<div class="d-flex flex-column line-middle-column">
-									<div class="mt-4">
-										<img src="./assets/images/how/line-1.svg" alt="" />
-									</div>
-									<div class="mt-4">
-										<img src="./assets/images/how/line-2.svg" alt="" />
-									</div>
-								</div>
-
-								<!-- group tow right  -->
-
-								<div style="padding-top: 16%" class="d-flex line-design-content">
-									<div>
-										<div class="number-count-box">
-											<img data-aos="zoom-in" class="shadow rounded-circle"
-												src="./assets/images/how/count-4.svg" alt="" />
+										<div class="mt-4">
+											<img src="./assets/images/how/line-2.svg" alt="" />
 										</div>
 									</div>
-									<div class="line-design-body">
+
+									<!-- group tow right  -->
+
+									<div
+										style="padding-top: 16%"
+										class="d-flex line-design-content"
+									>
 										<div>
-											<img src="./assets/images/how/i4.svg" alt="" />
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-4.svg"
+													alt=""
+												/>
+											</div>
 										</div>
-										<h5 class="text-center mt-3">
-											Wait in waiting room for tutor
-										</h5>
+										<div class="line-design-body">
+											<div>
+												<img src="./assets/images/how/i4.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">
+												Wait in waiting room for tutor
+											</h5>
+										</div>
+										<div class="mobile-line-art"></div>
 									</div>
-									<div class="mobile-line-art"></div>
 								</div>
-							</div>
 
-							<!-- group three  -->
-							<div class="d-flex line-design-wrap">
-								<!-- group three left  -->
-								<div class="d-flex line-design-content first">
-									<div class="line-design-body">
+								<!-- group three  -->
+								<div class="d-flex line-design-wrap">
+									<!-- group three left  -->
+									<div class="d-flex line-design-content first">
+										<div class="line-design-body">
+											<div>
+												<img src="./assets/images/how/i5.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">Tutor get connected</h5>
+										</div>
 										<div>
-											<img src="./assets/images/how/i5.svg" alt="" />
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-5.svg"
+													alt=""
+												/>
+											</div>
 										</div>
-										<h5 class="text-center mt-3">Tutor get connected</h5>
+										<div class="mobile-line-art"></div>
 									</div>
-									<div>
-										<div class="number-count-box">
-											<img data-aos="zoom-in" class="shadow rounded-circle"
-												src="./assets/images/how/count-5.svg" alt="" />
+
+									<!-- group three middle  -->
+									<div class="d-flex flex-column line-middle-column">
+										<div class="mt-4">
+											<img src="./assets/images/how/line-1.svg" alt="" />
 										</div>
-									</div>
-									<div class="mobile-line-art"></div>
-								</div>
-
-								<!-- group three middle  -->
-								<div class="d-flex flex-column line-middle-column">
-									<div class="mt-4">
-										<img src="./assets/images/how/line-1.svg" alt="" />
-									</div>
-									<div class="mt-4">
-										<img src="./assets/images/how/line-2.svg" alt="" />
-									</div>
-								</div>
-
-								<!-- group three right  -->
-
-								<div style="padding-top: 16%" class="d-flex line-design-content">
-									<div>
-										<div class="number-count-box">
-											<img data-aos="zoom-in" class="shadow rounded-circle"
-												src="./assets/images/how/count-6.svg" alt="" />
+										<div class="mt-4">
+											<img src="./assets/images/how/line-2.svg" alt="" />
 										</div>
 									</div>
-									<div class="line-design-body">
+
+									<!-- group three right  -->
+
+									<div
+										style="padding-top: 16%"
+										class="d-flex line-design-content"
+									>
 										<div>
-											<img src="./assets/images/how/i6.svg" alt="" />
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-6.svg"
+													alt=""
+												/>
+											</div>
 										</div>
-										<h5 class="text-center mt-3">Conversation with Tutor</h5>
-									</div>
-									<div class="mobile-line-art"></div>
-								</div>
-							</div>
-
-							<!-- group four  -->
-							<div class="d-flex line-design-wrap">
-								<!-- group four left  -->
-								<div class="d-flex line-design-content first">
-									<div class="line-design-body">
-										<div>
-											<img src="./assets/images/how/i7.svg" alt="" />
+										<div class="line-design-body">
+											<div>
+												<img src="./assets/images/how/i6.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">Conversation with Tutor</h5>
 										</div>
-										<h5 class="text-center mt-3">Doubt cleared</h5>
-									</div>
-									<div>
-										<div class="number-count-box">
-											<img data-aos="zoom-in" class="shadow rounded-circle"
-												src="./assets/images/how/count-7.svg" alt="" />
-										</div>
-									</div>
-									<!-- <div class="mobile-line-art"></div> -->
-								</div>
-
-								<!-- group four middle  -->
-								<div style="opacity: 0" class="d-flex flex-column line-middle-column noSelect">
-									<div class="mt-4">
-										<img src="./assets/images/how/line-1.svg" alt="" />
+										<div class="mobile-line-art"></div>
 									</div>
 								</div>
 
-								<!-- group four right  -->
-								<div class="last-items noSelect" style="opacity: 0">
-									<div class="d-flex">
-										<div>
-											<img data-aos="zoom-in" class="shadow rounded-circle"
-												src="./assets/images/how/count-4.svg" alt="" />
-										</div>
+								<!-- group four  -->
+								<div class="d-flex line-design-wrap">
+									<!-- group four left  -->
+									<div class="d-flex line-design-content first">
 										<div class="line-design-body">
 											<div>
 												<img src="./assets/images/how/i7.svg" alt="" />
 											</div>
-											<h5 class="text-center mt-3">A Tutor will solve it</h5>
+											<h5 class="text-center mt-3">Doubt cleared</h5>
+										</div>
+										<div>
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-7.svg"
+													alt=""
+												/>
+											</div>
+										</div>
+										<!-- <div class="mobile-line-art"></div> -->
+									</div>
+
+									<!-- group four middle  -->
+									<div
+										style="opacity: 0"
+										class="d-flex flex-column line-middle-column noSelect"
+									>
+										<div class="mt-4">
+											<img src="./assets/images/how/line-1.svg" alt="" />
+										</div>
+									</div>
+
+									<!-- group four right  -->
+									<div class="last-items noSelect" style="opacity: 0">
+										<div class="d-flex">
+											<div>
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-4.svg"
+													alt=""
+												/>
+											</div>
+											<div class="line-design-body">
+												<div>
+													<img src="./assets/images/how/i7.svg" alt="" />
+												</div>
+												<h5 class="text-center mt-3">A Tutor will solve it</h5>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
+							<!-- end line  design -->
 						</div>
-						<!-- end line  design -->
-					</div>
-					<!-- start tab 2  -->
-					<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
-						tabindex="0">
-						<section class="bg-arts">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-6">
-										<div class="content">
-											<h2>QDrop</h2>
-											<p>
-												Hate waiting for too long to get your query solved? No
-												worries, just drop your question in the ‘Drop a
-												question’ service and our expert tutor will revert
-												with proper guidance and help that you need. Our
-												tutors will not provide a solution but in fact they
-												will make students understand the whole concept.
-												Through this feature students can move ahead with
-												other topics without being stuck on a single question.
-												Schedule a session
-											</p>
+						<!-- start tab 2  -->
+						<div
+							class="tab-pane fade"
+							id="pills-profile"
+							role="tabpanel"
+							aria-labelledby="pills-profile-tab"
+							tabindex="0"
+						>
+							<section class="bg-arts">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="content">
+												<h2>QDrop</h2>
+												<p>
+													Hate waiting for too long to get your query solved? No
+													worries, just drop your question in the ‘Drop a
+													question’ service and our expert tutor will revert
+													with proper guidance and help that you need. Our
+													tutors will not provide a solution but in fact they
+													will make students understand the whole concept.
+													Through this feature students can move ahead with
+													other topics without being stuck on a single question.
+													Schedule a session
+												</p>
+											</div>
 										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="youtube_video_area">
-											<!-- <img src="./assets/images/youtube video placement.png" alt=""> -->
-											<iframe width="100%" height="415"
-												src="https://www.youtube.com/embed/tgbNymZ7vqY">
-											</iframe>
+										<div class="col-md-6">
+											<div class="youtube_video_area">
+												<!-- <img src="./assets/images/youtube video placement.png" alt=""> -->
+												<iframe
+													width="100%"
+													height="415"
+													src="https://www.youtube.com/embed/tgbNymZ7vqY"
+												>
+												</iframe>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-						</section>
-						<div class="container main-section-for-line">
-							<!-- group one  -->
-							<div class="d-flex line-design-wrap">
-								<!-- group one left  -->
-								<div class="d-flex line-design-content first">
-									<div class="line-design-body">
+							</section>
+							<div class="container main-section-for-line">
+								<!-- group one  -->
+								<div class="d-flex line-design-wrap">
+									<!-- group one left  -->
+									<div class="d-flex line-design-content first">
+										<div class="line-design-body">
+											<div>
+												<img src="./assets/images/how/i1.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">Login</h5>
+										</div>
 										<div>
-											<img src="./assets/images/how/i1.svg" alt="" />
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-1.svg"
+													alt=""
+													aria-colspan="count-1"
+												/>
+											</div>
 										</div>
-										<h5 class="text-center mt-3">Login</h5>
+										<div class="mobile-line-art first"></div>
 									</div>
-									<div>
-										<div class="number-count-box">
-											<img data-aos="zoom-in" class="shadow rounded-circle"
-												src="./assets/images/how/count-1.svg" alt="" aria-colspan="count-1" />
+									<!-- group one middle  -->
+									<div class="d-flex flex-column line-middle-column">
+										<div class="mt-4">
+											<img src="./assets/images/how/line-1.svg" alt="" />
+										</div>
+										<div class="mt-4">
+											<img src="./assets/images/how/line-2.svg" alt="" />
 										</div>
 									</div>
-									<div class="mobile-line-art first"></div>
-								</div>
-								<!-- group one middle  -->
-								<div class="d-flex flex-column line-middle-column">
-									<div class="mt-4">
-										<img src="./assets/images/how/line-1.svg" alt="" />
-									</div>
-									<div class="mt-4">
-										<img src="./assets/images/how/line-2.svg" alt="" />
-									</div>
-								</div>
 
-								<!-- group one right  -->
+									<!-- group one right  -->
 
-								<div style="padding-top: 16%" class="d-flex line-design-content">
-									<div>
-										<div class="number-count-box">
-											<img data-aos="zoom-in" data-aos-anchor=".count-1"
-												class="shadow rounded-circle" src="./assets/images/how/count-2.svg"
-												alt="" />
-										</div>
-									</div>
-									<div class="line-design-body">
+									<div
+										style="padding-top: 16%"
+										class="d-flex line-design-content"
+									>
 										<div>
-											<img src="./assets/images/how/q2.svg" alt="" />
-										</div>
-										<h5 class="text-center mt-3">Clicks on QDrop</h5>
-									</div>
-
-									<div class="mobile-line-art"></div>
-								</div>
-							</div>
-
-							<!-- group two  -->
-							<div class="d-flex line-design-wrap">
-								<!-- group two left  -->
-								<div class="d-flex line-design-content first">
-									<div class="line-design-body">
-										<div>
-											<img src="./assets/images/how/q3.svg" alt="" />
-										</div>
-										<h5 class="text-center mt-3">Fill the form and submit</h5>
-									</div>
-									<div>
-										<div class="number-count-box">
-											<img data-aos="zoom-in" class="shadow rounded-circle"
-												src="./assets/images/how/count-3.svg" alt="" />
-										</div>
-									</div>
-									<div class="mobile-line-art"></div>
-								</div>
-
-								<!-- group two middle  -->
-								<div class="d-flex flex-column line-middle-column">
-									<div class="mt-4">
-										<img src="./assets/images/how/line-1.svg" alt="" />
-									</div>
-									<div class="mt-4">
-										<img src="./assets/images/how/line-2.svg" alt="" />
-									</div>
-								</div>
-
-								<!-- group tow right  -->
-
-								<div style="padding-top: 16%" class="d-flex line-design-content">
-									<div>
-										<div class="number-count-box">
-											<img data-aos="zoom-in" class="shadow rounded-circle"
-												src="./assets/images/how/count-4.svg" alt="" />
-										</div>
-									</div>
-									<div class="line-design-body">
-										<div>
-											<img src="./assets/images/how/q4.svg" alt="" />
-										</div>
-										<h5 class="text-center mt-3">A Tutor will solve it</h5>
-									</div>
-									<div class="mobile-line-art"></div>
-								</div>
-							</div>
-
-							<!-- group three  -->
-							<div class="d-flex line-design-wrap">
-								<!-- group three left  -->
-								<div class="d-flex line-design-content first">
-									<div class="line-design-body">
-										<div>
-											<img src="./assets/images/how/q5.svg" alt="" />
-										</div>
-										<h5 class="text-center mt-3">
-											You get answer of your query
-										</h5>
-									</div>
-									<div>
-										<div class="number-count-box">
-											<img data-aos="zoom-in" class="shadow rounded-circle"
-												src="./assets/images/how/count-5.svg" alt="" />
-										</div>
-									</div>
-									<!-- <div class="mobile-line-art"></div> -->
-								</div>
-
-								<!-- group three middle  -->
-								<div style="opacity: 0" class="d-flex flex-column line-middle-column">
-									<div class="mt-4">
-										<img src="./assets/images/how/line-1.svg" alt="" />
-									</div>
-								</div>
-
-								<!-- group three right  -->
-								<div class="last-items" style="opacity: 0">
-									<div class="d-flex">
-										<div>
-											<img data-aos="zoom-in" class="shadow rounded-circle"
-												src="./assets/images/how/count-4.svg" alt="" />
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													data-aos-anchor=".count-1"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-2.svg"
+													alt=""
+												/>
+											</div>
 										</div>
 										<div class="line-design-body">
 											<div>
-												<img src="./assets/images/how/A-Tutor-will-solve-it.svg" alt="" />
+												<img src="./assets/images/how/q2.svg" alt="" />
 											</div>
-											<h5 class="text-center mt-3">A Tutor will solve it</h5>
+											<h5 class="text-center mt-3">Clicks on QDrop</h5>
 										</div>
+
+										<div class="mobile-line-art"></div>
 									</div>
 								</div>
-							</div>
-						</div>
-						<!-- end line  design -->
-					</div>
-					<!-- start tab 3  -->
-					<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
-						tabindex="0">
-						<section class="bg-arts">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-6">
-										<div class="content">
-											<h2 class="ScheduleSmart">ScheduleSmart</h2>
-											<p>
-												Pre booking is always a great idea, so schedule your
-												sessions as per your convenience and our tutors will
-												be there to help you at the time you will ask them to.
-												These tailored sessions will help students to learn
-												and understand better according to their time and
-												convenience. In one-to-one sessions with experienced
-												tutors, students can get proper guidance for the
-												subject which will lead to better understanding. Above
-												everything these customized scheduled sessions can
-												turn a dreaded subject into a fun subject.
-											</p>
+
+								<!-- group two  -->
+								<div class="d-flex line-design-wrap">
+									<!-- group two left  -->
+									<div class="d-flex line-design-content first">
+										<div class="line-design-body">
+											<div>
+												<img src="./assets/images/how/q3.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">Fill the form and submit</h5>
 										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="youtube_video_area">
-											<!-- <img src="./assets/images/youtube video placement.png" alt=""> -->
-											<iframe width="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-											</iframe>
-										</div>
-									</div>
-								</div>
-							</div>
-						</section>
-						<div class="container main-section-for-line">
-							<!-- group one  -->
-							<div class="d-flex line-design-wrap">
-								<!-- group one left  -->
-								<div class="d-flex line-design-content first">
-									<div class="line-design-body">
 										<div>
-											<img src="./assets/images/how/i1.svg" alt="" />
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-3.svg"
+													alt=""
+												/>
+											</div>
 										</div>
-										<h5 class="text-center mt-3">Login</h5>
+										<div class="mobile-line-art"></div>
 									</div>
-									<div>
-										<div class="number-count-box">
-											<img data-aos="zoom-in" class="shadow rounded-circle"
-												src="./assets/images/how/count-1.svg" alt="" aria-colspan="count-1" />
-										</div>
-									</div>
-									<div class="mobile-line-art first"></div>
-								</div>
-								<!-- group one middle  -->
-								<div class="d-flex flex-column line-middle-column">
-									<div class="mt-4">
-										<img src="./assets/images/how/line-1.svg" alt="" />
-									</div>
-									<div class="mt-4">
-										<img src="./assets/images/how/line-2.svg" alt="" />
-									</div>
-								</div>
 
-								<!-- group one right  -->
-
-								<div style="padding-top: 16%" class="d-flex line-design-content">
-									<div>
-										<div class="number-count-box">
-											<img data-aos="zoom-in" data-aos-anchor=".count-1"
-												class="shadow rounded-circle" src="./assets/images/how/count-2.svg"
-												alt="" />
+									<!-- group two middle  -->
+									<div class="d-flex flex-column line-middle-column">
+										<div class="mt-4">
+											<img src="./assets/images/how/line-1.svg" alt="" />
+										</div>
+										<div class="mt-4">
+											<img src="./assets/images/how/line-2.svg" alt="" />
 										</div>
 									</div>
-									<div class="line-design-body">
+
+									<!-- group tow right  -->
+
+									<div
+										style="padding-top: 16%"
+										class="d-flex line-design-content"
+									>
 										<div>
-											<img src="./assets/images/how/s2.svg" alt="" />
-										</div>
-										<h5 class="text-center mt-3">Clicks on ScheduleSmart</h5>
-									</div>
-
-									<div class="mobile-line-art"></div>
-								</div>
-							</div>
-
-							<!-- group two  -->
-							<div class="d-flex line-design-wrap">
-								<!-- group two left  -->
-								<div class="d-flex line-design-content first">
-									<div class="line-design-body">
-										<div>
-											<img src="./assets/images/how/s3.svg" alt="" />
-										</div>
-										<h5 class="text-center mt-3">
-											Fill out form , select time <br />
-											and subject and topic
-										</h5>
-									</div>
-									<div>
-										<div class="number-count-box">
-											<img data-aos="zoom-in" class="shadow rounded-circle"
-												src="./assets/images/how/count-3.svg" alt="" />
-										</div>
-									</div>
-									<div class="mobile-line-art"></div>
-								</div>
-
-								<!-- group two middle  -->
-								<div class="d-flex flex-column line-middle-column">
-									<div class="mt-4">
-										<img src="./assets/images/how/line-1.svg" alt="" />
-									</div>
-									<div class="mt-4">
-										<img src="./assets/images/how/line-2.svg" alt="" />
-									</div>
-								</div>
-
-								<!-- group tow right  -->
-
-								<div style="padding-top: 16%" class="d-flex line-design-content">
-									<div>
-										<div class="number-count-box">
-											<img data-aos="zoom-in" class="shadow rounded-circle"
-												src="./assets/images/how/count-4.svg" alt="" />
-										</div>
-									</div>
-									<div class="line-design-body">
-										<div>
-											<img src="./assets/images/how/s4.svg" alt="" />
-										</div>
-										<h5 class="text-center mt-3">Tutor accept the request</h5>
-									</div>
-									<div class="mobile-line-art"></div>
-								</div>
-							</div>
-
-							<!-- group three  -->
-							<div class="d-flex line-design-wrap">
-								<!-- group three left  -->
-								<div class="d-flex line-design-content first">
-									<div class="line-design-body">
-										<div>
-											<img src="./assets/images/how/s5.svg" alt="" />
-										</div>
-										<h5 class="text-center mt-3">Join at scheduled time</h5>
-									</div>
-									<div>
-										<div class="number-count-box">
-											<img data-aos="zoom-in" class="shadow rounded-circle"
-												src="./assets/images/how/count-5.svg" alt="" />
-										</div>
-									</div>
-									<!-- <div class="mobile-line-art"></div> -->
-								</div>
-
-								<!-- group three middle  -->
-								<div style="opacity: 0" class="d-flex flex-column line-middle-column noSelect">
-									<div class="mt-4">
-										<img src="./assets/images/how/line-1.svg" alt="" />
-									</div>
-								</div>
-
-								<!-- group three right  -->
-								<div class="last-items noSelect" style="opacity: 0">
-									<div class="d-flex">
-										<div>
-											<img data-aos="zoom-in" class="shadow rounded-circle"
-												src="./assets/images/how/count-4.svg" alt="" />
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-4.svg"
+													alt=""
+												/>
+											</div>
 										</div>
 										<div class="line-design-body">
 											<div>
-												<img src="./assets/images/how/A-Tutor-will-solve-it.svg" alt="" />
+												<img src="./assets/images/how/q4.svg" alt="" />
 											</div>
 											<h5 class="text-center mt-3">A Tutor will solve it</h5>
+										</div>
+										<div class="mobile-line-art"></div>
+									</div>
+								</div>
+
+								<!-- group three  -->
+								<div class="d-flex line-design-wrap">
+									<!-- group three left  -->
+									<div class="d-flex line-design-content first">
+										<div class="line-design-body">
+											<div>
+												<img src="./assets/images/how/q5.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">
+												You get answer of your query
+											</h5>
+										</div>
+										<div>
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-5.svg"
+													alt=""
+												/>
+											</div>
+										</div>
+										<!-- <div class="mobile-line-art"></div> -->
+									</div>
+
+									<!-- group three middle  -->
+									<div
+										style="opacity: 0"
+										class="d-flex flex-column line-middle-column"
+									>
+										<div class="mt-4">
+											<img src="./assets/images/how/line-1.svg" alt="" />
+										</div>
+									</div>
+
+									<!-- group three right  -->
+									<div class="last-items" style="opacity: 0">
+										<div class="d-flex">
+											<div>
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-4.svg"
+													alt=""
+												/>
+											</div>
+											<div class="line-design-body">
+												<div>
+													<img
+														src="./assets/images/how/A-Tutor-will-solve-it.svg"
+														alt=""
+													/>
+												</div>
+												<h5 class="text-center mt-3">A Tutor will solve it</h5>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
+							<!-- end line  design -->
 						</div>
-						<!-- end line  design -->
+						<!-- start tab 3  -->
+						<div
+							class="tab-pane fade"
+							id="pills-contact"
+							role="tabpanel"
+							aria-labelledby="pills-contact-tab"
+							tabindex="0"
+						>
+							<section class="bg-arts">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="content">
+												<h2 class="ScheduleSmart">ScheduleSmart</h2>
+												<p>
+													Pre booking is always a great idea, so schedule your
+													sessions as per your convenience and our tutors will
+													be there to help you at the time you will ask them to.
+													These tailored sessions will help students to learn
+													and understand better according to their time and
+													convenience. In one-to-one sessions with experienced
+													tutors, students can get proper guidance for the
+													subject which will lead to better understanding. Above
+													everything these customized scheduled sessions can
+													turn a dreaded subject into a fun subject.
+												</p>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="youtube_video_area">
+												<!-- <img src="./assets/images/youtube video placement.png" alt=""> -->
+												<iframe
+													width="100%"
+													src="https://www.youtube.com/embed/tgbNymZ7vqY"
+												>
+												</iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<div class="container main-section-for-line">
+								<!-- group one  -->
+								<div class="d-flex line-design-wrap">
+									<!-- group one left  -->
+									<div class="d-flex line-design-content first">
+										<div class="line-design-body">
+											<div>
+												<img src="./assets/images/how/i1.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">Login</h5>
+										</div>
+										<div>
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-1.svg"
+													alt=""
+													aria-colspan="count-1"
+												/>
+											</div>
+										</div>
+										<div class="mobile-line-art first"></div>
+									</div>
+									<!-- group one middle  -->
+									<div class="d-flex flex-column line-middle-column">
+										<div class="mt-4">
+											<img src="./assets/images/how/line-1.svg" alt="" />
+										</div>
+										<div class="mt-4">
+											<img src="./assets/images/how/line-2.svg" alt="" />
+										</div>
+									</div>
+
+									<!-- group one right  -->
+
+									<div
+										style="padding-top: 16%"
+										class="d-flex line-design-content"
+									>
+										<div>
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													data-aos-anchor=".count-1"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-2.svg"
+													alt=""
+												/>
+											</div>
+										</div>
+										<div class="line-design-body">
+											<div>
+												<img src="./assets/images/how/s2.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">Clicks on ScheduleSmart</h5>
+										</div>
+
+										<div class="mobile-line-art"></div>
+									</div>
+								</div>
+
+								<!-- group two  -->
+								<div class="d-flex line-design-wrap">
+									<!-- group two left  -->
+									<div class="d-flex line-design-content first">
+										<div class="line-design-body">
+											<div>
+												<img src="./assets/images/how/s3.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">
+												Fill out form , select time <br />
+												and subject and topic
+											</h5>
+										</div>
+										<div>
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-3.svg"
+													alt=""
+												/>
+											</div>
+										</div>
+										<div class="mobile-line-art"></div>
+									</div>
+
+									<!-- group two middle  -->
+									<div class="d-flex flex-column line-middle-column">
+										<div class="mt-4">
+											<img src="./assets/images/how/line-1.svg" alt="" />
+										</div>
+										<div class="mt-4">
+											<img src="./assets/images/how/line-2.svg" alt="" />
+										</div>
+									</div>
+
+									<!-- group tow right  -->
+
+									<div
+										style="padding-top: 16%"
+										class="d-flex line-design-content"
+									>
+										<div>
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-4.svg"
+													alt=""
+												/>
+											</div>
+										</div>
+										<div class="line-design-body">
+											<div>
+												<img src="./assets/images/how/s4.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">Tutor accept the request</h5>
+										</div>
+										<div class="mobile-line-art"></div>
+									</div>
+								</div>
+
+								<!-- group three  -->
+								<div class="d-flex line-design-wrap">
+									<!-- group three left  -->
+									<div class="d-flex line-design-content first">
+										<div class="line-design-body">
+											<div>
+												<img src="./assets/images/how/s5.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">Join at scheduled time</h5>
+										</div>
+										<div>
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-5.svg"
+													alt=""
+												/>
+											</div>
+										</div>
+										<!-- <div class="mobile-line-art"></div> -->
+									</div>
+
+									<!-- group three middle  -->
+									<div
+										style="opacity: 0"
+										class="d-flex flex-column line-middle-column noSelect"
+									>
+										<div class="mt-4">
+											<img src="./assets/images/how/line-1.svg" alt="" />
+										</div>
+									</div>
+
+									<!-- group three right  -->
+									<div class="last-items noSelect" style="opacity: 0">
+										<div class="d-flex">
+											<div>
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-4.svg"
+													alt=""
+												/>
+											</div>
+											<div class="line-design-body">
+												<div>
+													<img
+														src="./assets/images/how/A-Tutor-will-solve-it.svg"
+														alt=""
+													/>
+												</div>
+												<h5 class="text-center mt-3">A Tutor will solve it</h5>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end line  design -->
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<footer>
-		<div class="container">
-			<div class="row footer_options text-center text-md-start">
-				<div class="col-xl-3 col-sm-6">
-					<img class="footer-logo" src="./assets/images/whitelogo.png" alt="" />
+		<footer>
+			<div class="container">
+				<div class="row footer_options text-center text-md-start">
+					<div class="col-xl-3 col-sm-6">
+						<img
+							class="footer-logo"
+							src="./assets/images/whitelogo.png"
+							alt=""
+						/>
+						<p>
+							Get the academic support you need at your fingertips, and unlock
+							your true potential with our expert tutors.
+						</p>
+					</div>
+					<div class="col-xl-2 col-sm-6 offset-xl-1">
+						<h2>Menu</h2>
+						<a href="#">Assignment Help</a>
+						<a href="#">Online Tutoring</a>
+						<a href="#">Homework Help</a>
+						<a href="#">Writing Help</a>
+						<a href="#">Physics</a>
+					</div>
+					<div class="col-xl-2 col-sm-6">
+						<h2>Links</h2>
+						<a href="#">Blog</a>
+						<a href="#">Join as a Tutor</a>
+						<a href="#">Make Payment</a>
+						<a href="#">About Us</a>
+						<a href="#">Refund Policy</a>
+					</div>
+					<div class="col-xl-2 col-sm-6 contact-info">
+						<h2>Contact Info</h2>
+						<div>
+							<a class="flex" href="tel:+910000000000">
+								<i class="fa-solid fa-phone me-2"></i>
+								<span> +91 0000000000 </span></a
+							>
+						</div>
+						<div>
+							<a class="flex" href="mailto:support@fasttutor.co">
+								<i class="fa-regular fa-envelope me-2"></i>
+								<span>support@fasttutor.co</span></a
+							>
+						</div>
+					</div>
+					<div class="col-xl-2 col-sm-6 text-xl-end">
+						<h2 class="mb-0 mb-xl-2">Social Media</h2>
+						<div class="social_icons justify-content-xl-end">
+							<a href="" target="_blank" rel="noopener noreferrer">
+								<i class="fa-brands fa-facebook-f"></i
+							></a>
+							<a href="" target="_blank" rel="noopener noreferrer">
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+							<a href="" target="_blank" rel="noopener noreferrer">
+								<i class="fa-brands fa-youtube"></i>
+							</a>
+							<a href="" target="_blank" rel="noopener noreferrer">
+								<i class="fa-brands fa-twitter"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="copyright_text d-flex">
+					<p>Copyright © 2023 Fasttutor.co All Rights Reserved.</p>
+					<p class="mx-3">|</p>
 					<p>
-						Get the academic support you need at your fingertips, and unlock
-						your true potential with our expert tutors.
+						<a target="_blank" href="https://futureinltd.com/">
+							Designed with <span style="color: red">❤</span> by Future
+							Innovation LTD</a
+						>
 					</p>
 				</div>
-				<div class="col-xl-2 col-sm-6 offset-xl-1">
-					<h2>Menu</h2>
-					<a href="#">Assignment Help</a>
-					<a href="#">Online Tutoring</a>
-					<a href="#">Homework Help</a>
-					<a href="#">Writing Help</a>
-					<a href="#">Physics</a>
-				</div>
-				<div class="col-xl-2 col-sm-6">
-					<h2>Links</h2>
-					<a href="#">Blog</a>
-					<a href="#">Join as a Tutor</a>
-					<a href="#">Make Payment</a>
-					<a href="#">About Us</a>
-					<a href="#">Refund Policy</a>
-				</div>
-				<div class="col-xl-2 col-sm-6 contact-info">
-					<h2>Contact Info</h2>
-					<div>
-						<a class="flex" href="tel:+910000000000">
-							<i class="fa-solid fa-phone me-2"></i>
-							<span> +91 0000000000 </span></a>
-					</div>
-					<div>
-						<a class="flex" href="mailto:support@fasttutor.co">
-							<i class="fa-regular fa-envelope me-2"></i>
-							<span>support@fasttutor.co</span></a>
-					</div>
-				</div>
-				<div class="col-xl-2 col-sm-6 text-xl-end">
-					<h2 class="mb-0 mb-xl-2">Social Media</h2>
-					<div class="social_icons justify-content-xl-end">
-						<a href="" target="_blank" rel="noopener noreferrer">
-							<i class="fa-brands fa-facebook-f"></i></a>
-						<a href="" target="_blank" rel="noopener noreferrer">
-							<i class="fa-brands fa-instagram"></i>
-						</a>
-						<a href="" target="_blank" rel="noopener noreferrer">
-							<i class="fa-brands fa-youtube"></i>
-						</a>
-						<a href="" target="_blank" rel="noopener noreferrer">
-							<i class="fa-brands fa-twitter"></i>
-						</a>
-					</div>
-				</div>
 			</div>
-			<div class="copyright_text d-flex">
-				<p>Copyright © 2023 Fasttutor.co All Rights Reserved.</p>
-				<p class="mx-3">|</p>
-				<p>
-					<a target="_blank" href="https://futureinltd.com/">
-						Designed with <span style="color: red">❤</span> by Future
-						Innovation LTD</a>
-				</p>
+		</footer>
+		<!-- modal  -->
+		<div
+			class="modal fade"
+			id="loginModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-xl modal-dialog-centered">
+				<div class="modal-content">
+					<section class="sign-up-page">
+						<div class="row">
+							<div class="col-lg-5 col-md-12">
+								<div class="left_side_area">
+									<div>
+										<div class="logo text-center">
+											<img src="/assets/images/whitelogo.png" alt="" />
+										</div>
+										<h2>Get Started with FastTutor !</h2>
+										<p>
+											<span
+												><svg
+													width="36"
+													height="36"
+													viewBox="0 0 36 36"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
+														fill="white"
+													/></svg
+											></span>
+
+											24*7 Tutor availability
+										</p>
+										<p>
+											<span
+												><svg
+													width="36"
+													height="36"
+													viewBox="0 0 36 36"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
+														fill="white"
+													/></svg
+											></span>
+											Interactive Whiteboard
+										</p>
+										<p>
+											<span
+												><svg
+													width="36"
+													height="36"
+													viewBox="0 0 36 36"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
+														fill="white"
+													/></svg
+											></span>
+											Multi-device compatibility
+										</p>
+										<p>
+											<span
+												><svg
+													width="36"
+													height="36"
+													viewBox="0 0 36 36"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
+														fill="white"
+													/></svg
+											></span>
+											Customized service
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-7 col-md-12">
+								<div class="right_side_from">
+									<div>
+										<h2>Sign In to Continue</h2>
+
+										<input type="text" placeholder="Username/Email" />
+										<input type="Password" placeholder="Password" />
+										<div class="submit_area row">
+											<div class="col-md-7 order-2 order-md-1">
+												<p class="text_brand">
+													<a href="#" class="text_brand">Forgot Password?</a>
+												</p>
+												<p>
+													Don't have an account yet?
+													<a data-bs-toggle="modal" data-bs-target="#regModal"
+														>Register Now</a
+													>
+												</p>
+											</div>
+											<div
+												class="col-md-5 text-center order-1 order-md-2 text-md-end mb-3"
+											>
+												<button class="btn_submit">continue</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="close_btn">
+							<span data-bs-dismiss="modal" aria-label="Close" class="btn_close"
+								>X</span
+							>
+						</div>
+					</section>
+				</div>
 			</div>
 		</div>
-	</footer>
-	<!-- modal  -->
-	<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-xl modal-dialog-centered">
-			<div class="modal-content">
-				<section class="sign-up-page">
-					<div class="row">
-						<div class="col-lg-5 col-md-12">
-							<div class="left_side_area">
-								<div>
-									<div class="logo text-center">
-										<img src="/assets/images/whitelogo.png" alt="" />
+		<div
+			class="modal fade"
+			id="regModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-xl modal-dialog-centered">
+				<div class="modal-content">
+					<section class="sign-up-page">
+						<div class="row">
+							<div class="col-lg-5 col-md-12">
+								<div class="left_side_area">
+									<div>
+										<div class="logo text-center">
+											<img src="/assets/images/whitelogo.png" alt="" />
+										</div>
+										<h2>Get Started with FastTutor !</h2>
+										<p>
+											<span
+												><svg
+													width="36"
+													height="36"
+													viewBox="0 0 36 36"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
+														fill="white"
+													/></svg
+											></span>
+
+											24*7 Tutor availability
+										</p>
+										<p>
+											<span
+												><svg
+													width="36"
+													height="36"
+													viewBox="0 0 36 36"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
+														fill="white"
+													/></svg
+											></span>
+											Interactive Whiteboard
+										</p>
+										<p>
+											<span
+												><svg
+													width="36"
+													height="36"
+													viewBox="0 0 36 36"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
+														fill="white"
+													/></svg
+											></span>
+											Multi-device compatibility
+										</p>
+										<p>
+											<span
+												><svg
+													width="36"
+													height="36"
+													viewBox="0 0 36 36"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
+														fill="white"
+													/></svg
+											></span>
+											Customized service
+										</p>
 									</div>
-									<h2>Get Started with FastTutor !</h2>
-									<p>
-										<span><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
-												xmlns="http://www.w3.org/2000/svg">
-												<path
-													d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
-													fill="white" />
-											</svg></span>
-	
-										24*7 Tutor availability
-									</p>
-									<p>
-										<span><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
-												xmlns="http://www.w3.org/2000/svg">
-												<path
-													d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
-													fill="white" />
-											</svg></span>
-										Interactive Whiteboard
-									</p>
-									<p>
-										<span><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
-												xmlns="http://www.w3.org/2000/svg">
-												<path
-													d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
-													fill="white" />
-											</svg></span>
-										Multi-device compatibility
-									</p>
-									<p>
-										<span><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
-												xmlns="http://www.w3.org/2000/svg">
-												<path
-													d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
-													fill="white" />
-											</svg></span>
-										Customized service
-									</p>
+								</div>
+							</div>
+							<div class="col-md-12 col-lg-7">
+								<div class="right_side_from">
+									<div>
+										<h2>First sign up page</h2>
+
+										<div class="pb-3">
+											<div class="iti">
+												<input type="tel" name="phone" />
+											</div>
+										</div>
+
+										<input type="email" placeholder="Email" />
+										<input type="text" placeholder="Mobile No" />
+										<div class="submit_area row">
+											<div class="col-md-7 order-2 order-md-1">
+												<p>
+													Already have an Account ?
+													<a data-bs-toggle="modal" data-bs-target="#loginModal"
+														>Login Now</a
+													>
+												</p>
+											</div>
+											<div
+												class="col-md-5 order-1 order-md-2 text-center text-md-end mb-3"
+											>
+												<button
+													data-bs-toggle="modal"
+													data-bs-target="#regModal2"
+													class="btn_submit"
+												>
+													continue
+												</button>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-7 col-md-12">
-							<div class="right_side_from">
-								<div>
-									<h2>Sign In to Continue</h2>
-	
-									<input type="text" placeholder="Username/Email" />
-									<input type="Password" placeholder="Password" />
-									<div class="submit_area row">
-										<div class="col-md-7 order-2 order-md-1">
-											<p class="text_brand">
-												<a href="#" class="text_brand">Forgot Password?</a>
-											</p>
-											<p>
-												Don't have an account yet?
-												<a data-bs-toggle="modal" data-bs-target="#regModal">Register Now</a>
-											</p>
-										</div>
-										<div class="col-md-5 text-center order-1 order-md-2 text-md-end mb-3">
-											<button class="btn_submit">continue</button>
-										</div>
-									</div>
-								</div>
-							</div>
+						<div class="close_btn">
+							<span class="btn_close" data-bs-dismiss="modal" aria-label="Close"
+								>X</span
+							>
 						</div>
-					</div>
-					<div class="close_btn">
-						<span data-bs-dismiss="modal" aria-label="Close" class="btn_close">X</span>
-					</div>
-				</section>
+					</section>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="modal fade" id="regModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-xl modal-dialog-centered">
-			<div class="modal-content">
-				<section class="sign-up-page">
-					<div class="row">
-						<div class="col-lg-5 col-md-12">
-							<div class="left_side_area">
-								<div>
-									<div class="logo text-center">
-										<img src="/assets/images/whitelogo.png" alt="" />
+		<div
+			class="modal fade"
+			id="regModal2"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-xl modal-dialog-centered">
+				<div class="modal-content">
+					<section class="sign-up-page">
+						<div class="row">
+							<div class="col-md-12 col-lg-5">
+								<div class="left_side_area">
+									<div>
+										<div class="logo text-center">
+											<img src="/assets/images/whitelogo.png" alt="" />
+										</div>
+										<h2>Get Started with FastTutor !</h2>
+										<p>
+											<span
+												><svg
+													width="36"
+													height="36"
+													viewBox="0 0 36 36"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
+														fill="white"
+													/></svg
+											></span>
+
+											24*7 Tutor availability
+										</p>
+										<p>
+											<span
+												><svg
+													width="36"
+													height="36"
+													viewBox="0 0 36 36"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
+														fill="white"
+													/></svg
+											></span>
+											Interactive Whiteboard
+										</p>
+										<p>
+											<span
+												><svg
+													width="36"
+													height="36"
+													viewBox="0 0 36 36"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
+														fill="white"
+													/></svg
+											></span>
+											Multi-device compatibility
+										</p>
+										<p>
+											<span
+												><svg
+													width="36"
+													height="36"
+													viewBox="0 0 36 36"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
+														fill="white"
+													/></svg
+											></span>
+											Customized service
+										</p>
 									</div>
-									<h2>Get Started with FastTutor !</h2>
-									<p>
-										<span><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
-												xmlns="http://www.w3.org/2000/svg">
-												<path
-													d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
-													fill="white" />
-											</svg></span>
-	
-										24*7 Tutor availability
-									</p>
-									<p>
-										<span><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
-												xmlns="http://www.w3.org/2000/svg">
-												<path
-													d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
-													fill="white" />
-											</svg></span>
-										Interactive Whiteboard
-									</p>
-									<p>
-										<span><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
-												xmlns="http://www.w3.org/2000/svg">
-												<path
-													d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
-													fill="white" />
-											</svg></span>
-										Multi-device compatibility
-									</p>
-									<p>
-										<span><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
-												xmlns="http://www.w3.org/2000/svg">
-												<path
-													d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
-													fill="white" />
-											</svg></span>
-										Customized service
-									</p>
+								</div>
+							</div>
+							<div class="col-lg-7 col-md-12">
+								<div class="right_side_from">
+									<div>
+										<h2>Continue sign up</h2>
+
+										<div class="row">
+											<div class="col-md-6">
+												<input type="text" placeholder="First Name" />
+											</div>
+											<div class="col-md-6">
+												<input type="text" placeholder="Last Name" />
+											</div>
+											<div class="col-6">
+												<select>
+													<option value="0">Select School</option>
+													<option value="1">India</option>
+													<option value="2">USA</option>
+													<option value="3">UK</option>
+													<option value="4">Canada</option>
+													<option value="5">Australia</option>
+												</select>
+											</div>
+											<div class="col-6 text-end">
+												<input type="text" placeholder="OTP" /><br />
+												<button class="btn_resend">Resend</button>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-12">
+												<input type="password" placeholder="Password" />
+											</div>
+										</div>
+
+										<div class="row mb-4 gap-4">
+											<div class="col-3 d-flex align-items-center">
+												<input
+													type="radio"
+													name="usertype"
+													id="Student"
+													value="student"
+													checked
+												/>
+												<label for="Student">Student</label>
+											</div>
+											<div class="col-3 d-flex align-items-center">
+												<input
+													type="radio"
+													name="usertype"
+													id="Teacher"
+													value="teacher"
+												/>
+												<label for="Teacher">Teacher</label>
+											</div>
+											<div class="col-3 d-flex align-items-center">
+												<input
+													type="radio"
+													name="usertype"
+													id="Parent"
+													value="Parent"
+												/>
+												<label for="Parent">Parent</label>
+											</div>
+										</div>
+
+										<div class="row mb-5">
+											<div class="text-center">
+												<button class="btn_submit">JOIN NOW FOR FREE</button>
+											</div>
+										</div>
+										<div class="row align-items-center">
+											<div class="col-md-6">
+												By joining you agree to our <a href="#">T&G</a>
+											</div>
+											<div class="col-md-6 mt-2">
+												<p>
+													Already have an Account? <br /><a
+														data-bs-toggle="modal"
+														data-bs-target="#loginModal"
+														>Login Now</a
+													>
+												</p>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class=" col-md-12 col-lg-7">
-							<div class="right_side_from">
-								<div>
-									<h2>First sign up page</h2>
-	
-									<div class="pb-3">
-										<div class="iti">
-											<input type="tel" name="phone" />
-										</div>
-									</div>
-	
-									<input type="email" placeholder="Email" />
-									<input type="text" placeholder="Mobile No" />
-									<div class="submit_area row">
-										<div class="col-md-7 order-2 order-md-1">
-											<p>
-												Already have an Account ?
-												<a data-bs-toggle="modal" data-bs-target="#loginModal">Login Now</a>
-											</p>
-										</div>
-										<div class="col-md-5 order-1 order-md-2 text-center text-md-end mb-3">
-											<button data-bs-toggle="modal" data-bs-target="#regModal2" class="btn_submit">
-												continue
-											</button>
-										</div>
-									</div>
-								</div>
-							</div>
+						<div class="close_btn">
+							<span class="btn_close" data-bs-dismiss="modal" aria-label="Close"
+								>X</span
+							>
 						</div>
-					</div>
-					<div class="close_btn">
-						<span class="btn_close" data-bs-dismiss="modal" aria-label="Close">X</span>
-					</div>
-				</section>
+					</section>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="modal fade" id="regModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-xl modal-dialog-centered">
-			<div class="modal-content">
-				<section class="sign-up-page">
-					<div class="row">
-						<div class=" col-md-12 col-lg-5">
-							<div class="left_side_area">
-								<div>
-									<div class="logo text-center">
-										<img src="/assets/images/whitelogo.png" alt="" />
-									</div>
-									<h2>Get Started with FastTutor !</h2>
-									<p>
-										<span><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
-												xmlns="http://www.w3.org/2000/svg">
-												<path
-													d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
-													fill="white" />
-											</svg></span>
-	
-										24*7 Tutor availability
-									</p>
-									<p>
-										<span><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
-												xmlns="http://www.w3.org/2000/svg">
-												<path
-													d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
-													fill="white" />
-											</svg></span>
-										Interactive Whiteboard
-									</p>
-									<p>
-										<span><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
-												xmlns="http://www.w3.org/2000/svg">
-												<path
-													d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
-													fill="white" />
-											</svg></span>
-										Multi-device compatibility
-									</p>
-									<p>
-										<span><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
-												xmlns="http://www.w3.org/2000/svg">
-												<path
-													d="M7.5 31.5C6.675 31.5 5.9685 31.206 5.3805 30.618C4.7925 30.03 4.499 29.324 4.5 28.5V7.5C4.5 6.675 4.794 5.9685 5.382 5.3805C5.97 4.7925 6.676 4.499 7.5 4.5H28.5C29.325 4.5 30.0315 4.794 30.6195 5.382C31.2075 5.97 31.501 6.676 31.5 7.5V28.5C31.5 29.325 31.206 30.0315 30.618 30.6195C30.03 31.2075 29.324 31.501 28.5 31.5H7.5ZM7.5 28.5H28.5V7.5H7.5V28.5ZM15.9 23.6625C16.1 23.6625 16.2875 23.631 16.4625 23.568C16.6375 23.505 16.8 23.399 16.95 23.25L25.4625 14.7375C25.7375 14.4625 25.875 14.125 25.875 13.725C25.875 13.325 25.725 12.975 25.425 12.675C25.15 12.4 24.8 12.2625 24.375 12.2625C23.95 12.2625 23.6 12.4 23.325 12.675L15.9 20.1L12.6375 16.8375C12.3625 16.5625 12.025 16.425 11.625 16.425C11.225 16.425 10.875 16.575 10.575 16.875C10.3 17.15 10.1625 17.5 10.1625 17.925C10.1625 18.35 10.3 18.7 10.575 18.975L14.85 23.25C15 23.4 15.1625 23.506 15.3375 23.568C15.5125 23.63 15.7 23.6615 15.9 23.6625Z"
-													fill="white" />
-											</svg></span>
-										Customized service
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-7 col-md-12">
-							<div class="right_side_from">
-								<div>
-									<h2>Continue sign up</h2>
-	
-									<div class="row">
-										<div class="col-md-6">
-											<input type="text" placeholder="First Name" />
-										</div>
-										<div class="col-md-6">
-											<input type="text" placeholder="Last Name" />
-										</div>
-										<div class="col-6">
-											<select>
-												<option value="0">Select School</option>
-												<option value="1">India</option>
-												<option value="2">USA</option>
-												<option value="3">UK</option>
-												<option value="4">Canada</option>
-												<option value="5">Australia</option>
-											</select>
-										</div>
-										<div class="col-6 text-end">
-											<input type="text" placeholder="OTP" /><br />
-											<button class="btn_resend">Resend</button>
-										</div>
-									</div>
-	
-									<div class="row">
-										<div class="col-12">
-											<input type="password" placeholder="Password" />
-										</div>
-									</div>
-	
-									<div class="row mb-4 gap-4">
-										<div class="col-3 d-flex align-items-center">
-											<input type="radio" name="usertype" id="Student" value="student" checked />
-											<label for="Student">Student</label>
-										</div>
-										<div class="col-3 d-flex align-items-center">
-											<input type="radio" name="usertype" id="Teacher" value="teacher" />
-											<label for="Teacher">Teacher</label>
-										</div>
-										<div class="col-3 d-flex align-items-center">
-											<input type="radio" name="usertype" id="Parent" value="Parent" />
-											<label for="Parent">Parent</label>
-										</div>
-									</div>
-	
-									<div class="row mb-5">
-										<div class="text-center">
-											<button class="btn_submit">JOIN NOW FOR FREE</button>
-										</div>
-									</div>
-									<div class="row align-items-center">
-										<div class="col-md-6">
-											By joining you agree to our <a href="#">T&G</a>
-										</div>
-										<div class="col-md-6 mt-2">
-											<p>
-												Already have an Account? <br /><a data-bs-toggle="modal"
-													data-bs-target="#loginModal">Login Now</a>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="close_btn">
-						<span class="btn_close" data-bs-dismiss="modal" aria-label="Close">X</span>
-					</div>
-				</section>
-			</div>
-		</div>
-	</div>
-	
-	<!-- modal  -->
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	<script>
-		AOS.init();
-	</script>
 
-	<!-- Swiper JS -->
-	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<!-- modal  -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 
-	<!-- Initialize Swiper  slider-->
-	<script src="./assets/js/slider.js"></script>
+		<!-- Swiper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-	<!-- country code  -->
-	<script src="./assets/js/phone-input.js"></script>
+		<!-- Initialize Swiper  slider-->
+		<script src="./assets/js/slider.js"></script>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-		crossorigin="anonymous"></script>
-</body>
-
+		<!-- country code  -->
+		<script src="./assets/js/phone-input.js"></script>
+		<script src="./assets/js/line-animation.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>
