@@ -67,11 +67,22 @@
   }
 }
 
-// @media screen and (max-width: 960px) {
-//   .let_join {
-//     padding-top: 30px;
-//   }
-// }
+@media screen and (max-width: 992px) {
+
+  .benefits .content h3,
+  .benefits .content .h3 {
+    margin-bottom: 30px;
+  }
+
+  .benefits h2,
+  .benefits .h2 {
+    margin-bottom: 30px;
+  }
+
+  .benefits .content {
+    margin-top: 20px;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .let_join {
