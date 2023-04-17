@@ -106,13 +106,16 @@
   .sign-up-page {
     .left_side_area {
       padding: 20px;
+
       h2 {
         font-size: 25px;
       }
+
       p {
         margin-left: 0px;
       }
     }
+
     .right_side_from {
       padding: 20px;
     }
@@ -120,6 +123,7 @@
 }
 
 @media screen and (max-width: 768px) {
+
   // sign in page
   .sign-up-page {
     position: relative;
@@ -136,9 +140,11 @@
       background: $main-color;
       color: #fff;
       padding: 20px;
+
       .logo img {
         margin-top: 60px;
       }
+
       h2 {
         font-weight: 600;
         font-size: 24px;
@@ -158,9 +164,11 @@
 
     .right_side_from {
       padding: 20px;
+
       .row {
         margin-right: 0;
       }
+
       input,
       select {
         width: 100%;
@@ -186,9 +194,10 @@
         line-height: 150%;
         color: #999999;
       }
+
       .btn_submit {
         background: $main-color;
-        padding: 5px 15px 5px 15px;
+        padding: 10px 40px 10px 40px;
         color: #fff;
         font-weight: 600;
         font-size: 18px;

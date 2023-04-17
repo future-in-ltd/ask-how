@@ -11899,6 +11899,23 @@ textarea.form-control-lg {
   background-color: #d48f3f;
 }
 
+@media screen and (max-width: 992px) {
+  .close_btn.custom-change .btn_close {
+    background-color: white;
+    color: #5a1f7a;
+  }
+  .sign-up-page .left_side_area h2,
+  .sign-up-page .left_side_area .h2 {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+  }
+  .list-style-pages p {
+    margin-bottom: 0px;
+  }
+  .list-style-pages svg {
+    transform: scale(0.6);
+  }
+}
 .iti {
   position: relative;
 }
@@ -13217,6 +13234,7 @@ footer .copyright_text a {
 }
 .blogs .single_blog_card img {
   max-height: 280px;
+  object-fit: cover;
 }
 .blogs .single_blog_card .content {
   padding: 38.5px 37.5px 27px 37.5px;
@@ -14226,7 +14244,7 @@ footer .copyright_text a {
   }
   .sign-up-page .right_side_from .btn_submit {
     background: #7531ab;
-    padding: 5px 15px 5px 15px;
+    padding: 10px 40px 10px 40px;
     color: #fff;
     font-weight: 600;
     font-size: 18px;
