@@ -15,7 +15,9 @@
 
 .line-design-body {
 	img {
-		transition: .3s linear;
+		transition: 0.3s linear;
+		z-index: 999999;
+		position: relative;
 
 		&:hover {
 			transform: scale(1.2);
@@ -71,6 +73,38 @@
 	}
 }
 
+.linemain {
+	position: absolute;
+	z-index: 999 !important;
+	left: -24px;
+	width: 100%;
+	height: 218%;
+}
+.linemain2 {
+	position: absolute;
+	z-index: 999 !important;
+	left: -24px;
+	width: 100%;
+	height: 146%;
+}
+.linemain3 {
+	position: absolute;
+	z-index: 999 !important;
+	left: -24px;
+	width: 100%;
+	height: 146%;
+}
+.number-count-box img {
+	position: relative;
+	z-index: 9999 !important;
+}
+// count
+.count-2-1st {
+	left: -30px !important;
+}
+.count--1st {
+	left: -30px !important;
+}
 @media only screen and (max-width: 450px) {
 	.number-count-box {
 		max-width: 70px;
@@ -79,5 +113,32 @@
 
 	.mobile-line-art {
 		left: 35px;
+	}
+}
+@media only screen and (max-width: 1199px) {
+	.linemain {
+		position: absolute;
+		z-index: 999 !important;
+		left: -14px;
+		width: 100%;
+		height: 164%;
+	}
+	.linemain2,
+	.linemain3 {
+		height: 126%;
+	}
+}
+@media only screen and (max-width: 992px) {
+	.linemain,
+	.linemain2,
+	.linemain3 {
+		display: none;
+	}
+}
+@media only screen and (min-width: 992px) {
+	.line-middle-column {
+		img {
+			opacity: 0;
+		}
 	}
 }

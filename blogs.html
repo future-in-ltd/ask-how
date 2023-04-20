@@ -24,6 +24,11 @@
 	</head>
 
 	<body>
+		<!-- loader -->
+		<div id="coverScreen">
+			<img src="./assets/images/icon/sample-loader.gif" alt="" />
+		</div>
+
 		<header>
 			<div class="container">
 				<nav
@@ -1022,5 +1027,26 @@
 			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
 			crossorigin="anonymous"
 		></script>
+		<script>
+			let path =  document.querySelector('path');
+			let pathlength =  path.getTotalLength();
+	 
+			path.style.strokeDasharray = pathlength + ' ' + pathlength;
+			path.style.strokeDashoffset = pathlength;
+	 
+			window.addEventListener('scroll',()=>{
+			 var scrollpercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+	 
+			 var drawlength = pathlength * scrollpercentage;
+	 
+			 //draw in reverse
+	 
+			 path.style.strokeDashoffset = pathlength - drawlength;
+	 
+			})
+	 
+		 </script>
+		<script src="./assets/js/script.js"></script>
+
 	</body>
 </html>
