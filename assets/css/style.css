@@ -135,14 +135,60 @@ body {
   filter: invert(6%) sepia(61%) saturate(3672%) hue-rotate(260deg) brightness(94%) contrast(84%);
 }
 
-#coverScreen {
+.preloader {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100vh;
+  background: #fff;
+  z-index: 9999;
+  text-align: center;
 }
 
+.preloader-icon {
+  position: relative;
+  top: 35%;
+  width: 300px;
+  border-radius: 50%;
+  animation: shake 1.5s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, -1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(1px, -3px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(1px, -5px) rotate(-3deg);
+  }
+  30% {
+    transform: translate(1px, -7px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -9px) rotate(1deg);
+  }
+  50% {
+    transform: translate(1px, -11px) rotate(3deg);
+  }
+  60% {
+    transform: translate(1px, -9px) rotate(0deg);
+  }
+  70% {
+    transform: translate(1px, -7px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(1px, -5px) rotate(-3deg);
+  }
+  90% {
+    transform: translate(1px, -3px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -1px) rotate(-1deg);
+  }
+}
 /*!
  * Bootstrap  v5.3.0-alpha1 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -15667,6 +15713,7 @@ footer .copyright_text a {
   left: -24px;
   width: 100%;
   height: 218%;
+  min-height: 2106px;
 }
 
 .linemain2 {
@@ -15675,6 +15722,7 @@ footer .copyright_text a {
   left: -24px;
   width: 100%;
   height: 146%;
+  min-height: 1409px;
 }
 
 .linemain3 {
@@ -15683,6 +15731,7 @@ footer .copyright_text a {
   left: -24px;
   width: 100%;
   height: 146%;
+  min-height: 1409px;
 }
 
 .number-count-box img {
@@ -15706,6 +15755,41 @@ footer .copyright_text a {
     left: 35px;
   }
 }
+@media only screen and (min-width: 1400px) {
+  .i-c-3 {
+    right: 30px;
+  }
+  .q-c-3,
+  .s-c-3 {
+    right: 20px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .linemain {
+    position: absolute;
+    z-index: 999 !important;
+    left: 7px;
+    width: 100%;
+    height: 192%;
+    min-height: 1835px;
+  }
+  .linemain2,
+  .linemain3 {
+    position: absolute;
+    z-index: 999 !important;
+    left: 24px;
+    width: 100%;
+    height: 130%;
+    min-height: 1238px;
+  }
+  .count-2-1st {
+    left: 0px !important;
+  }
+  .q-c-4,
+  .s-c-4 {
+    left: 30px;
+  }
+}
 @media only screen and (max-width: 1199px) {
   .linemain {
     position: absolute;
@@ -15713,10 +15797,15 @@ footer .copyright_text a {
     left: -14px;
     width: 100%;
     height: 164%;
+    min-height: 1600px;
   }
   .linemain2,
   .linemain3 {
-    height: 126%;
+    height: 113%;
+    min-height: 1068px;
+  }
+  .i-c-3 {
+    right: 20px;
   }
 }
 @media only screen and (max-width: 992px) {
