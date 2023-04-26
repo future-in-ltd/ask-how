@@ -1103,6 +1103,14 @@ header {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width:992px) {
+
+  .testimonials .testimonials_list .swiper-slide .content h3,
+  .testimonials .testimonials_list .swiper-slide .content .h3 {
+    font-size: 17px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .testimonials {
     background-color: $bg-color;

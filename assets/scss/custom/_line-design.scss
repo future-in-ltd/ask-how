@@ -19,9 +19,7 @@
 		z-index: 999999;
 		position: relative;
 
-		&:hover {
-			transform: scale(1.2);
-		}
+
 	}
 }
 
@@ -30,6 +28,19 @@
 		position: relative;
 		z-index: 999;
 	}
+}
+
+@media only screen and (min-width: 992px) {
+	.line-design-body {
+		img {
+
+
+			&:hover {
+				transform: scale(1.2);
+			}
+		}
+	}
+
 }
 
 @media only screen and (max-width: 992px) {
@@ -195,6 +206,15 @@
 	.linemain2,
 	.linemain3 {
 		display: none;
+	}
+
+	.i-c-3 {
+		right: 0px;
+	}
+
+	.q-c-4,
+	.s-c-4 {
+		left: 0;
 	}
 }
 

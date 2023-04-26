@@ -11903,6 +11903,11 @@ textarea.form-control-lg {
   background-color: #d48f3f;
 }
 
+@media screen and (min-width: 768px) {
+  .subject_area .top_area p {
+    font-size: 20px !important;
+  }
+}
 @media screen and (max-width: 992px) {
   .close_btn.custom-change .btn_close {
     background-color: white;
@@ -12882,6 +12887,12 @@ header nav .header_buttons {
   stroke: white !important;
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .testimonials .testimonials_list .swiper-slide .content h3,
+  .testimonials .testimonials_list .swiper-slide .content .h3 {
+    font-size: 17px;
+  }
+}
 @media screen and (max-width: 768px) {
   .testimonials {
     background-color: #f3f1fd;
@@ -13665,7 +13676,7 @@ footer .copyright_text a {
 }
 .req-demo .request_demo .demo_form {
   max-width: 800px;
-  padding: 40px 80px;
+  padding: 50px;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
   border-radius: 16px;
 }
@@ -14171,6 +14182,10 @@ footer .copyright_text a {
   background-repeat: no-repeat;
   background-position: left center;
   line-height: 1.6;
+}
+
+.right_side_from {
+  padding-right: 20px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -15673,15 +15688,17 @@ footer .copyright_text a {
   z-index: 999999;
   position: relative;
 }
-.line-design-body img:hover {
-  transform: scale(1.2);
-}
 
 .number-count-box img {
   position: relative;
   z-index: 999;
 }
 
+@media only screen and (min-width: 992px) {
+  .line-design-body img:hover {
+    transform: scale(1.2);
+  }
+}
 @media only screen and (max-width: 992px) {
   .line-middle-column {
     display: none !important;
@@ -15820,6 +15837,13 @@ footer .copyright_text a {
   .linemain2,
   .linemain3 {
     display: none;
+  }
+  .i-c-3 {
+    right: 0px;
+  }
+  .q-c-4,
+  .s-c-4 {
+    left: 0;
   }
 }
 @media only screen and (min-width: 992px) {
