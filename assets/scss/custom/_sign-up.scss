@@ -122,6 +122,18 @@
   }
 }
 
+@media screen and (max-width: 992px) {
+  .sign-up-page .logo img {
+    width: 200px;
+  }
+
+  .sign-up-page .left_side_area h2,
+  .sign-up-page .left_side_area .h2 {
+    margin-top: 0px !important;
+    font-size: 20px;
+  }
+}
+
 @media screen and (max-width: 768px) {
 
   // sign in page
@@ -129,7 +141,7 @@
     position: relative;
 
     h2 {
-      font-size: 24px;
+      font-size: 20px;
       line-height: 150%;
       text-align: center;
       color: #000000;
@@ -147,12 +159,12 @@
 
       h2 {
         font-weight: 600;
-        font-size: 24px;
+
         line-height: 150%;
         text-align: center;
         color: #ffffff;
-        margin-top: 25px;
-        margin-bottom: 10px;
+        // margin-top: 25px !important;
+        // margin-bottom: 10px !important;
       }
 
       p {
