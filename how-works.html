@@ -1521,7 +1521,7 @@
 		</script>
 		<script>
 			let pathh1 = document.querySelector('#linescroll2');
-			let pathlength2 = pathh1.getTotalLength();
+			let pathlength2 = pathh1.getTotalLength() + 1000;
 
 			pathh1.style.strokeDasharray = pathlength2 + ' ' + pathlength2;
 			pathh1.style.strokeDashoffset = pathlength2;
@@ -1532,14 +1532,14 @@
 					(document.documentElement.scrollHeight -
 						document.documentElement.clientHeight);
 
-				var drawlength2 = pathlength2 * scrollpercentage2;
+				var drawlength2 = pathlength2 * scrollpercentage2 - 750;
 
 				pathh1.style.strokeDashoffset = pathlength2 - drawlength2;
 			});
 		</script>
 		<script>
 			let pathh3 = document.querySelector('#linescroll3');
-			let pathlength3 = pathh3.getTotalLength();
+			let pathlength3 = pathh3.getTotalLength() + 1000;
 
 			pathh3.style.strokeDasharray = pathlength3 + ' ' + pathlength3;
 			pathh3.style.strokeDashoffset = pathlength3;
@@ -1550,7 +1550,7 @@
 					(document.documentElement.scrollHeight -
 						document.documentElement.clientHeight);
 
-				var drawlength3 = pathlength3 * scrollpercentage3;
+				var drawlength3 = pathlength3 * scrollpercentage3 - 750;
 
 				pathh3.style.strokeDashoffset = pathlength3 - drawlength3;
 			});
