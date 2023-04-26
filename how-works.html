@@ -197,7 +197,10 @@
 									</div>
 								</div>
 							</section>
-							<div class="container main-section-for-line">
+							<div
+								class="container main-section-for-line"
+								id="main-section-for-animation"
+							>
 								<div class="svg-res-container">
 									<svg
 										class="linemain"
@@ -1497,10 +1500,13 @@
 
 		<script>
 			let pathh = document.querySelector('#linescroll');
-			let pathlength = pathh.getTotalLength();
+			let pathlength = pathh.getTotalLength() + 1000;
 
 			pathh.style.strokeDasharray = pathlength + ' ' + pathlength;
 			pathh.style.strokeDashoffset = pathlength;
+			let a = document.getElementById(
+				'main-section-for-animation'
+			).scrollHeight;
 
 			window.addEventListener('scroll', () => {
 				var scrollpercentage =
@@ -1508,7 +1514,7 @@
 					(document.documentElement.scrollHeight -
 						document.documentElement.clientHeight);
 
-				var drawlength = pathlength * scrollpercentage;
+				var drawlength = pathlength * scrollpercentage - 1000;
 
 				pathh.style.strokeDashoffset = pathlength - drawlength;
 			});
