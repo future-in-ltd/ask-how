@@ -13133,6 +13133,8 @@ footer .social_icons a:hover {
 }
 footer .contact-info a {
   font-size: 14px !important;
+  white-space: nowrap;
+  overflow: hidden;
 }
 footer .contact-info a i {
   font-size: 16px;
@@ -14188,6 +14190,11 @@ footer .copyright_text a {
   padding-right: 20px;
 }
 
+@media screen and (min-width: 992px) {
+  .signup-to-continue {
+    margin-top: 50px;
+  }
+}
 @media screen and (max-width: 1199px) {
   .sign-up-page .left_side_area {
     padding: 20px;

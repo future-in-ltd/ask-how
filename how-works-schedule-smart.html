@@ -4,13 +4,19 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Blogs || FastTutor</title>
+		<title>How it Works</title>
+		<link rel="stylesheet" href="./assets/css/animate.css" />
 		<!-- styles -->
 		<link rel="stylesheet" href="./assets/css/style.css" />
-
 		<!-- fonts  -->
+
+		<link rel="stylesheet" href="./assets/css/phoneinput.css" />
+
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
 		<script
 			src="https://kit.fontawesome.com/f13f5b2b08.js"
 			crossorigin="anonymous"
@@ -19,8 +25,6 @@
 			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 			rel="stylesheet"
 		/>
-
-		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	</head>
 
 	<body>
@@ -32,7 +36,6 @@
 				alt="My Site Preloader"
 			/>
 		</div>
-
 		<header>
 			<div class="container">
 				<nav
@@ -64,15 +67,15 @@
 									<a class="nav-link" href="./school.html">School</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="./how-works.html">How it works</a>
-								</li>
-								<li class="nav-item">
 									<a
 										class="nav-link active"
 										aria-current="page"
-										href="./blogs.html"
-										>Blog Page</a
+										href="./how-works.html"
+										>How it works</a
 									>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="./blogs.html">Blog Page</a>
 								</li>
 							</ul>
 							<div class="header_buttons">
@@ -93,400 +96,849 @@
 				</nav>
 			</div>
 		</header>
-		<section class="blog_page_heading">
-			<div class="container">
-				<div class="row" data-aos="zoom-in" data-aos-duration="1500">
-					<div class="col-md-12">
-						<h1>Blog</h1>
+
+		<section class="how-its-works">
+			<div>
+				<div class="container">
+					<div class="top_part">
+						<h2>How it works</h2>
+						<p>
+							FastTutor can help academic support you need at your fingertips,
+							and unlock your true potential with our expert tutors.
+						</p>
 					</div>
 				</div>
-			</div>
-		</section>
-		<section class="blogs">
-			<div class="container">
-				<div class="row" data-aos="fade-up" data-aos-duration="1500">
-					<div class="col-md-6 col-lg-4">
-						<div class="single_blog_card">
-							<a href="./blog-single.html">
-								<img src="./assets/images/blog/blog1.png" alt="" />
-							</a>
-							<div class="content">
-								<div
-									class="d-flex info align-items-center justify-content-between"
-								>
-									<div class="d-flex align-items-center">
-										<svg
-											width="25"
-											height="24"
-											viewBox="0 0 25 24"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<path
-												d="M19.5 3.99976H17.5V2.99976C17.5 2.73454 17.3946 2.48019 17.2071 2.29265C17.0196 2.10511 16.7652 1.99976 16.5 1.99976C16.2348 1.99976 15.9804 2.10511 15.7929 2.29265C15.6054 2.48019 15.5 2.73454 15.5 2.99976V3.99976H9.5V2.99976C9.5 2.73454 9.39464 2.48019 9.20711 2.29265C9.01957 2.10511 8.76522 1.99976 8.5 1.99976C8.23478 1.99976 7.98043 2.10511 7.79289 2.29265C7.60536 2.48019 7.5 2.73454 7.5 2.99976V3.99976H5.5C4.70435 3.99976 3.94129 4.31583 3.37868 4.87844C2.81607 5.44104 2.5 6.20411 2.5 6.99976V18.9998C2.5 19.7954 2.81607 20.5585 3.37868 21.1211C3.94129 21.6837 4.70435 21.9998 5.5 21.9998H19.5C20.2956 21.9998 21.0587 21.6837 21.6213 21.1211C22.1839 20.5585 22.5 19.7954 22.5 18.9998V6.99976C22.5 6.20411 22.1839 5.44104 21.6213 4.87844C21.0587 4.31583 20.2956 3.99976 19.5 3.99976ZM20.5 18.9998C20.5 19.265 20.3946 19.5193 20.2071 19.7069C20.0196 19.8944 19.7652 19.9998 19.5 19.9998H5.5C5.23478 19.9998 4.98043 19.8944 4.79289 19.7069C4.60536 19.5193 4.5 19.265 4.5 18.9998V11.9998H20.5V18.9998ZM20.5 9.99976H4.5V6.99976C4.5 6.73454 4.60536 6.48019 4.79289 6.29265C4.98043 6.10511 5.23478 5.99976 5.5 5.99976H7.5V6.99976C7.5 7.26497 7.60536 7.51933 7.79289 7.70686C7.98043 7.8944 8.23478 7.99976 8.5 7.99976C8.76522 7.99976 9.01957 7.8944 9.20711 7.70686C9.39464 7.51933 9.5 7.26497 9.5 6.99976V5.99976H15.5V6.99976C15.5 7.26497 15.6054 7.51933 15.7929 7.70686C15.9804 7.8944 16.2348 7.99976 16.5 7.99976C16.7652 7.99976 17.0196 7.8944 17.2071 7.70686C17.3946 7.51933 17.5 7.26497 17.5 6.99976V5.99976H19.5C19.7652 5.99976 20.0196 6.10511 20.2071 6.29265C20.3946 6.48019 20.5 6.73454 20.5 6.99976V9.99976Z"
-												fill="#999999"
-											/>
-										</svg>
-										<p class="date">3 Mar 2023</p>
-									</div>
-									<div>
-										<p>by merkulove</p>
-									</div>
-								</div>
-								<a href="./blog-single.html">
-									<h3>7 Tips for Improving Memory Power</h3>
-								</a>
-								<p>
-									Memory: it is the basic ongoing process of information
-									retention over time. We cannot ignore its significance because
-									the past provides the foundation for how...
-								</p>
-								<div>
-									<a href="./blog-single.html"
-										>Learn more
-										<svg
-											width="19"
-											height="19"
-											viewBox="0 0 19 19"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<path
-												fill-rule="evenodd"
-												clip-rule="evenodd"
-												d="M13.5605 9.49978L7.03023 16.03L5.96973 14.9695L11.4395 9.49978L5.96973 4.03003L7.03023 2.96953L13.5605 9.49978Z"
-												fill="#D48F3F"
-											/>
-										</svg>
-									</a>
-								</div>
-							</div>
+				<div class="content">
+					<ul
+						class="stepstoggle"
+						id="pills-tab"
+						role="tablist"
+						style="overflow-x: auto"
+					>
+						<div role="presentation">
+							<button
+								class="nav-link"
+								id="pills-home-tab"
+								data-bs-toggle="pill"
+								data-bs-target="#pills-home"
+								type="button"
+								role="tab"
+								aria-controls="pills-home"
+								aria-selected="true"
+							>
+								Instaconnect
+							</button>
 						</div>
-					</div>
-					<div class="col-md-6 col-lg-4">
-						<div class="single_blog_card">
-							<a href="./blog-single.html"
-								><img src="./assets/images/blog/blog2.png" alt=""
-							/></a>
-							<div class="content">
-								<div
-									class="d-flex info align-items-center justify-content-between"
-								>
-									<div class="d-flex align-items-center">
-										<svg
-											width="25"
-											height="24"
-											viewBox="0 0 25 24"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<path
-												d="M19.5 3.99976H17.5V2.99976C17.5 2.73454 17.3946 2.48019 17.2071 2.29265C17.0196 2.10511 16.7652 1.99976 16.5 1.99976C16.2348 1.99976 15.9804 2.10511 15.7929 2.29265C15.6054 2.48019 15.5 2.73454 15.5 2.99976V3.99976H9.5V2.99976C9.5 2.73454 9.39464 2.48019 9.20711 2.29265C9.01957 2.10511 8.76522 1.99976 8.5 1.99976C8.23478 1.99976 7.98043 2.10511 7.79289 2.29265C7.60536 2.48019 7.5 2.73454 7.5 2.99976V3.99976H5.5C4.70435 3.99976 3.94129 4.31583 3.37868 4.87844C2.81607 5.44104 2.5 6.20411 2.5 6.99976V18.9998C2.5 19.7954 2.81607 20.5585 3.37868 21.1211C3.94129 21.6837 4.70435 21.9998 5.5 21.9998H19.5C20.2956 21.9998 21.0587 21.6837 21.6213 21.1211C22.1839 20.5585 22.5 19.7954 22.5 18.9998V6.99976C22.5 6.20411 22.1839 5.44104 21.6213 4.87844C21.0587 4.31583 20.2956 3.99976 19.5 3.99976ZM20.5 18.9998C20.5 19.265 20.3946 19.5193 20.2071 19.7069C20.0196 19.8944 19.7652 19.9998 19.5 19.9998H5.5C5.23478 19.9998 4.98043 19.8944 4.79289 19.7069C4.60536 19.5193 4.5 19.265 4.5 18.9998V11.9998H20.5V18.9998ZM20.5 9.99976H4.5V6.99976C4.5 6.73454 4.60536 6.48019 4.79289 6.29265C4.98043 6.10511 5.23478 5.99976 5.5 5.99976H7.5V6.99976C7.5 7.26497 7.60536 7.51933 7.79289 7.70686C7.98043 7.8944 8.23478 7.99976 8.5 7.99976C8.76522 7.99976 9.01957 7.8944 9.20711 7.70686C9.39464 7.51933 9.5 7.26497 9.5 6.99976V5.99976H15.5V6.99976C15.5 7.26497 15.6054 7.51933 15.7929 7.70686C15.9804 7.8944 16.2348 7.99976 16.5 7.99976C16.7652 7.99976 17.0196 7.8944 17.2071 7.70686C17.3946 7.51933 17.5 7.26497 17.5 6.99976V5.99976H19.5C19.7652 5.99976 20.0196 6.10511 20.2071 6.29265C20.3946 6.48019 20.5 6.73454 20.5 6.99976V9.99976Z"
-												fill="#999999"
-											/>
-										</svg>
-										<p class="date">3 Mar 2023</p>
-									</div>
-									<div>
-										<p>by merkulove</p>
-									</div>
-								</div>
-								<a href="./blog-single.html">
-									<h3>5 TIPS TO IMPROVE YOUR MEMORY POWER</h3>
-								</a>
-								<p>
-									Memory is the basic process that we use to acquire, store, and
-									later retain information. The importance of our memory and
-									concentration level is at the peak
-								</p>
-								<div>
-									<a href="./blog-single.html"
-										>Learn more
-										<svg
-											width="19"
-											height="19"
-											viewBox="0 0 19 19"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<path
-												fill-rule="evenodd"
-												clip-rule="evenodd"
-												d="M13.5605 9.49978L7.03023 16.03L5.96973 14.9695L11.4395 9.49978L5.96973 4.03003L7.03023 2.96953L13.5605 9.49978Z"
-												fill="#D48F3F"
-											/>
-										</svg>
-									</a>
-								</div>
-							</div>
+						<div role="presentation">
+							<button
+								class="nav-link"
+								id="pills-profile-tab"
+								data-bs-toggle="pill"
+								data-bs-target="#pills-profile"
+								type="button"
+								role="tab"
+								aria-controls="pills-profile"
+								aria-selected="false"
+							>
+								Qdrop
+							</button>
 						</div>
-					</div>
-					<div class="col-md-6 col-lg-4">
-						<div class="single_blog_card">
-							<a href="./blog-single.html"
-								><img src="./assets/images/blog/blog3.png" alt=""
-							/></a>
-							<div class="content">
-								<div
-									class="d-flex info align-items-center justify-content-between"
-								>
-									<div class="d-flex align-items-center">
-										<svg
-											width="25"
-											height="24"
-											viewBox="0 0 25 24"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<path
-												d="M19.5 3.99976H17.5V2.99976C17.5 2.73454 17.3946 2.48019 17.2071 2.29265C17.0196 2.10511 16.7652 1.99976 16.5 1.99976C16.2348 1.99976 15.9804 2.10511 15.7929 2.29265C15.6054 2.48019 15.5 2.73454 15.5 2.99976V3.99976H9.5V2.99976C9.5 2.73454 9.39464 2.48019 9.20711 2.29265C9.01957 2.10511 8.76522 1.99976 8.5 1.99976C8.23478 1.99976 7.98043 2.10511 7.79289 2.29265C7.60536 2.48019 7.5 2.73454 7.5 2.99976V3.99976H5.5C4.70435 3.99976 3.94129 4.31583 3.37868 4.87844C2.81607 5.44104 2.5 6.20411 2.5 6.99976V18.9998C2.5 19.7954 2.81607 20.5585 3.37868 21.1211C3.94129 21.6837 4.70435 21.9998 5.5 21.9998H19.5C20.2956 21.9998 21.0587 21.6837 21.6213 21.1211C22.1839 20.5585 22.5 19.7954 22.5 18.9998V6.99976C22.5 6.20411 22.1839 5.44104 21.6213 4.87844C21.0587 4.31583 20.2956 3.99976 19.5 3.99976ZM20.5 18.9998C20.5 19.265 20.3946 19.5193 20.2071 19.7069C20.0196 19.8944 19.7652 19.9998 19.5 19.9998H5.5C5.23478 19.9998 4.98043 19.8944 4.79289 19.7069C4.60536 19.5193 4.5 19.265 4.5 18.9998V11.9998H20.5V18.9998ZM20.5 9.99976H4.5V6.99976C4.5 6.73454 4.60536 6.48019 4.79289 6.29265C4.98043 6.10511 5.23478 5.99976 5.5 5.99976H7.5V6.99976C7.5 7.26497 7.60536 7.51933 7.79289 7.70686C7.98043 7.8944 8.23478 7.99976 8.5 7.99976C8.76522 7.99976 9.01957 7.8944 9.20711 7.70686C9.39464 7.51933 9.5 7.26497 9.5 6.99976V5.99976H15.5V6.99976C15.5 7.26497 15.6054 7.51933 15.7929 7.70686C15.9804 7.8944 16.2348 7.99976 16.5 7.99976C16.7652 7.99976 17.0196 7.8944 17.2071 7.70686C17.3946 7.51933 17.5 7.26497 17.5 6.99976V5.99976H19.5C19.7652 5.99976 20.0196 6.10511 20.2071 6.29265C20.3946 6.48019 20.5 6.73454 20.5 6.99976V9.99976Z"
-												fill="#999999"
-											/>
-										</svg>
-										<p class="date">3 Mar 2023</p>
-									</div>
-									<div>
-										<p>by merkulove</p>
-									</div>
-								</div>
-								<a href="./blog-single.html">
-									<h3>7 Reasons Why Online Learning is Best</h3>
-								</a>
-								<p>
-									Despite the COVID pandemic playing a major part in the
-									exponential rise of the virtual classroom phenomenon. We
-									cannot deny the...
-								</p>
-								<div>
-									<a href="./blog-single.html"
-										>Learn more
-										<svg
-											width="19"
-											height="19"
-											viewBox="0 0 19 19"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<path
-												fill-rule="evenodd"
-												clip-rule="evenodd"
-												d="M13.5605 9.49978L7.03023 16.03L5.96973 14.9695L11.4395 9.49978L5.96973 4.03003L7.03023 2.96953L13.5605 9.49978Z"
-												fill="#D48F3F"
-											/>
-										</svg>
-									</a>
-								</div>
-							</div>
+						<div role="presentation">
+							<button
+								class="nav-link active"
+								id="pills-contact-tab"
+								data-bs-toggle="pill"
+								data-bs-target="#pills-contact"
+								type="button"
+								role="tab"
+								aria-controls="pills-contact"
+								aria-selected="false"
+							>
+								ScheduleSmart
+							</button>
 						</div>
-					</div>
-					<div class="col-md-6 col-lg-4">
-						<div class="single_blog_card">
-							<a href="./blog-single.html">
-								<img src="./assets/images/blog/blog4.png" alt=""
-							/></a>
-							<div class="content">
-								<div
-									class="d-flex info align-items-center justify-content-between"
-								>
-									<div class="d-flex align-items-center">
-										<svg
-											width="25"
-											height="24"
-											viewBox="0 0 25 24"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<path
-												d="M19.5 3.99976H17.5V2.99976C17.5 2.73454 17.3946 2.48019 17.2071 2.29265C17.0196 2.10511 16.7652 1.99976 16.5 1.99976C16.2348 1.99976 15.9804 2.10511 15.7929 2.29265C15.6054 2.48019 15.5 2.73454 15.5 2.99976V3.99976H9.5V2.99976C9.5 2.73454 9.39464 2.48019 9.20711 2.29265C9.01957 2.10511 8.76522 1.99976 8.5 1.99976C8.23478 1.99976 7.98043 2.10511 7.79289 2.29265C7.60536 2.48019 7.5 2.73454 7.5 2.99976V3.99976H5.5C4.70435 3.99976 3.94129 4.31583 3.37868 4.87844C2.81607 5.44104 2.5 6.20411 2.5 6.99976V18.9998C2.5 19.7954 2.81607 20.5585 3.37868 21.1211C3.94129 21.6837 4.70435 21.9998 5.5 21.9998H19.5C20.2956 21.9998 21.0587 21.6837 21.6213 21.1211C22.1839 20.5585 22.5 19.7954 22.5 18.9998V6.99976C22.5 6.20411 22.1839 5.44104 21.6213 4.87844C21.0587 4.31583 20.2956 3.99976 19.5 3.99976ZM20.5 18.9998C20.5 19.265 20.3946 19.5193 20.2071 19.7069C20.0196 19.8944 19.7652 19.9998 19.5 19.9998H5.5C5.23478 19.9998 4.98043 19.8944 4.79289 19.7069C4.60536 19.5193 4.5 19.265 4.5 18.9998V11.9998H20.5V18.9998ZM20.5 9.99976H4.5V6.99976C4.5 6.73454 4.60536 6.48019 4.79289 6.29265C4.98043 6.10511 5.23478 5.99976 5.5 5.99976H7.5V6.99976C7.5 7.26497 7.60536 7.51933 7.79289 7.70686C7.98043 7.8944 8.23478 7.99976 8.5 7.99976C8.76522 7.99976 9.01957 7.8944 9.20711 7.70686C9.39464 7.51933 9.5 7.26497 9.5 6.99976V5.99976H15.5V6.99976C15.5 7.26497 15.6054 7.51933 15.7929 7.70686C15.9804 7.8944 16.2348 7.99976 16.5 7.99976C16.7652 7.99976 17.0196 7.8944 17.2071 7.70686C17.3946 7.51933 17.5 7.26497 17.5 6.99976V5.99976H19.5C19.7652 5.99976 20.0196 6.10511 20.2071 6.29265C20.3946 6.48019 20.5 6.73454 20.5 6.99976V9.99976Z"
-												fill="#999999"
-											/>
-										</svg>
-										<p class="date">3 Mar 2023</p>
-									</div>
-									<div>
-										<p>by merkulove</p>
-									</div>
-								</div>
-								<a href="./blog-single.html">
-									<h3>
-										ALL THINGS YOU NEED TO KNOW ABOUT THE NATIONAL TUTORING
-										PROGRAMME
-									</h3>
-								</a>
-								<p>
-									The past one year and over has caused a severe breakdown in
-									the economy of the world. No area has been lucky enough to be
-									left from its wrath. Financial sectors, ...
-								</p>
-								<div>
-									<a href="./blog-single.html"
-										>Learn more
-										<svg
-											width="19"
-											height="19"
-											viewBox="0 0 19 19"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<path
-												fill-rule="evenodd"
-												clip-rule="evenodd"
-												d="M13.5605 9.49978L7.03023 16.03L5.96973 14.9695L11.4395 9.49978L5.96973 4.03003L7.03023 2.96953L13.5605 9.49978Z"
-												fill="#D48F3F"
-											/>
-										</svg>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-4">
-						<div class="single_blog_card">
-							<a href="./blog-single.html">
-								<img src="./assets/images/blog/blog5.png" alt="" />
-							</a>
-							<div class="content">
-								<div
-									class="d-flex info align-items-center justify-content-between"
-								>
-									<div class="d-flex align-items-center">
-										<svg
-											width="25"
-											height="24"
-											viewBox="0 0 25 24"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<path
-												d="M19.5 3.99976H17.5V2.99976C17.5 2.73454 17.3946 2.48019 17.2071 2.29265C17.0196 2.10511 16.7652 1.99976 16.5 1.99976C16.2348 1.99976 15.9804 2.10511 15.7929 2.29265C15.6054 2.48019 15.5 2.73454 15.5 2.99976V3.99976H9.5V2.99976C9.5 2.73454 9.39464 2.48019 9.20711 2.29265C9.01957 2.10511 8.76522 1.99976 8.5 1.99976C8.23478 1.99976 7.98043 2.10511 7.79289 2.29265C7.60536 2.48019 7.5 2.73454 7.5 2.99976V3.99976H5.5C4.70435 3.99976 3.94129 4.31583 3.37868 4.87844C2.81607 5.44104 2.5 6.20411 2.5 6.99976V18.9998C2.5 19.7954 2.81607 20.5585 3.37868 21.1211C3.94129 21.6837 4.70435 21.9998 5.5 21.9998H19.5C20.2956 21.9998 21.0587 21.6837 21.6213 21.1211C22.1839 20.5585 22.5 19.7954 22.5 18.9998V6.99976C22.5 6.20411 22.1839 5.44104 21.6213 4.87844C21.0587 4.31583 20.2956 3.99976 19.5 3.99976ZM20.5 18.9998C20.5 19.265 20.3946 19.5193 20.2071 19.7069C20.0196 19.8944 19.7652 19.9998 19.5 19.9998H5.5C5.23478 19.9998 4.98043 19.8944 4.79289 19.7069C4.60536 19.5193 4.5 19.265 4.5 18.9998V11.9998H20.5V18.9998ZM20.5 9.99976H4.5V6.99976C4.5 6.73454 4.60536 6.48019 4.79289 6.29265C4.98043 6.10511 5.23478 5.99976 5.5 5.99976H7.5V6.99976C7.5 7.26497 7.60536 7.51933 7.79289 7.70686C7.98043 7.8944 8.23478 7.99976 8.5 7.99976C8.76522 7.99976 9.01957 7.8944 9.20711 7.70686C9.39464 7.51933 9.5 7.26497 9.5 6.99976V5.99976H15.5V6.99976C15.5 7.26497 15.6054 7.51933 15.7929 7.70686C15.9804 7.8944 16.2348 7.99976 16.5 7.99976C16.7652 7.99976 17.0196 7.8944 17.2071 7.70686C17.3946 7.51933 17.5 7.26497 17.5 6.99976V5.99976H19.5C19.7652 5.99976 20.0196 6.10511 20.2071 6.29265C20.3946 6.48019 20.5 6.73454 20.5 6.99976V9.99976Z"
-												fill="#999999"
-											/>
-										</svg>
-										<p class="date">3 Mar 2023</p>
-									</div>
-									<div>
-										<p>by merkulove</p>
-									</div>
-								</div>
-								<a href="./blog-single.html">
-									<h3>Common misconseptions about tutoring</h3>
-								</a>
-								<p>
-									Tutoring sounds too good to be true, doesn't it? There are
-									many common myths about the effectiveness and importance of
-									tutoring...
-								</p>
-								<div>
-									<a href="./blog-single.html"
-										>Learn more
-										<svg
-											width="19"
-											height="19"
-											viewBox="0 0 19 19"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<path
-												fill-rule="evenodd"
-												clip-rule="evenodd"
-												d="M13.5605 9.49978L7.03023 16.03L5.96973 14.9695L11.4395 9.49978L5.96973 4.03003L7.03023 2.96953L13.5605 9.49978Z"
-												fill="#D48F3F"
-											/>
-										</svg>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-4">
-						<div class="single_blog_card">
-							<a href="./blog-single.html">
-								<img src="./assets/images/blog/blog6.png" alt=""
-							/></a>
-							<div class="content">
-								<div
-									class="d-flex info align-items-center justify-content-between"
-								>
-									<div class="d-flex align-items-center">
-										<svg
-											width="25"
-											height="24"
-											viewBox="0 0 25 24"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<path
-												d="M19.5 3.99976H17.5V2.99976C17.5 2.73454 17.3946 2.48019 17.2071 2.29265C17.0196 2.10511 16.7652 1.99976 16.5 1.99976C16.2348 1.99976 15.9804 2.10511 15.7929 2.29265C15.6054 2.48019 15.5 2.73454 15.5 2.99976V3.99976H9.5V2.99976C9.5 2.73454 9.39464 2.48019 9.20711 2.29265C9.01957 2.10511 8.76522 1.99976 8.5 1.99976C8.23478 1.99976 7.98043 2.10511 7.79289 2.29265C7.60536 2.48019 7.5 2.73454 7.5 2.99976V3.99976H5.5C4.70435 3.99976 3.94129 4.31583 3.37868 4.87844C2.81607 5.44104 2.5 6.20411 2.5 6.99976V18.9998C2.5 19.7954 2.81607 20.5585 3.37868 21.1211C3.94129 21.6837 4.70435 21.9998 5.5 21.9998H19.5C20.2956 21.9998 21.0587 21.6837 21.6213 21.1211C22.1839 20.5585 22.5 19.7954 22.5 18.9998V6.99976C22.5 6.20411 22.1839 5.44104 21.6213 4.87844C21.0587 4.31583 20.2956 3.99976 19.5 3.99976ZM20.5 18.9998C20.5 19.265 20.3946 19.5193 20.2071 19.7069C20.0196 19.8944 19.7652 19.9998 19.5 19.9998H5.5C5.23478 19.9998 4.98043 19.8944 4.79289 19.7069C4.60536 19.5193 4.5 19.265 4.5 18.9998V11.9998H20.5V18.9998ZM20.5 9.99976H4.5V6.99976C4.5 6.73454 4.60536 6.48019 4.79289 6.29265C4.98043 6.10511 5.23478 5.99976 5.5 5.99976H7.5V6.99976C7.5 7.26497 7.60536 7.51933 7.79289 7.70686C7.98043 7.8944 8.23478 7.99976 8.5 7.99976C8.76522 7.99976 9.01957 7.8944 9.20711 7.70686C9.39464 7.51933 9.5 7.26497 9.5 6.99976V5.99976H15.5V6.99976C15.5 7.26497 15.6054 7.51933 15.7929 7.70686C15.9804 7.8944 16.2348 7.99976 16.5 7.99976C16.7652 7.99976 17.0196 7.8944 17.2071 7.70686C17.3946 7.51933 17.5 7.26497 17.5 6.99976V5.99976H19.5C19.7652 5.99976 20.0196 6.10511 20.2071 6.29265C20.3946 6.48019 20.5 6.73454 20.5 6.99976V9.99976Z"
-												fill="#999999"
-											/>
-										</svg>
-										<p class="date">3 Mar 2023</p>
-									</div>
-									<div>
-										<p>by merkulove</p>
-									</div>
-								</div>
-								<a href="./blog-single.html">
-									<h3>
-										Everything You Need To Know About Selecting Your Major In
-										University
-									</h3>
-								</a>
-								<p>
-									You have finally given your GCSEs and have aced it all. Now
-									you are ready to go further and get a college degree...
-								</p>
-								<div>
-									<a href="./blog-single.html"
-										>Learn more
-										<svg
-											width="19"
-											height="19"
-											viewBox="0 0 19 19"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<path
-												fill-rule="evenodd"
-												clip-rule="evenodd"
-												d="M13.5605 9.49978L7.03023 16.03L5.96973 14.9695L11.4395 9.49978L5.96973 4.03003L7.03023 2.96953L13.5605 9.49978Z"
-												fill="#D48F3F"
-											/>
-										</svg>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="pagination">
-					<a href="#" class="current-page">1</a>
-					<a href="#">2</a>
-					<a href="#">3</a>
-					<a href="#"
-						><svg
-							width="16"
-							height="16"
-							viewBox="0 0 16 16"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
+					</ul>
+					<div class="tab-content" id="pills-tabContent">
+						<!-- start tab 1  -->
+						<div
+							class="tab-pane fade"
+							id="pills-home"
+							role="tabpanel"
+							aria-labelledby="pills-home-tab"
+							tabindex="0"
 						>
-							<g clip-path="url(#clip0_371_1741)">
-								<path
-									d="M4.15332 13.4867L5.33332 14.6667L12 8.00004L5.33332 1.33337L4.15332 2.51337L9.63999 8.00004L4.15332 13.4867Z"
-									fill="#444444"
-								/>
-							</g>
-							<defs>
-								<clipPath id="clip0_371_1741">
-									<rect width="16" height="16" fill="white" />
-								</clipPath>
-							</defs>
-						</svg>
-					</a>
+							<section class="bg-arts">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="content">
+												<h2>InstaConnect</h2>
+												<p>
+													Need assistance with an assignment or your homework?
+													Be at ease; we offer InstaConnect. You can contact our
+													knowledgeable tutor for online tutoring at any moment.
+													On our whiteboard and chat-based tutoring platform,
+													our tutor will work with you one-on-one to help you
+													solve problems.
+												</p>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="youtube_video_area">
+												<!-- <img src="./assets/images/youtube video placement.png" alt=""> -->
+												<iframe
+													width="100%"
+													height="415"
+													src="https://www.youtube.com/embed/tgbNymZ7vqY"
+												>
+												</iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<div
+								class="container main-section-for-line"
+								id="main-section-for-animation"
+							>
+								<div class="svg-res-container">
+									<svg
+										class="linemain"
+										viewBox="0 0 677 2106"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											id="linescroll"
+											d="M77.9307 9.48351C128.612 -8.50988 253.006 -10.6691 345.133 124.641C460.29 293.779 620.432 231.702 640.224 226.304C639.924 300.077 583.185 444.384 358.628 431.429C77.9307 415.235 32.0475 577.175 1.45874 707.627C69.5337 701.329 238.792 721.662 371.223 853.374C503.654 985.085 627.329 946.639 672.612 910.953C665.415 1000.32 561.773 1172.04 204.784 1143.97C146.006 1146.07 28.6287 1201.91 29.3485 1408.47C106.72 1399.17 278.377 1411.71 346.032 1536.22C413.687 1660.74 593.741 1642.68 675.311 1618.09C655.818 1686.47 559.074 1823.22 328.039 1823.22C39.2448 1823.22 32.9471 1934.78 9.55574 2105.71"
+											stroke="#D48F3F"
+											stroke-width="1.5"
+										/>
+									</svg>
+								</div>
+
+								<!-- group one  -->
+								<div class="d-flex line-design-wrap">
+									<!-- group one left  -->
+									<div class="d-flex line-design-content first">
+										<div class="line-design-body wow bounceInUp">
+											<div>
+												<img src="./assets/images/how/i1.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">Login</h5>
+										</div>
+										<div>
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-1.svg"
+													alt=""
+													aria-colspan="count-1"
+												/>
+											</div>
+										</div>
+										<div class="mobile-line-art first"></div>
+									</div>
+									<!-- group one middle  -->
+									<div class="d-flex flex-column line-middle-column">
+										<div class="mt-4">
+											<img src="./assets/images/how/line-1.svg" alt="" />
+										</div>
+										<div class="mt-4">
+											<img src="./assets/images/how/line-2.svg" alt="" />
+										</div>
+									</div>
+
+									<!-- group one right  -->
+
+									<div
+										style="padding-top: 16%"
+										class="d-flex line-design-content"
+									>
+										<div>
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													data-aos-anchor=".count-1"
+													class="shadow rounded-circle count-2-1st"
+													src="./assets/images/how/count-2.svg"
+													alt=""
+												/>
+											</div>
+										</div>
+										<div class="line-design-body wow bounceInUp">
+											<div>
+												<img src="./assets/images/how/i2.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">
+												Clicks on Instaconnect button
+											</h5>
+										</div>
+
+										<div class="mobile-line-art"></div>
+									</div>
+								</div>
+
+								<!-- group two  -->
+
+								<div class="d-flex line-design-wrap">
+									<!-- group two left  -->
+									<div class="d-flex line-design-content first">
+										<div class="line-design-body wow bounceInUp">
+											<div>
+												<img src="./assets/images/how/i3.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">select subject</h5>
+										</div>
+										<div>
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle count-3-1st i-c-3"
+													src="./assets/images/how/count-3.svg"
+													alt=""
+												/>
+											</div>
+										</div>
+										<div class="mobile-line-art"></div>
+									</div>
+
+									<!-- group two middle  -->
+									<div class="d-flex flex-column line-middle-column">
+										<div class="mt-4">
+											<img src="./assets/images/how/line-1.svg" alt="" />
+										</div>
+										<div class="mt-4">
+											<img src="./assets/images/how/line-2.svg" alt="" />
+										</div>
+									</div>
+
+									<!-- group tow right  -->
+
+									<div
+										style="padding-top: 16%"
+										class="d-flex line-design-content"
+									>
+										<div>
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-4.svg"
+													alt=""
+												/>
+											</div>
+										</div>
+										<div class="line-design-body wow bounceInUp">
+											<div>
+												<img src="./assets/images/how/i4.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">
+												Wait in waiting room for tutor
+											</h5>
+										</div>
+										<div class="mobile-line-art"></div>
+									</div>
+								</div>
+
+								<!-- group three  -->
+								<div class="d-flex line-design-wrap">
+									<!-- group three left  -->
+									<div class="d-flex line-design-content first">
+										<div class="line-design-body wow bounceInUp">
+											<div>
+												<img src="./assets/images/how/i5.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">Tutor get connected</h5>
+										</div>
+										<div>
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-5.svg"
+													alt=""
+												/>
+											</div>
+										</div>
+										<div class="mobile-line-art"></div>
+									</div>
+
+									<!-- group three middle  -->
+									<div class="d-flex flex-column line-middle-column">
+										<div class="mt-4">
+											<img src="./assets/images/how/line-1.svg" alt="" />
+										</div>
+										<div class="mt-4">
+											<img src="./assets/images/how/line-2.svg" alt="" />
+										</div>
+									</div>
+
+									<!-- group three right  -->
+
+									<div
+										style="padding-top: 16%"
+										class="d-flex line-design-content"
+									>
+										<div>
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-6.svg"
+													alt=""
+												/>
+											</div>
+										</div>
+										<div class="line-design-body wow bounceInUp">
+											<div>
+												<img src="./assets/images/how/i6.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">Conversation with Tutor</h5>
+										</div>
+										<div class="mobile-line-art"></div>
+									</div>
+								</div>
+
+								<!-- group four  -->
+								<div class="d-flex line-design-wrap">
+									<!-- group four left  -->
+									<div class="d-flex line-design-content first">
+										<div class="line-design-body wow bounceInUp">
+											<div>
+												<img src="./assets/images/how/i7.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">Doubt cleared</h5>
+										</div>
+										<div>
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-7.svg"
+													alt=""
+												/>
+											</div>
+										</div>
+										<!-- <div class="mobile-line-art"></div> -->
+									</div>
+
+									<!-- group four middle  -->
+									<div
+										style="opacity: 0"
+										class="d-flex flex-column line-middle-column noSelect"
+									>
+										<div class="mt-4">
+											<img src="./assets/images/how/line-1.svg" alt="" />
+										</div>
+									</div>
+
+									<!-- group four right  -->
+									<div class="last-items noSelect" style="opacity: 0">
+										<div class="d-flex">
+											<div>
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-4.svg"
+													alt=""
+												/>
+											</div>
+											<div class="line-design-body wow bounceInUp">
+												<div>
+													<img src="./assets/images/how/i7.svg" alt="" />
+												</div>
+												<h5 class="text-center mt-3">A Tutor will solve it</h5>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end line  design -->
+						</div>
+						<!-- start tab 2  -->
+						<div
+							class="tab-pane fade"
+							id="pills-profile"
+							role="tabpanel"
+							aria-labelledby="pills-profile-tab"
+							tabindex="0"
+						>
+							<section class="bg-arts">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="content">
+												<h2>QDrop</h2>
+												<p>
+													Hate waiting for too long to get your query solved? No
+													worries, just drop your question in the ‘Drop a
+													question’ service and our expert tutor will revert
+													with proper guidance and help that you need. Our
+													tutors will not provide a solution but in fact they
+													will make students understand the whole concept.
+													Through this feature students can move ahead with
+													other topics without being stuck on a single question.
+													Schedule a session
+												</p>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="youtube_video_area">
+												<!-- <img src="./assets/images/youtube video placement.png" alt=""> -->
+												<iframe
+													width="100%"
+													height="415"
+													src="https://www.youtube.com/embed/tgbNymZ7vqY"
+												>
+												</iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<div class="container main-section-for-line">
+								<svg
+									class="linemain2"
+									width="674"
+									height="1409"
+									viewBox="0 0 674 1409"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										id="linescroll2"
+										d="M77.9307 9.48351C128.612 -8.50988 253.006 -10.6691 345.133 124.641C460.29 293.779 620.432 231.702 640.224 226.304C639.924 300.077 583.185 444.384 358.628 431.429C77.9307 415.235 32.0475 577.175 1.45874 707.627C69.5337 701.329 238.792 721.662 371.223 853.374C503.654 985.085 627.329 946.639 672.612 910.953C665.415 1000.32 561.773 1172.04 204.784 1143.97C146.006 1146.07 28.6287 1201.91 29.3485 1408.47"
+										stroke="#D48F3F"
+										stroke-width="1.5"
+									/>
+								</svg>
+								<!-- group one  -->
+								<div class="d-flex line-design-wrap">
+									<!-- group one left  -->
+									<div class="d-flex line-design-content first">
+										<div class="line-design-body wow bounceInUp">
+											<div>
+												<img src="./assets/images/how/i1.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">Login</h5>
+										</div>
+										<div>
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-1.svg"
+													alt=""
+													aria-colspan="count-1"
+												/>
+											</div>
+										</div>
+										<div class="mobile-line-art first"></div>
+									</div>
+									<!-- group one middle  -->
+									<div class="d-flex flex-column line-middle-column">
+										<div class="mt-4">
+											<img src="./assets/images/how/line-1.svg" alt="" />
+										</div>
+										<div class="mt-4">
+											<img src="./assets/images/how/line-2.svg" alt="" />
+										</div>
+									</div>
+
+									<!-- group one right  -->
+
+									<div
+										style="padding-top: 16%"
+										class="d-flex line-design-content"
+									>
+										<div>
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													data-aos-anchor=".count-1"
+													class="shadow rounded-circle count-2-1st"
+													src="./assets/images/how/count-2.svg"
+													alt=""
+												/>
+											</div>
+										</div>
+										<div class="line-design-body wow bounceInUp">
+											<div>
+												<img src="./assets/images/how/q2.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">Clicks on QDrop</h5>
+										</div>
+
+										<div class="mobile-line-art"></div>
+									</div>
+								</div>
+
+								<!-- group two  -->
+								<div class="d-flex line-design-wrap">
+									<!-- group two left  -->
+									<div class="d-flex line-design-content first">
+										<div class="line-design-body wow bounceInUp">
+											<div>
+												<img src="./assets/images/how/q3.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">Fill the form and submit</h5>
+										</div>
+										<div>
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle count-3-1st q-c-3"
+													src="./assets/images/how/count-3.svg"
+													alt=""
+												/>
+											</div>
+										</div>
+										<div class="mobile-line-art"></div>
+									</div>
+
+									<!-- group two middle  -->
+									<div class="d-flex flex-column line-middle-column">
+										<div class="mt-4">
+											<img src="./assets/images/how/line-1.svg" alt="" />
+										</div>
+										<div class="mt-4">
+											<img src="./assets/images/how/line-2.svg" alt="" />
+										</div>
+									</div>
+
+									<!-- group tow right  -->
+
+									<div
+										style="padding-top: 16%"
+										class="d-flex line-design-content"
+									>
+										<div>
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle q-c-4"
+													src="./assets/images/how/count-4.svg"
+													alt=""
+												/>
+											</div>
+										</div>
+										<div class="line-design-body wow bounceInUp">
+											<div>
+												<img src="./assets/images/how/q4.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">A Tutor will solve it</h5>
+										</div>
+										<div class="mobile-line-art"></div>
+									</div>
+								</div>
+
+								<!-- group three  -->
+								<div class="d-flex line-design-wrap">
+									<!-- group three left  -->
+									<div class="d-flex line-design-content first">
+										<div class="line-design-body wow bounceInUp">
+											<div>
+												<img src="./assets/images/how/q5.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">
+												You get answer of your query
+											</h5>
+										</div>
+										<div>
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-5.svg"
+													alt=""
+												/>
+											</div>
+										</div>
+										<!-- <div class="mobile-line-art"></div> -->
+									</div>
+
+									<!-- group three middle  -->
+									<div
+										style="opacity: 0"
+										class="d-flex flex-column line-middle-column"
+									>
+										<div class="mt-4">
+											<img src="./assets/images/how/line-1.svg" alt="" />
+										</div>
+									</div>
+
+									<!-- group three right  -->
+									<div class="last-items" style="opacity: 0">
+										<div class="d-flex">
+											<div>
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-4.svg"
+													alt=""
+												/>
+											</div>
+											<div class="line-design-body wow bounceInUp">
+												<div>
+													<img
+														src="./assets/images/how/A-Tutor-will-solve-it.svg"
+														alt=""
+													/>
+												</div>
+												<h5 class="text-center mt-3">A Tutor will solve it</h5>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end line  design -->
+						</div>
+						<!-- start tab 3  -->
+						<div
+							class="tab-pane fade show active"
+							id="pills-contact"
+							role="tabpanel"
+							aria-labelledby="pills-contact-tab"
+							tabindex="0"
+						>
+							<section class="bg-arts">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="content">
+												<h2 class="ScheduleSmart">ScheduleSmart</h2>
+												<p>
+													Pre booking is always a great idea, so schedule your
+													sessions as per your convenience and our tutors will
+													be there to help you at the time you will ask them to.
+													These tailored sessions will help students to learn
+													and understand better according to their time and
+													convenience. In one-to-one sessions with experienced
+													tutors, students can get proper guidance for the
+													subject which will lead to better understanding. Above
+													everything these customized scheduled sessions can
+													turn a dreaded subject into a fun subject.
+												</p>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="youtube_video_area">
+												<!-- <img src="./assets/images/youtube video placement.png" alt=""> -->
+												<iframe
+													width="100%"
+													src="https://www.youtube.com/embed/tgbNymZ7vqY"
+												>
+												</iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<div class="container main-section-for-line">
+								<svg
+									class="linemain3"
+									width="674"
+									height="1409"
+									viewBox="0 0 674 1409"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										id="linescroll3"
+										d="M77.9307 9.48351C128.612 -8.50988 253.006 -10.6691 345.133 124.641C460.29 293.779 620.432 231.702 640.224 226.304C639.924 300.077 583.185 444.384 358.628 431.429C77.9307 415.235 32.0475 577.175 1.45874 707.627C69.5337 701.329 238.792 721.662 371.223 853.374C503.654 985.085 627.329 946.639 672.612 910.953C665.415 1000.32 561.773 1172.04 204.784 1143.97C146.006 1146.07 28.6287 1201.91 29.3485 1408.47"
+										stroke="#D48F3F"
+										stroke-width="1.5"
+									/>
+								</svg>
+								<!-- group one  -->
+								<div class="d-flex line-design-wrap">
+									<!-- group one left  -->
+									<div class="d-flex line-design-content first">
+										<div class="line-design-body wow bounceInUp">
+											<div>
+												<img src="./assets/images/how/i1.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">Login</h5>
+										</div>
+										<div>
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-1.svg"
+													alt=""
+													aria-colspan="count-1"
+												/>
+											</div>
+										</div>
+										<div class="mobile-line-art first"></div>
+									</div>
+									<!-- group one middle  -->
+									<div class="d-flex flex-column line-middle-column">
+										<div class="mt-4">
+											<img src="./assets/images/how/line-1.svg" alt="" />
+										</div>
+										<div class="mt-4">
+											<img src="./assets/images/how/line-2.svg" alt="" />
+										</div>
+									</div>
+
+									<!-- group one right  -->
+
+									<div
+										style="padding-top: 16%"
+										class="d-flex line-design-content"
+									>
+										<div>
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													data-aos-anchor=".count-1"
+													class="shadow rounded-circle count-2-1st"
+													src="./assets/images/how/count-2.svg"
+													alt=""
+												/>
+											</div>
+										</div>
+										<div class="line-design-body wow bounceInUp">
+											<div>
+												<img src="./assets/images/how/s2.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">Clicks on ScheduleSmart</h5>
+										</div>
+
+										<div class="mobile-line-art"></div>
+									</div>
+								</div>
+
+								<!-- group two  -->
+								<div class="d-flex line-design-wrap">
+									<!-- group two left  -->
+									<div class="d-flex line-design-content first">
+										<div class="line-design-body wow bounceInUp">
+											<div>
+												<img src="./assets/images/how/s3.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">
+												Fill out form , select time <br />
+												and subject and topic
+											</h5>
+										</div>
+										<div>
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle count-3-1st s-c-3"
+													src="./assets/images/how/count-3.svg"
+													alt=""
+												/>
+											</div>
+										</div>
+										<div class="mobile-line-art"></div>
+									</div>
+
+									<!-- group two middle  -->
+									<div class="d-flex flex-column line-middle-column">
+										<div class="mt-4">
+											<img src="./assets/images/how/line-1.svg" alt="" />
+										</div>
+										<div class="mt-4">
+											<img src="./assets/images/how/line-2.svg" alt="" />
+										</div>
+									</div>
+
+									<!-- group tow right  -->
+
+									<div
+										style="padding-top: 16%"
+										class="d-flex line-design-content"
+									>
+										<div>
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle s-c-4"
+													src="./assets/images/how/count-4.svg"
+													alt=""
+												/>
+											</div>
+										</div>
+										<div class="line-design-body wow bounceInUp">
+											<div>
+												<img src="./assets/images/how/s4.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">Tutor accept the request</h5>
+										</div>
+										<div class="mobile-line-art"></div>
+									</div>
+								</div>
+
+								<!-- group three  -->
+								<div class="d-flex line-design-wrap">
+									<!-- group three left  -->
+									<div class="d-flex line-design-content first">
+										<div class="line-design-body wow bounceInUp">
+											<div>
+												<img src="./assets/images/how/s5.svg" alt="" />
+											</div>
+											<h5 class="text-center mt-3">Join at scheduled time</h5>
+										</div>
+										<div>
+											<div class="number-count-box">
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-5.svg"
+													alt=""
+												/>
+											</div>
+										</div>
+										<!-- <div class="mobile-line-art"></div> -->
+									</div>
+
+									<!-- group three middle  -->
+									<div
+										style="opacity: 0"
+										class="d-flex flex-column line-middle-column noSelect"
+									>
+										<div class="mt-4">
+											<img src="./assets/images/how/line-1.svg" alt="" />
+										</div>
+									</div>
+
+									<!-- group three right  -->
+									<div class="last-items noSelect" style="opacity: 0">
+										<div class="d-flex">
+											<div>
+												<img
+													data-aos="zoom-in"
+													class="shadow rounded-circle"
+													src="./assets/images/how/count-4.svg"
+													alt=""
+												/>
+											</div>
+											<div class="line-design-body wow bounceInUp">
+												<div>
+													<img
+														src="./assets/images/how/A-Tutor-will-solve-it.svg"
+														alt=""
+													/>
+												</div>
+												<h5 class="text-center mt-3">A Tutor will solve it</h5>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end line  design -->
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
+
 		<footer>
 			<div class="container">
 				<div class="row footer_options text-center text-md-start">
@@ -1012,7 +1464,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="close_btn custom-change">
+						<div class="close_btn">
 							<span class="btn_close" data-bs-dismiss="modal" aria-label="Close"
 								>X</span
 							>
@@ -1022,13 +1474,6 @@
 			</div>
 		</div>
 
-		<!-- modal  -->
-
-		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-		<script>
-			AOS.init();
-		</script>
-
 		<!-- Swiper JS -->
 		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
@@ -1037,18 +1482,31 @@
 
 		<!-- country code  -->
 		<script src="./assets/js/phone-input.js"></script>
-
+		<script src="./assets/js/line-animation.js"></script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
 			crossorigin="anonymous"
 		></script>
+		<!-- aos  -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script>
-			let path = document.querySelector('path');
-			let pathlength = path.getTotalLength();
+			AOS.init();
+		</script>
+		<script src="./assets/js/wow.min.js"></script>
+		<script>
+			new WOW().init();
+		</script>
 
-			path.style.strokeDasharray = pathlength + ' ' + pathlength;
-			path.style.strokeDashoffset = pathlength;
+		<script>
+			let pathh = document.querySelector('#linescroll');
+			let pathlength = pathh.getTotalLength() + 1500;
+
+			pathh.style.strokeDasharray = pathlength + ' ' + pathlength;
+			pathh.style.strokeDashoffset = pathlength;
+			let a = document.getElementById(
+				'main-section-for-animation'
+			).scrollHeight;
 
 			window.addEventListener('scroll', () => {
 				var scrollpercentage =
@@ -1056,11 +1514,45 @@
 					(document.documentElement.scrollHeight -
 						document.documentElement.clientHeight);
 
-				var drawlength = pathlength * scrollpercentage;
+				var drawlength = pathlength * scrollpercentage - 750;
 
-				//draw in reverse
+				pathh.style.strokeDashoffset = pathlength - drawlength;
+			});
+		</script>
+		<script>
+			let pathh1 = document.querySelector('#linescroll2');
+			let pathlength2 = pathh1.getTotalLength() + 1300;
 
-				path.style.strokeDashoffset = pathlength - drawlength;
+			pathh1.style.strokeDasharray = pathlength2 + ' ' + pathlength2;
+			pathh1.style.strokeDashoffset = pathlength2;
+
+			window.addEventListener('scroll', () => {
+				var scrollpercentage2 =
+					(document.documentElement.scrollTop + document.body.scrollTop) /
+					(document.documentElement.scrollHeight -
+						document.documentElement.clientHeight);
+
+				var drawlength2 = pathlength2 * scrollpercentage2 - 750;
+
+				pathh1.style.strokeDashoffset = pathlength2 - drawlength2;
+			});
+		</script>
+		<script>
+			let pathh3 = document.querySelector('#linescroll3');
+			let pathlength3 = pathh3.getTotalLength() + 1300;
+
+			pathh3.style.strokeDasharray = pathlength3 + ' ' + pathlength3;
+			pathh3.style.strokeDashoffset = pathlength3;
+
+			window.addEventListener('scroll', () => {
+				var scrollpercentage3 =
+					(document.documentElement.scrollTop + document.body.scrollTop) /
+					(document.documentElement.scrollHeight -
+						document.documentElement.clientHeight);
+
+				var drawlength3 = pathlength3 * scrollpercentage3 - 750;
+
+				pathh3.style.strokeDashoffset = pathlength3 - drawlength3;
 			});
 		</script>
 		<script src="./assets/js/script.js"></script>
