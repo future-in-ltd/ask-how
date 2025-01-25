@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 export function Footer() {
@@ -6,7 +7,7 @@ export function Footer() {
 			<div className="container">
 				<div className="row footer_options text-center text-md-start">
 					<div className="col-xl-3 col-sm-6">
-						<img
+						<Image
 							className="footer-logo"
 							src="/assets/images/whitelogo.png"
 							alt=""

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 export default function Page() {
@@ -36,7 +37,7 @@ export default function Page() {
 							data-aos-duration="1500"
 							className="col-lg-6 text-center"
 						>
-							<img src="/assets/images/school/hero.png" alt="" />
+							<Image src="/assets/images/school/hero.png" alt="" />
 						</div>
 					</div>
 				</div>
@@ -54,7 +55,7 @@ export default function Page() {
 						>
 							<div className="service_card">
 								<div className="service_card_img">
-									<img src="/assets/images/our-service/insta.png" alt="" />
+									<Image src="/assets/images/our-service/insta.png" alt="" />
 								</div>
 								<div className="content">
 									<div className="service_card_text">
@@ -101,7 +102,7 @@ export default function Page() {
 						>
 							<div className="service_card">
 								<div className="service_card_img">
-									<img src="/assets/images/our-service/Qdrop.png" alt="" />
+									<Image src="/assets/images/our-service/Qdrop.png" alt="" />
 								</div>
 								<div className="content">
 									<div className="service_card_text">
@@ -146,7 +147,7 @@ export default function Page() {
 						>
 							<div className="service_card">
 								<div className="service_card_img">
-									<img
+									<Image
 										src="/assets/images/our-service/smartschedule.png"
 										alt=""
 									/>
@@ -222,7 +223,7 @@ export default function Page() {
 							data-aos-duration="1500"
 							className="col-lg-6 order-1 order-lg-2 text-center"
 						>
-							<img src="/assets/images/benifites/learning.png" alt="" />
+							<Image src="/assets/images/benifites/learning.png" alt="" />
 						</div>
 					</div>
 					<div className="row mt-60 gy-4">
@@ -231,7 +232,7 @@ export default function Page() {
 							data-aos-duration="1500"
 							className="col-lg-6 text-center"
 						>
-							<img src="/assets/images/benifites/engagement.png" alt="" />
+							<Image src="/assets/images/benifites/engagement.png" alt="" />
 						</div>
 						<div
 							className="col-lg-6"
@@ -271,7 +272,7 @@ export default function Page() {
 						>
 							<div className="features_card">
 								<div className="features_card_image">
-									<img src="/assets/images/school/c1.png" alt="" />
+									<Image src="/assets/images/school/c1.png" alt="" />
 								</div>
 								<div className="features_card_content">
 									<h3>Methodology</h3>
@@ -292,7 +293,7 @@ export default function Page() {
 						>
 							<div className="features_card">
 								<div className="features_card_image">
-									<img src="/assets/images/school/c2.png" alt="" />
+									<Image src="/assets/images/school/c2.png" alt="" />
 								</div>
 								<div className="features_card_content">
 									<h3>Time Duration</h3>
@@ -311,7 +312,7 @@ export default function Page() {
 						>
 							<div className="features_card">
 								<div className="features_card_image">
-									<img src="/assets/images/school/c3.png" alt="" />
+									<Image src="/assets/images/school/c3.png" alt="" />
 								</div>
 								<div className="features_card_content">
 									<h3>Learning Objective</h3>
@@ -332,7 +333,7 @@ export default function Page() {
 						>
 							<div className="features_card">
 								<div className="features_card_image">
-									<img src="/assets/images/school/c4.png" alt="" />
+									<Image src="/assets/images/school/c4.png" alt="" />
 								</div>
 								<div className="features_card_content">
 									<h3>Curriculum</h3>

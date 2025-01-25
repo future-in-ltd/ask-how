@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 export default function Page() {
@@ -74,7 +75,7 @@ export default function Page() {
 							heart, eating healthy works wonders. Eat fruits, vegetables,
 							salads, proteins and everything a healthy and balanced diet should
 							include. Not only eating but what you drink counts too. So have
-							some juices and don't forget to have lots of water.
+							some juices and Don&apos;t forget to have lots of water.
 						</p>
 						<h3>Exercise:</h3>
 						<p>
@@ -215,7 +216,7 @@ export default function Page() {
 							<h2>Post Comments</h2>
 							<div className="author-info">
 								<div className="author-img">
-									<img src="/assets/images/blog/author.png" alt="" />
+									<Image src="/assets/images/blog/author.png" alt="" />
 								</div>
 								<div className="author-details">
 									<p className="name">Amanda Saleds</p>

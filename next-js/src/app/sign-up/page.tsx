@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -9,7 +10,7 @@ export default function Page() {
 					<div className="left_side_area">
 						<div>
 							<div className="logo text-center">
-								<img src="/assets/images/whitelogo.png" alt="" />
+								<Image src="/assets/images/whitelogo.png" alt="" />
 							</div>
 							<h2>Get Started with FastTutor !</h2>
 							<div className="list-style-pages">

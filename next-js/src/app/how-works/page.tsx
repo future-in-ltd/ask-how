@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 export default function Page() {
@@ -90,7 +91,7 @@ export default function Page() {
 										</div>
 										<div className="col-md-6">
 											<div className="youtube_video_area">
-												{/* <!-- <img src="/assets/images/youtube video placement.png" alt=""> --> */}
+												{/* <!-- <Image src="/assets/images/youtube video placement.png" alt=""> --> */}
 												<iframe
 													width="100%"
 													height="415"
@@ -127,13 +128,13 @@ export default function Page() {
 									<div className="d-flex line-design-content first">
 										<div className="line-design-body wow bounceInUp">
 											<div>
-												<img src="/assets/images/how/i1.svg" alt="" />
+												<Image src="/assets/images/how/i1.svg" alt="" />
 											</div>
 											<h5 className="text-center mt-3">Login</h5>
 										</div>
 										<div>
 											<div className="number-count-box">
-												<img
+												<Image
 													className="shadow rounded-circle"
 													src="/assets/images/how/count-1.svg"
 													alt=""
@@ -145,10 +146,10 @@ export default function Page() {
 									{/* <!-- group one middle  --> */}
 									<div className="d-flex flex-column line-middle-column">
 										<div className="mt-4">
-											<img src="/assets/images/how/line-1.svg" alt="" />
+											<Image src="/assets/images/how/line-1.svg" alt="" />
 										</div>
 										<div className="mt-4">
-											<img src="/assets/images/how/line-2.svg" alt="" />
+											<Image src="/assets/images/how/line-2.svg" alt="" />
 										</div>
 									</div>
 
@@ -160,7 +161,7 @@ export default function Page() {
 									>
 										<div>
 											<div className="number-count-box">
-												<img
+												<Image
 													data-aos="zoom-in"
 													data-aos-anchor=".count-1"
 													className="shadow rounded-circle count-2-1st"
@@ -171,7 +172,7 @@ export default function Page() {
 										</div>
 										<div className="line-design-body wow bounceInUp">
 											<div>
-												<img src="/assets/images/how/i2.svg" alt="" />
+												<Image src="/assets/images/how/i2.svg" alt="" />
 											</div>
 											<h5 className="text-center mt-3">
 												Clicks on Instaconnect button
@@ -189,13 +190,13 @@ export default function Page() {
 									<div className="d-flex line-design-content first">
 										<div className="line-design-body wow bounceInUp">
 											<div>
-												<img src="/assets/images/how/i3.svg" alt="" />
+												<Image src="/assets/images/how/i3.svg" alt="" />
 											</div>
 											<h5 className="text-center mt-3">select subject</h5>
 										</div>
 										<div>
 											<div className="number-count-box">
-												<img
+												<Image
 													data-aos="zoom-in"
 													className="shadow rounded-circle count-3-1st i-c-3"
 													src="/assets/images/how/count-3.svg"
@@ -209,10 +210,10 @@ export default function Page() {
 									{/* <!-- group two middle  --> */}
 									<div className="d-flex flex-column line-middle-column">
 										<div className="mt-4">
-											<img src="/assets/images/how/line-1.svg" alt="" />
+											<Image src="/assets/images/how/line-1.svg" alt="" />
 										</div>
 										<div className="mt-4">
-											<img src="/assets/images/how/line-2.svg" alt="" />
+											<Image src="/assets/images/how/line-2.svg" alt="" />
 										</div>
 									</div>
 
@@ -224,7 +225,7 @@ export default function Page() {
 									>
 										<div>
 											<div className="number-count-box">
-												<img
+												<Image
 													data-aos="zoom-in"
 													className="shadow rounded-circle"
 													src="/assets/images/how/count-4.svg"
@@ -234,7 +235,7 @@ export default function Page() {
 										</div>
 										<div className="line-design-body wow bounceInUp">
 											<div>
-												<img src="/assets/images/how/i4.svg" alt="" />
+												<Image src="/assets/images/how/i4.svg" alt="" />
 											</div>
 											<h5 className="text-center mt-3">
 												Wait in waiting room for tutor
@@ -250,13 +251,13 @@ export default function Page() {
 									<div className="d-flex line-design-content first">
 										<div className="line-design-body wow bounceInUp">
 											<div>
-												<img src="/assets/images/how/i5.svg" alt="" />
+												<Image src="/assets/images/how/i5.svg" alt="" />
 											</div>
 											<h5 className="text-center mt-3">Tutor get connected</h5>
 										</div>
 										<div>
 											<div className="number-count-box">
-												<img
+												<Image
 													data-aos="zoom-in"
 													className="shadow rounded-circle"
 													src="/assets/images/how/count-5.svg"
@@ -270,10 +271,10 @@ export default function Page() {
 									{/* <!-- group three middle  --> */}
 									<div className="d-flex flex-column line-middle-column">
 										<div className="mt-4">
-											<img src="/assets/images/how/line-1.svg" alt="" />
+											<Image src="/assets/images/how/line-1.svg" alt="" />
 										</div>
 										<div className="mt-4">
-											<img src="/assets/images/how/line-2.svg" alt="" />
+											<Image src="/assets/images/how/line-2.svg" alt="" />
 										</div>
 									</div>
 
@@ -285,7 +286,7 @@ export default function Page() {
 									>
 										<div>
 											<div className="number-count-box">
-												<img
+												<Image
 													data-aos="zoom-in"
 													className="shadow rounded-circle"
 													src="/assets/images/how/count-6.svg"
@@ -295,7 +296,7 @@ export default function Page() {
 										</div>
 										<div className="line-design-body wow bounceInUp">
 											<div>
-												<img src="/assets/images/how/i6.svg" alt="" />
+												<Image src="/assets/images/how/i6.svg" alt="" />
 											</div>
 											<h5 className="text-center mt-3">
 												Conversation with Tutor
@@ -311,13 +312,13 @@ export default function Page() {
 									<div className="d-flex line-design-content first">
 										<div className="line-design-body wow bounceInUp">
 											<div>
-												<img src="/assets/images/how/i7.svg" alt="" />
+												<Image src="/assets/images/how/i7.svg" alt="" />
 											</div>
 											<h5 className="text-center mt-3">Doubt cleared</h5>
 										</div>
 										<div>
 											<div className="number-count-box">
-												<img
+												<Image
 													data-aos="zoom-in"
 													className="shadow rounded-circle"
 													src="/assets/images/how/count-7.svg"
@@ -334,7 +335,7 @@ export default function Page() {
 										className="d-flex flex-column line-middle-column noSelect"
 									>
 										<div className="mt-4">
-											<img src="/assets/images/how/line-1.svg" alt="" />
+											<Image src="/assets/images/how/line-1.svg" alt="" />
 										</div>
 									</div>
 
@@ -342,7 +343,7 @@ export default function Page() {
 									<div className="last-items noSelect" style={{ opacity: 0 }}>
 										<div className="d-flex">
 											<div>
-												<img
+												<Image
 													data-aos="zoom-in"
 													className="shadow rounded-circle"
 													src="/assets/images/how/count-4.svg"
@@ -351,7 +352,7 @@ export default function Page() {
 											</div>
 											<div className="line-design-body wow bounceInUp">
 												<div>
-													<img src="/assets/images/how/i7.svg" alt="" />
+													<Image src="/assets/images/how/i7.svg" alt="" />
 												</div>
 												<h5 className="text-center mt-3">
 													A Tutor will solve it
@@ -392,7 +393,7 @@ export default function Page() {
 										</div>
 										<div className="col-md-6">
 											<div className="youtube_video_area">
-												{/* <!-- <img src="/assets/images/youtube video placement.png" alt=""> --> */}
+												{/* <!-- <Image src="/assets/images/youtube video placement.png" alt=""> --> */}
 												<iframe
 													width="100%"
 													height="415"
@@ -425,15 +426,16 @@ export default function Page() {
 									<div className="d-flex line-design-content first">
 										<div className="line-design-body wow bounceInUp">
 											<div>
-												<img src="/assets/images/how/i1.svg" alt="" />
+												<Image src="/assets/images/how/i1.svg" alt="" />
 											</div>
 											<h5 className="text-center mt-3">Login</h5>
 										</div>
 										<div>
 											<div className="number-count-box">
-												<img
+												<Image
 													className="shadow rounded-circle"
 													src="/assets/images/how/count-1.svg"
+													alt=""
 												/>
 											</div>
 										</div>
@@ -442,10 +444,10 @@ export default function Page() {
 									{/* <!-- group one middle  --> */}
 									<div className="d-flex flex-column line-middle-column">
 										<div className="mt-4">
-											<img src="/assets/images/how/line-1.svg" alt="" />
+											<Image src="/assets/images/how/line-1.svg" alt="" />
 										</div>
 										<div className="mt-4">
-											<img src="/assets/images/how/line-2.svg" alt="" />
+											<Image src="/assets/images/how/line-2.svg" alt="" />
 										</div>
 									</div>
 
@@ -457,7 +459,7 @@ export default function Page() {
 									>
 										<div>
 											<div className="number-count-box">
-												<img
+												<Image
 													data-aos="zoom-in"
 													data-aos-anchor=".count-1"
 													className="shadow rounded-circle count-2-1st"
@@ -468,7 +470,7 @@ export default function Page() {
 										</div>
 										<div className="line-design-body wow bounceInUp">
 											<div>
-												<img src="/assets/images/how/q2.svg" alt="" />
+												<Image src="/assets/images/how/q2.svg" alt="" />
 											</div>
 											<h5 className="text-center mt-3">Clicks on QDrop</h5>
 										</div>
@@ -483,7 +485,7 @@ export default function Page() {
 									<div className="d-flex line-design-content first">
 										<div className="line-design-body wow bounceInUp">
 											<div>
-												<img src="/assets/images/how/q3.svg" alt="" />
+												<Image src="/assets/images/how/q3.svg" alt="" />
 											</div>
 											<h5 className="text-center mt-3">
 												Fill the form and submit
@@ -491,7 +493,7 @@ export default function Page() {
 										</div>
 										<div>
 											<div className="number-count-box">
-												<img
+												<Image
 													data-aos="zoom-in"
 													className="shadow rounded-circle count-3-1st q-c-3"
 													src="/assets/images/how/count-3.svg"
@@ -505,10 +507,10 @@ export default function Page() {
 									{/* <!-- group two middle  --> */}
 									<div className="d-flex flex-column line-middle-column">
 										<div className="mt-4">
-											<img src="/assets/images/how/line-1.svg" alt="" />
+											<Image src="/assets/images/how/line-1.svg" alt="" />
 										</div>
 										<div className="mt-4">
-											<img src="/assets/images/how/line-2.svg" alt="" />
+											<Image src="/assets/images/how/line-2.svg" alt="" />
 										</div>
 									</div>
 
@@ -520,7 +522,7 @@ export default function Page() {
 									>
 										<div>
 											<div className="number-count-box">
-												<img
+												<Image
 													data-aos="zoom-in"
 													className="shadow rounded-circle q-c-4"
 													src="/assets/images/how/count-4.svg"
@@ -530,7 +532,7 @@ export default function Page() {
 										</div>
 										<div className="line-design-body wow bounceInUp">
 											<div>
-												<img src="/assets/images/how/q4.svg" alt="" />
+												<Image src="/assets/images/how/q4.svg" alt="" />
 											</div>
 											<h5 className="text-center mt-3">
 												A Tutor will solve it
@@ -546,7 +548,7 @@ export default function Page() {
 									<div className="d-flex line-design-content first">
 										<div className="line-design-body wow bounceInUp">
 											<div>
-												<img src="/assets/images/how/q5.svg" alt="" />
+												<Image src="/assets/images/how/q5.svg" alt="" />
 											</div>
 											<h5 className="text-center mt-3">
 												You get answer of your query
@@ -554,7 +556,7 @@ export default function Page() {
 										</div>
 										<div>
 											<div className="number-count-box">
-												<img
+												<Image
 													data-aos="zoom-in"
 													className="shadow rounded-circle"
 													src="/assets/images/how/count-5.svg"
@@ -571,7 +573,7 @@ export default function Page() {
 										className="d-flex flex-column line-middle-column"
 									>
 										<div className="mt-4">
-											<img src="/assets/images/how/line-1.svg" alt="" />
+											<Image src="/assets/images/how/line-1.svg" alt="" />
 										</div>
 									</div>
 
@@ -579,7 +581,7 @@ export default function Page() {
 									<div className="last-items" style={{ opacity: 0 }}>
 										<div className="d-flex">
 											<div>
-												<img
+												<Image
 													data-aos="zoom-in"
 													className="shadow rounded-circle"
 													src="/assets/images/how/count-4.svg"
@@ -588,7 +590,7 @@ export default function Page() {
 											</div>
 											<div className="line-design-body wow bounceInUp">
 												<div>
-													{/* <img
+													{/* <Image
 														src="/assets/images/how/A-Tutor-will-solve-it.svg"
 														alt=""
 													/> */}
@@ -633,7 +635,7 @@ export default function Page() {
 										</div>
 										<div className="col-md-6">
 											<div className="youtube_video_area">
-												{/* <!-- <img src="/assets/images/youtube video placement.png" alt=""> --> */}
+												{/* <!-- <Image src="/assets/images/youtube video placement.png" alt=""> --> */}
 												<iframe
 													width="100%"
 													src="https://www.youtube.com/embed/tgbNymZ7vqY"
@@ -665,13 +667,14 @@ export default function Page() {
 									<div className="d-flex line-design-content first">
 										<div className="line-design-body wow bounceInUp">
 											<div>
-												<img src="/assets/images/how/i1.svg" alt="" />
+												<Image src="/assets/images/how/i1.svg" alt="" />
 											</div>
 											<h5 className="text-center mt-3">Login</h5>
 										</div>
 										<div>
 											<div className="number-count-box">
-												<img
+												<Image
+													alt=""
 													className="shadow rounded-circle"
 													src="/assets/images/how/count-1.svg"
 												/>
@@ -682,10 +685,10 @@ export default function Page() {
 									{/* <!-- group one middle  --> */}
 									<div className="d-flex flex-column line-middle-column">
 										<div className="mt-4">
-											<img src="/assets/images/how/line-1.svg" alt="" />
+											<Image src="/assets/images/how/line-1.svg" alt="" />
 										</div>
 										<div className="mt-4">
-											<img src="/assets/images/how/line-2.svg" alt="" />
+											<Image src="/assets/images/how/line-2.svg" alt="" />
 										</div>
 									</div>
 
@@ -697,7 +700,7 @@ export default function Page() {
 									>
 										<div>
 											<div className="number-count-box">
-												<img
+												<Image
 													data-aos="zoom-in"
 													data-aos-anchor=".count-1"
 													className="shadow rounded-circle count-2-1st"
@@ -708,7 +711,7 @@ export default function Page() {
 										</div>
 										<div className="line-design-body wow bounceInUp">
 											<div>
-												<img src="/assets/images/how/s2.svg" alt="" />
+												<Image src="/assets/images/how/s2.svg" alt="" />
 											</div>
 											<h5 className="text-center mt-3">
 												Clicks on ScheduleSmart
@@ -725,7 +728,7 @@ export default function Page() {
 									<div className="d-flex line-design-content first">
 										<div className="line-design-body wow bounceInUp">
 											<div>
-												<img src="/assets/images/how/s3.svg" alt="" />
+												<Image src="/assets/images/how/s3.svg" alt="" />
 											</div>
 											<h5 className="text-center mt-3">
 												Fill out form , select time <br />
@@ -734,7 +737,7 @@ export default function Page() {
 										</div>
 										<div>
 											<div className="number-count-box">
-												<img
+												<Image
 													data-aos="zoom-in"
 													className="shadow rounded-circle count-3-1st s-c-3"
 													src="/assets/images/how/count-3.svg"
@@ -748,10 +751,10 @@ export default function Page() {
 									{/* <!-- group two middle  --> */}
 									<div className="d-flex flex-column line-middle-column">
 										<div className="mt-4">
-											<img src="/assets/images/how/line-1.svg" alt="" />
+											<Image src="/assets/images/how/line-1.svg" alt="" />
 										</div>
 										<div className="mt-4">
-											<img src="/assets/images/how/line-2.svg" alt="" />
+											<Image src="/assets/images/how/line-2.svg" alt="" />
 										</div>
 									</div>
 
@@ -763,7 +766,7 @@ export default function Page() {
 									>
 										<div>
 											<div className="number-count-box">
-												<img
+												<Image
 													data-aos="zoom-in"
 													className="shadow rounded-circle s-c-4"
 													src="/assets/images/how/count-4.svg"
@@ -773,7 +776,7 @@ export default function Page() {
 										</div>
 										<div className="line-design-body wow bounceInUp">
 											<div>
-												<img src="/assets/images/how/s4.svg" alt="" />
+												<Image src="/assets/images/how/s4.svg" alt="" />
 											</div>
 											<h5 className="text-center mt-3">
 												Tutor accept the request
@@ -789,7 +792,7 @@ export default function Page() {
 									<div className="d-flex line-design-content first">
 										<div className="line-design-body wow bounceInUp">
 											<div>
-												<img src="/assets/images/how/s5.svg" alt="" />
+												<Image src="/assets/images/how/s5.svg" alt="" />
 											</div>
 											<h5 className="text-center mt-3">
 												Join at scheduled time
@@ -797,7 +800,7 @@ export default function Page() {
 										</div>
 										<div>
 											<div className="number-count-box">
-												<img
+												<Image
 													data-aos="zoom-in"
 													className="shadow rounded-circle"
 													src="/assets/images/how/count-5.svg"
@@ -814,7 +817,7 @@ export default function Page() {
 										className="d-flex flex-column line-middle-column noSelect"
 									>
 										<div className="mt-4">
-											<img src="/assets/images/how/line-1.svg" alt="" />
+											<Image src="/assets/images/how/line-1.svg" alt="" />
 										</div>
 									</div>
 
@@ -822,7 +825,7 @@ export default function Page() {
 									<div className="last-items noSelect" style={{ opacity: 0 }}>
 										<div className="d-flex">
 											<div>
-												<img
+												<Image
 													data-aos="zoom-in"
 													className="shadow rounded-circle"
 													src="/assets/images/how/count-4.svg"
@@ -831,7 +834,7 @@ export default function Page() {
 											</div>
 											<div className="line-design-body wow bounceInUp">
 												<div>
-													<img
+													<Image
 														src="/assets/images/how/A-Tutor-will-solve-it.svg"
 														alt=""
 													/>

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -11,7 +12,7 @@ export function Header() {
 				>
 					<div className="container-fluid">
 						<Link className="navbar-brand" href="/">
-							<img src="/assets/images/logo.png" alt="" />
+							<Image src="/assets/images/logo.png" alt="" />
 						</Link>
 						<button
 							className="navbar-toggler collapsed"

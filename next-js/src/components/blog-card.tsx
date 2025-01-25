@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 const BlogCards = ({ item }: any) => {
@@ -5,7 +6,7 @@ const BlogCards = ({ item }: any) => {
 		<div className="col-md-6 col-lg-4" key={item.id}>
 			<div className="single_blog_card">
 				<Link href={item.link}>
-					<img src={item.image} alt={item.title} />
+					<Image src={item.image} alt={item.title} />
 				</Link>
 				<div className="content">
 					<div className="d-flex info align-items-center justify-content-between">
