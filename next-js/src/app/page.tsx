@@ -54,7 +54,7 @@ export default function Home() {
 						</div>
 						<div className="col-lg-6 ps-lg-0">
 							<div className="hero_Image">
-								<Image src="./assets/images/hero-model.png" alt="" />
+								<Image src="/assets/images/hero-model.png" alt="" />
 							</div>
 							{/* <div className="youtube_video_area rounded-0">
 								<iframe
@@ -82,7 +82,7 @@ export default function Home() {
 						>
 							<div className="service_card">
 								<div className="service_card_Image">
-									<Image src="./assets/images/instahome.png" alt="" />
+									<Image src="/assets/images/instahome.png" alt="" />
 								</div>
 								<div className="content">
 									<div className="service_card_text">
@@ -127,7 +127,7 @@ export default function Home() {
 						>
 							<div className="service_card">
 								<div className="service_card_Image">
-									<Image src="./assets/images/qdrophome.png" alt="" />
+									<Image src="/assets/images/qdrophome.png" alt="" />
 								</div>
 								<div className="content">
 									<div className="service_card_text">
@@ -171,7 +171,7 @@ export default function Home() {
 						>
 							<div className="service_card">
 								<div className="service_card_Image">
-									<Image src="./assets/images/sedhome.png" alt="" />
+									<Image src="/assets/images/sedhome.png" alt="" />
 								</div>
 								<div className="content">
 									<div className="service_card_text">
@@ -218,7 +218,7 @@ export default function Home() {
 							data-aos-duration="1500"
 							className="col-md-5"
 						>
-							<Image src="./assets/images/macbook.png" alt="" />
+							<Image src="/assets/images/macbook.png" alt="" />
 						</div>
 						<div
 							data-aos="fade-left"
@@ -1033,7 +1033,7 @@ export default function Home() {
 						>
 							<div className="features_card">
 								<div className="features_card_image">
-									<Image src="./assets/images/our-features/247.png" alt="" />
+									<Image src="/assets/images/our-features/247.png" alt="" />
 								</div>
 								<div className="features_card_content">
 									<h3>24*7 Tutor availability</h3>
@@ -1085,7 +1085,7 @@ export default function Home() {
 						>
 							<div className="features_card">
 								<div className="features_card_image">
-									<Image src="./assets/images/our-features/multi.png" alt="" />
+									<Image src="/assets/images/our-features/multi.png" alt="" />
 								</div>
 								<div className="features_card_content">
 									<h3>Multi-device compatibility</h3>
@@ -1140,7 +1140,7 @@ export default function Home() {
 							<div className="swiper-wrapper">
 								<div className="swiper-slide">
 									<div className="tumbnile_area">
-										<Image src="./assets/images/slider/1.png" alt="" />
+										<Image src="/assets/images/slider/1.png" alt="" />
 									</div>
 									<div className="content">
 										<h3>Emma Williams</h3>
@@ -1149,7 +1149,7 @@ export default function Home() {
 								</div>
 								<div className="swiper-slide">
 									<div className="tumbnile_area">
-										<Image src="./assets/images/slider/2.png" alt="" />
+										<Image src="/assets/images/slider/2.png" alt="" />
 									</div>
 									<div className="content">
 										<h3>Ava Smith</h3>
@@ -1158,7 +1158,7 @@ export default function Home() {
 								</div>
 								<div className="swiper-slide">
 									<div className="tumbnile_area">
-										<Image src="./assets/images/slider/3.png" alt="" />
+										<Image src="/assets/images/slider/3.png" alt="" />
 									</div>
 									<div className="content">
 										<h3>Oliver Davis</h3>
@@ -1167,7 +1167,7 @@ export default function Home() {
 								</div>
 								<div className="swiper-slide">
 									<div className="tumbnile_area">
-										<Image src="./assets/images/slider/4.png" alt="" />
+										<Image src="/assets/images/slider/4.png" alt="" />
 									</div>
 									<div className="content">
 										<h3>Henry Miller</h3>
@@ -1176,7 +1176,7 @@ export default function Home() {
 								</div>
 								<div className="swiper-slide">
 									<div className="tumbnile_area">
-										<Image src="./assets/images/slider/5.png" alt="" />
+										<Image src="/assets/images/slider/5.png" alt="" />
 									</div>
 									<div className="content">
 										<h3>Mia Lucas</h3>
@@ -1241,30 +1241,30 @@ export default function Home() {
 						<div className="swiper-wrapper">
 							<div className="swiper-slide">
 								<div className="partner_logo">
-									<Image src="./assets/images/patnars/Group 13047.png" alt="" />
+									<Image src="/assets/images/patnars/Group 13047.png" alt="" />
 								</div>
 							</div>
 
 							<div className="swiper-slide">
 								<div className="partner_logo">
-									<Image src="./assets/images/patnars/Group 13055.png" alt="" />
+									<Image src="/assets/images/patnars/Group 13055.png" alt="" />
 								</div>
 							</div>
 							<div className="swiper-slide">
 								<div className="partner_logo">
-									<Image src="./assets/images/patnars/Group 13064.png" alt="" />
-								</div>
-							</div>
-
-							<div className="swiper-slide">
-								<div className="partner_logo">
-									<Image src="./assets/images/patnars/Group 13071.png" alt="" />
+									<Image src="/assets/images/patnars/Group 13064.png" alt="" />
 								</div>
 							</div>
 
 							<div className="swiper-slide">
 								<div className="partner_logo">
-									<Image src="./assets/images/patnars/Group 13080.png" alt="" />
+									<Image src="/assets/images/patnars/Group 13071.png" alt="" />
+								</div>
+							</div>
+
+							<div className="swiper-slide">
+								<div className="partner_logo">
+									<Image src="/assets/images/patnars/Group 13080.png" alt="" />
 								</div>
 							</div>
 						</div>
