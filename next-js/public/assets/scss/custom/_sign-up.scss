@@ -1,0 +1,247 @@
+// sign in page
+.sign-up-page {
+  position: relative;
+
+  h2 {
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 60px;
+  }
+
+  .logo img {
+    width: 282px;
+  }
+
+  .left_side_area {
+    background: $main-color;
+    color: #fff;
+    padding: 100px 75px;
+    height: 100%;
+    display: grid;
+    place-items: center;
+
+    h2 {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 150%;
+      text-align: center;
+      color: #ffffff;
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 150%;
+      color: #ffffff;
+      margin-left: 30px;
+    }
+  }
+
+  .right_side_from {
+    // padding: 20px 138px;
+    display: grid;
+    place-items: center;
+    height: 100%;
+
+    .row {
+      width: 100%;
+      margin-right: 40px;
+    }
+
+    input,
+    select {
+      width: 100%;
+      margin-bottom: 30px;
+      padding: 10px;
+
+      height: 47px;
+      border: 1px solid #999999;
+      border-radius: 8px;
+    }
+
+    input[type="radio"] {
+      margin-right: 10px;
+      height: auto;
+      border: 1px solid #999999;
+      border-radius: none;
+      margin-bottom: 0;
+    }
+
+    .submit_area {
+      max-width: 780px;
+      display: flex;
+    }
+
+    a {
+      color: $main-color;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 150%;
+      color: #999999;
+    }
+  }
+
+  select#countryCode {
+    background-repeat: no-repeat;
+    background-position: calc(100% - 8px) center;
+    background-size: 16px;
+    padding-right: 28px;
+  }
+
+  option[data-icon] {
+    padding-left: 24px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    line-height: 1.6;
+  }
+}
+
+.right_side_from {
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 992px) {
+  .signup-to-continue {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .sign-up-page {
+    .left_side_area {
+      padding: 20px;
+
+      h2 {
+        font-size: 25px;
+      }
+
+      p {
+        margin-left: 0px;
+      }
+    }
+
+    .right_side_from {
+      padding: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .sign-up-page .logo img {
+    width: 200px;
+  }
+
+  .sign-up-page .left_side_area h2,
+  .sign-up-page .left_side_area .h2 {
+    margin-top: 0px !important;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  // sign in page
+  .sign-up-page {
+    position: relative;
+
+    h2 {
+      font-size: 20px;
+      line-height: 150%;
+      text-align: center;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+
+    .left_side_area {
+      background: $main-color;
+      color: #fff;
+      padding: 20px;
+
+      .logo img {
+        margin-top: 60px;
+      }
+
+      h2 {
+        font-weight: 600;
+
+        line-height: 150%;
+        text-align: center;
+        color: #ffffff;
+        // margin-top: 25px !important;
+        // margin-bottom: 10px !important;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 150%;
+        color: #ffffff;
+      }
+    }
+
+    .right_side_from {
+      padding: 20px;
+
+      .row {
+        margin-right: 0;
+      }
+
+      input,
+      select {
+        width: 100%;
+        margin-bottom: 10px;
+        height: 47px;
+        border: 1px solid #999999;
+        border-radius: 8px;
+        font-size: 14px;
+      }
+
+      .submit_area {
+        width: 100%;
+        display: flex;
+      }
+
+      a {
+        color: $main-color;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #999999;
+      }
+
+      .btn_submit {
+        background: $main-color;
+        padding: 10px 40px 10px 40px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    }
+
+    select#countryCode {
+      background-repeat: no-repeat;
+      background-position: calc(100% - 8px) center;
+      background-size: 16px;
+      padding-right: 28px;
+    }
+
+    option[data-icon] {
+      padding-left: 24px;
+      background-repeat: no-repeat;
+      background-position: left center;
+      line-height: 1.6;
+    }
+  }
+}
